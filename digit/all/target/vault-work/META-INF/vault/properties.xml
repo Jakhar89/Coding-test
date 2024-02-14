@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>SSCP - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2024-02-12T14:40:08.409Z</entry>
+<entry key="groupId">com.sscp</entry>
+<entry key="name">sscp.all</entry>
+<entry key="description">All content package for SSCP</entry>
+<entry key="artifactId">sscp.all</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.sscp</entry>
+</properties>

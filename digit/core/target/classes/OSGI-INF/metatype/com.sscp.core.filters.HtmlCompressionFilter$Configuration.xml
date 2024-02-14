@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.sscp.core.filters.HtmlCompressionFilter$Configuration">
+  <OCD id="com.sscp.core.filters.HtmlCompressionFilter$Configuration" name="Accelerator - HTML Compression Filter" description="Compress the content response for the provided paths.">
+    <AD id="enabled" type="Boolean" name="Enable Compression" description="Enable or disable HTML response compression." default="false"/>
+    <AD id="paths" type="String" cardinality="2147483647" name="Content Paths" description="Please enter the paths where you need to compress the content response." default=""/>
+  </OCD>
+  <Designate pid="com.sscp.core.filters.HtmlCompressionFilter">
+    <Object ocdref="com.sscp.core.filters.HtmlCompressionFilter$Configuration"/>
+  </Designate>
+</metatype:MetaData>

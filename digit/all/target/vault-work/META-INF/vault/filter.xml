@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/sscp-packages"/>
+    <filter root="/apps/sscp-vendor-packages"/>
+    <filter root="/apps/my-app-packages/container/install">
+        <include pattern="\Q/apps/my-app-packages/container/install/acs-aem-commons-content-\E.*\.zip(/.*)?"/>
+    </filter>
+</workspaceFilter>

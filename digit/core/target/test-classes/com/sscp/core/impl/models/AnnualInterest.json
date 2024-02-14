@@ -1,0 +1,12 @@
+{
+  "annualInterestLabelText": "Annual interest charged",
+  "cq:lastRolledout": "2023-08-08T05:39:46.951Z",
+  "cq:lastRolledoutBy": "hafiz.ahmad@tfal.com.au",
+  "financialYearText": "Financial year",
+  "jcr:lastModified": "2023-08-08T05:39:46.949Z",
+  "jcr:lastModifiedBy": "bharat.mani@merkleinc.com.au",
+  "jcr:mixinTypes": ["cq:LiveRelationship"],
+  "jcr:primaryType": "nt:unstructured",
+  "setSuffixYear": "false",
+  "sling:resourceType": "sscp/components/annualinterest"
+}

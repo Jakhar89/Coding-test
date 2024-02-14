@@ -1,0 +1,28 @@
+{"marketingCommunications": {
+"marketingCommunicationsErrorTitle": "Sorry, we are experiencing a problem.",
+"textIsRich": [
+"true",
+"true",
+"true"
+],
+"marketingAndCommunicationsEditTitle": "Communication preferences",
+"saveButtonText": "Save changes",
+"marketingPreferenceDescription": "I would like to be informed",
+"sling:resourceType": "sscp/components/marketingandcommunications",
+"correspondenceMethodPaper": "Mail",
+"marketingPreferenceYes": "Yes",
+"thankYouDescription": "Your marketing and communications preferences have been updated",
+"marketingAndCommunicationsTitle": "Communication preferences",
+"thankYouOverlayTimer": "3000",
+"cancelButtonText": "Cancel",
+"marketingCommunicationsErrorDescription": "Please try again or contact",
+"jcr:lastModifiedBy": "tim.muir@tfal.com.au",
+"correspondenceMethodEmail": "Email",
+"thankYouIcon": "receipt-approved",
+"thankYouTitle": "Thank you!",
+"correspondenceMethodDescription": "I would like to receive correspondence",
+"jcr:lastModified": "Mon Jul 10 2023 05:59:28 GMT+0000",
+"jcr:primaryType": "nt:unstructured",
+"marketingPreferenceNo": "No"
+}
+}

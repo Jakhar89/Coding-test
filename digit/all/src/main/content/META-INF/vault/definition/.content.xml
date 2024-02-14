@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="vlt:PackageDefinition"
+		  providerLink="${meta.provider.url}"
+		  providerName="${meta.provider.name}"
+		  providerUrl="${meta.provider.url}"
+		  testedWith="AEM as a Cloud Service"/>

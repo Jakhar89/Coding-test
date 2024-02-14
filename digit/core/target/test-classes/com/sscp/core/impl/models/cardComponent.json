@@ -1,0 +1,30 @@
+{ "cardComponent": {
+"jcr:primaryType": "nt:unstructured",
+"jcr:createdBy": "admin",
+"card1CtaPath": "/content/sscp/co",
+"card2CtaLabel": "Button Label",
+"jcr:lastModifiedBy": "admin",
+"card2imagePath": "/content/dam/sscp/logos",
+"card1imagePath": "/content/dam/sscp/icons",
+"jcr:created": "Fri Aug 11 2023 01:02:49 GMT+1000",
+"card1title": "Title",
+"card2title": "Title",
+"card2CtaPath": "/content/sscp/co",
+"card1CtaLabel": "Button Label",
+"card1description": "Description",
+"card2description": "Description",
+"jcr:lastModified": "Fri Aug 11 2023 01:06:36 GMT+1000",
+"sling:resourceType": "sscp/components/cardcomponent",
+"cardContainerItem": {
+"jcr:primaryType": "nt:unstructured",
+"item0": {
+"jcr:primaryType": "nt:unstructured",
+"description": "Description",
+"imagePath": "/content/dam/sscp/icons",
+"ctaLabel": "Button Label",
+"title": "Title",
+"ctaPath": "/content/sscp/toyota"
+}
+}
+}
+}

@@ -1,0 +1,23 @@
+{"accountStatement": {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "generatedDescription": "Click here to downloaded statement",
+  "noStatementLabel": "No Statements downloaded to preview",
+  "downloadedDescription": "Your statement has been downloaded",
+  "statementTableHeader1": "Date",
+  "statementTableHeader2": "Description",
+  "statementGeneratedLabel": "Statement Generated",
+  "dateRangeLabel": "Date range",
+  "statementDownloadedLabel": "Statement Downloaded",
+  "jcr:created": "Wed Jan 17 2024 03:08:56 GMT+1100",
+  "statementTitle": "Previous Statements",
+  "dateToLabel": "Date To",
+  "jcr:lastModified": "Wed Jan 17 2024 06:52:18 GMT+1100",
+  "generateStatementTitle": "Generate Statement",
+  "accountToDateLabel": "Account to date",
+  "sling:resourceType": "sscp/components/accountstatement",
+  "accountStatementTitle": "Account Statement",
+  "dateFromLabel": "DATE FROM",
+  "generateStatementCta": "Generate Statement"
+}
+}

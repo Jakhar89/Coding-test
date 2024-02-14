@@ -1,0 +1,19 @@
+{ "quickLinksComp" : {
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Thu Jun 01 2023 13:34:30 GMT+1000",
+  "jcr:lastModified": "Mon Jun 12 2023 19:06:13 GMT+1000",
+  "sling:resourceType": "sscp/components/quicklinks",
+  "quickLinks": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "phone",
+      "title": "contact",
+      "linkPath": "/content/dam/sscp/StreetType.csv",
+      "openInNewTab": "false"
+    }
+  }
+  }
+}

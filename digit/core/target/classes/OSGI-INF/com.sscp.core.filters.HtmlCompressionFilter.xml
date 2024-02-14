@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.sscp.core.filters.HtmlCompressionFilter" immediate="true" activate="activate">
+  <property name="enabled" type="Boolean" value="false"/>
+  <property name="sling.core.servletName" type="String" value="HTML Compression Filter"/>
+  <property name="service.description" type="String" value="Compress the page response for the configured content paths."/>
+  <property name="sling.filter.scope" type="String">REQUEST</property>
+  <property name="sling.filter.pattern" type="String" value=""/>
+  <property name="sling.filter.resource.pattern" type="String" value=""/>
+  <property name="sling.filter.request.pattern" type="String" value=""/>
+  <property name="sling.filter.suffix.pattern" type="String" value=""/>
+  <service>
+    <provide interface="javax.servlet.Filter"/>
+  </service>
+  <implementation class="com.sscp.core.filters.HtmlCompressionFilter"/>
+</scr:component>

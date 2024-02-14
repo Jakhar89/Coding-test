@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sscp.core.filters.HtmlCompressionFilterTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.796 s - in com.sscp.core.filters.HtmlCompressionFilterTest

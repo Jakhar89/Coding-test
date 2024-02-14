@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.sscp.core.services.impl.GlobalConfigurationServiceImpl$GlobalConfigurationServiceConfig">
+  <OCD id="com.sscp.core.services.impl.GlobalConfigurationServiceImpl$GlobalConfigurationServiceConfig" name="SSCP Global configurations" description="SSCP website configuration service">
+    <AD id="baseApiUrl" type="String" name="Base API Url" description="Base API Url for SSCP website" default=""/>
+    <AD id="forgerockUrl" type="String" name="Forgerock Url" description="Forgerock Url for SSCP website" default=""/>
+    <AD id="forgerockRealm" type="String" name="Forgeock Realm" description="Forgerock Url for SSCP website" default=""/>
+    <AD id="forgerockClientId" type="String" name="Forgeock ClientID" description="Forgerock CleintID for SSCP website" default=""/>
+    <AD id="dynatraceUrl" type="String" name="Dynatrace Url" description="Dynatrace Url for SSCP website" default=""/>
+    <AD id="questApiKey" type="String" name="Quest API Key" description="Quest API Key for SSCP website" default=""/>
+  </OCD>
+  <Designate pid="com.sscp.core.services.impl.GlobalConfigurationServiceImpl">
+    <Object ocdref="com.sscp.core.services.impl.GlobalConfigurationServiceImpl$GlobalConfigurationServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

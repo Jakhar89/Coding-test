@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sscp.core.models.MessageBoxTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 s - in com.sscp.core.models.MessageBoxTest

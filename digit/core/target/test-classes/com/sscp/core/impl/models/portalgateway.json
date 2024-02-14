@@ -1,0 +1,12 @@
+{"portalGateway": {
+"surnameLabel": "Surname",
+"sling:resourceType": "sscp/components/portalgateway",
+"buttonLabel": "Go to my portal",
+"vehicleRegoNumberLabel": "Vehicle Registration Number",
+"myPortalLtUri": "https://www.toyota.com.au/",
+"surnamePlaceholderText": "Enter your surname",
+"vehicleRegoNoPlaceholderText": "Enter your vehicle registration",
+"jcr:primaryType": "nt:unstructured",
+"myPortalAlfaUri": "https://stage.toyotafinanceonline.com.au/"
+}
+}

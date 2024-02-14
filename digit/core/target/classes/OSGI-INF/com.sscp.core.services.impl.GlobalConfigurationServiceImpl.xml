@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.sscp.core.services.impl.GlobalConfigurationServiceImpl" configuration-policy="optional" activate="activate">
+  <property name="baseApiUrl" type="String" value=""/>
+  <property name="forgerockUrl" type="String" value=""/>
+  <property name="forgerockRealm" type="String" value=""/>
+  <property name="forgerockClientId" type="String" value=""/>
+  <property name="dynatraceUrl" type="String" value=""/>
+  <property name="questApiKey" type="String" value=""/>
+  <service>
+    <provide interface="com.sscp.core.services.GlobalConfigurationService"/>
+  </service>
+  <implementation class="com.sscp.core.services.impl.GlobalConfigurationServiceImpl"/>
+</scr:component>

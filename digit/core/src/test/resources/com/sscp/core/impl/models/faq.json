@@ -1,0 +1,19 @@
+{
+    "faq": {
+        "sling:resourceType": "sscp/components/faq",
+        "tabNameText5": "Tab Name",
+        "tabNameText4": "Tab Name",
+        "tabNameText3": "Tab Name",
+        "jcr:primaryType": "nt:unstructured",
+        "tabNameText2": "Tab Name",
+        "tabNameText1": "Tab Name",
+        "faqTypeItem": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+                "description": "Answer",
+                "jcr:primaryType": "nt:unstructured",
+                "title": "FAQ Item"
+            }
+        }
+    }
+}

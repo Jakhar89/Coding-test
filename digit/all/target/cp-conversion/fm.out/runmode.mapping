@@ -1,0 +1,10 @@
+#File edited by the Apache Sling Content Package to Sling Feature converter
+#Mon Jan 15 12:07:07 AEDT 2024
+publish.prod=sscp.all-publish.prod.json
+prod=sscp.all-prod.json
+stage=sscp.all-stage.json
+dev=sscp.all-dev.json
+author=sscp.all-author.json
+publish=sscp.all-publish.json
+(default)=sscp.all.json
+publish.stage=sscp.all-publish.stage.json

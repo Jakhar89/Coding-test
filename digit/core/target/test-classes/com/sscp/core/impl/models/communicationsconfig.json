@@ -1,0 +1,26 @@
+{
+  "communicationsConfig": {
+    "verifyMobileTitle": "Verify Mobile Title",
+    "verifyMobileDescription": "Verify Mobile Description",
+    "verifyMobileOTPText": "Verify Mobile OTP Text",
+    "verifyMobileCancelButton": "Verify Mobile Cancel Button",
+    "verifyMobileContinueButton": "Verify Mobile Continue Button",
+    "verifyMobileResendText": "Verify Mobile Resend Text",
+    "resendSMSText": "Resend SMS Text",
+    "verifyMobileDisclaimer": "Verify Mobile Disclaimer",
+    "verifyEmailTitle": "Verify Email Title",
+    "verifyEmailDescription": "Verify Email Description",
+    "verifyEmailOTPText": "Verify Email OTP Text",
+    "verifyEmailCancelButton": "Verify Email Cancel Button",
+    "verifyEmailContinueButton": "Verify Email Continue Button",
+    "verifyEmailResendText": "Verify Email Resend Text",
+    "resendEmailText": "Resend Email Text",
+    "verifyEmailDisclaimer": "Verify Email Disclaimer",
+    "thankYouOverlayTimer": 3000,
+    "thankYouIcon": "Thank You Icon",
+    "thankYouTitle": "Thank You Title",
+    "thankYouDescription": "Thank You Description",
+    "managePasswordEditTitle": "Manage Password Edit Title",
+    "managePasswordDescription": "Manage Password Description"
+  }
+}

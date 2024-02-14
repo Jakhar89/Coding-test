@@ -1,0 +1,59 @@
+{
+  "id":"com.sscp:sscp.all:slingosgifeature:prod:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl":    {
+      "htmllibmanager.strict.versioning":true,
+      "htmllibmanager.minify":true,
+      "htmllibmanager.processor.js":"min:gcc",
+      "htmllibmanager.processor.css":"min:gcc",
+      "htmllibmanager.longcache.patterns":[
+        "/.*;hash"
+      ],
+      "htmllibmanager.longcache.format":"lc-%s-lc",
+      ":configurator:content-package-origins":"com.sscp:sscp.all:1.0.0-SNAPSHOT|com.sscp:sscp.ui.config:1.0.0-SNAPSHOT"
+    },
+    "com.sscp.core.services.impl.GlobalConfigurationServiceImpl":    {
+      "baseApiUrl":"$[env:BASE_API_URL]",
+      "dynatraceUrl":"$[env:DYNATRACE_URI]",
+      "forgerockUrl":"$[env:FORGEROCK_URL]",
+      "forgerockRealm":"$[env:FORGEROCK_REALM]",
+      "forgerockClientId":"$[env:FORGEROCK_CLIENT_ID]",
+      "questApiKey":"$[env:QUEST_API_KEY]",
+      ":configurator:content-package-origins":"com.sscp:sscp.all:1.0.0-SNAPSHOT|com.sscp:sscp.ui.config:1.0.0-SNAPSHOT"
+    },
+    "org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider~sscpcontext":    {
+      "enabled":true,
+      "description":"sscp Override Configs for global configuration service",
+      "overrides":[
+        "[/content/sscp/toyota]com.sscp.core.services.ContextBrandConfigService/baseApiUrl=\"$[env:BASE_API_TOYOTA_URL]\"",
+        "[/content/sscp/powertorque]com.sscp.core.services.ContextBrandConfigService/baseApiUrl=\"$[env:BASE_API_PT_URL]\"",
+        "[/content/sscp/hino]com.sscp.core.services.ContextBrandConfigService/baseApiUrl=\"$[env:BASE_API_HINO_URL]\"",
+        "[/content/sscp/lexus]com.sscp.core.services.ContextBrandConfigService/baseApiUrl=\"$[env:BASE_API_LEXUS_URL]\"",
+        "[/content/sscp/suzuki]com.sscp.core.services.ContextBrandConfigService/baseApiUrl=\"$[env:BASE_API_SUZUKI_URL]\"",
+        "[/content/sscp/mazda]com.sscp.core.services.ContextBrandConfigService/baseApiUrl=\"$[env:BASE_API_MAZDA_URL]\"",
+        "[/content/sscp/power-alliance]com.sscp.core.services.ContextBrandConfigService/baseApiUrl=\"$[env:BASE_API_PAF_URL]\""
+      ],
+      ":configurator:content-package-origins":"com.sscp:sscp.all:1.0.0-SNAPSHOT|com.sscp:sscp.ui.config:1.0.0-SNAPSHOT"
+    },
+    "org.apache.sling.commons.log.LogManager.factory.config~sscp":    {
+      "org.apache.sling.commons.log.pattern":"{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}",
+      "org.apache.sling.commons.log.names":[
+        "com.sscp"
+      ],
+      "org.apache.sling.commons.log.level":"ERROR",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"true",
+      ":configurator:content-package-origins":"com.sscp:sscp.all:1.0.0-SNAPSHOT|com.sscp:sscp.ui.config:1.0.0-SNAPSHOT"
+    },
+    "org.apache.sling.commons.log.LogManager.factory.config~aem-vite":    {
+      "org.apache.sling.commons.log.pattern":"{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}",
+      "org.apache.sling.commons.log.names":[
+        "dev.aemvite"
+      ],
+      "org.apache.sling.commons.log.level":"error",
+      "org.apache.sling.commons.log.file":"logs/aem-vite.log",
+      "org.apache.sling.commons.log.additiv":"true",
+      ":configurator:content-package-origins":"com.sscp:sscp.all:1.0.0-SNAPSHOT|dev.aemvite:aem-vite.all:2.2.2|dev.aemvite:aem-vite.ui.config:2.2.2"
+    }
+  }
+}

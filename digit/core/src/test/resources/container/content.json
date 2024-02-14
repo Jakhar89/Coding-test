@@ -1,0 +1,7 @@
+{
+  "simple": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sscp/components/container",
+    "layout": "simple"
+  }
+}

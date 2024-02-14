@@ -1,0 +1,42 @@
+{ "transactionHistory": {
+  "tableHeader4": "Credit Amount",
+  "tableHeader3": "Debit Amount",
+  "tableHeader5": "Balance Label",
+  "transactionPeriodText": "Transaction Period",
+  "sling:resourceType": "sscp/components/transactionhistory",
+  "filter1Icon": "search",
+  "tableHeader2": "Description",
+  "tableHeader1": "Date",
+  "exportButtonLabel": "Export PDF/Print",
+  "filter1Placeholder": "Search by description",
+  "filter4Placeholder": "Select Transaction Type",
+  "noTransactions": "No Transaction Details",
+  "jcr:created": "Tue Jul 04 2023 01:28:21 GMT+0000",
+  "jcr:lastModifiedBy": "hafiz.ahmad@tfal.com.au",
+  "jcr:createdBy": "Geeti.Anand@toyota.com.au",
+  "filter1": "Search",
+  "filter2": "Date From",
+  "filter3": "Date To",
+  "filter4": "Transaction Type",
+  "transactionTitle": "Transactions History",
+  "jcr:lastModified": "Tue Jul 04 2023 05:23:48 GMT+0000",
+  "accountNumberText": "Account Number",
+  "filtersText": "Filters",
+  "jcr:primaryType": "nt:unstructured",
+  "transactionTypes": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "type": "All Transactions"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "type": "Debit"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "type": "Credit"
+    }
+  }
+}
+}

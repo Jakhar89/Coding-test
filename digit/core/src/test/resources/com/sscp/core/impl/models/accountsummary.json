@@ -1,0 +1,22 @@
+{ "accountSummary": {
+"jcr:primaryType": "nt:unstructured",
+"recentTransactionsTitle": "Recent transactions",
+"buttonLabel": "SEE ALL TRANSACTIONS",
+"accountNumberTitle": "Account number:",
+"jcr:lastModifiedBy": "hafiz.ahmad@tfal.com.au",
+"paidToDateTooltip": "Paid to date, as of yesterday",
+"paidToDateTitle": "Paid to date",
+"balance": "Balance",
+"date": "Date",
+"outstandingBalanceTooltip": "Balance as of yesterday, which does not include future interest",
+"buttonLink": "/content/sscp/blueprint/homepage/transaction-history",
+"recentTransactionsTooltip": "Recent transactions are shown as of yesterday.",
+"outstandingBalanceTitle": "Outstanding balance",
+"paymentAmount": "Payment Amount",
+"jcr:lastModified": "Mon Jul 10 2023 07:05:29 GMT+0000",
+"sling:resourceType": "sscp/components/accountsummary",
+"loanProgressTitle": "Term progress",
+"noTransactionsText": "No transaction details",
+"nextRepaymentDueTitle": "Next repayment due"
+}
+}

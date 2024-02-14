@@ -1,0 +1,33 @@
+{"iconText": {
+"jcr:created": "Thu Jul 20 2023 01:07:43 GMT+0000",
+"textIsRich": [
+"true",
+"true",
+"true"
+],
+"sling:resourceType": "sscp/components/icontext",
+"jcr:lastModified": "Thu Jul 20 2023 02:22:50 GMT+0000",
+"jcr:primaryType": "nt:unstructured",
+"iconTextItem": {
+"jcr:primaryType": "nt:unstructured",
+"item0": {
+"alt": "General Enquiries",
+"icon": "phone",
+"description": "<p><b>General enquiries</b></p>\r\n<p>Phone 137200<br>\r\nMon - Fri 8:30am - 6:00pm AESTfinance@toyotafinance.com.au<br>\r\nToyota Finance, National Customer Solutions Centre, PO Box 9215, Scoresby VIC 3179<br>\r\n</p>\r\n",
+"jcr:primaryType": "nt:unstructured"
+},
+"item1": {
+"alt": "Insurance",
+"icon": "suv",
+"description": "<p>InsuranceFor existing policy enquiries &amp; claims detailsPhone 1300 658 027Mon-Fri 8:30am to 7:00pm AESTSat 9:00am to 4:00pm AESTcustomerservice@adica.com.auToyota Insurance, PO Box 7212, Melbourne VIC 3004</p>\r\n",
+"jcr:primaryType": "nt:unstructured"
+},
+"item2": {
+"alt": "Roadside Assistance",
+"icon": "tow-truck",
+"description": "<p><b>Roadside Assistance</b></p>\r\n<p>For existing policy enquiries &amp; 24/7 assistance</p>\r\n<p>Phone 1300 832 772</p>\r\n<p>toyotasupport@365assistance.com.au<br>\r\nToyota Insurance, PO Box 7212, Melbourne VIC 3004</p>\r\n",
+"jcr:primaryType": "nt:unstructured"
+}
+}
+}
+}

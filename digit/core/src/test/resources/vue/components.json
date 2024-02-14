@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "text": "Hello World",
+      "value": "hello-world"
+    },
+    {
+      "text": "Hello World",
+      "value": "hello-world-with-textfield",
+      "fields": [
+        {
+          "fieldLabel": "Foo",
+          "fieldType": "textfield",
+          "mapToAttribute": "bar",
+          "name": "foo",
+          "skipOutput": true
+        }
+      ]
+    },
+    {
+      "text": "With Slot",
+      "value": "with-slot",
+      "fields": [
+        {
+          "fieldLabel": "Foo",
+          "fieldType": "textfield",
+          "name": "foo",
+          "slot": true,
+          "slotName": "bar"
+        }
+      ]
+    },
+    {
+      "text": "With Externalizer",
+      "value": "with-externalizer",
+      "fields": [
+        {
+          "fieldLabel": "Foo",
+          "fieldType": "textfield",
+          "externalizer": true,
+          "name": "foo"
+        }
+      ]
+    }
+  ]
+}

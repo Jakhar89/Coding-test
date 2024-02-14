@@ -1,0 +1,13 @@
+{"pageNotifi": {
+"analyticsTrackEventName": "accountUnlock",
+"icon": "maintenance",
+"description": "We’re currently conducting maintenance ",
+"sling:resourceType": "sscp/components/pagenotification",
+"title": "Sorry, we’re down for maintenance",
+"isMaintainencePage": true,
+"buttonText": "click",
+"buttonUrl": "/content/sscp/home",
+"mobileDescription": "mobile decsription",
+"jcr:primaryType": "nt:unstructured"
+}
+}

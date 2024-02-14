@@ -1,0 +1,6 @@
+{
+  "foo": {
+    "fieldType": "textfield",
+    "name": "foo_bar"
+  }
+}

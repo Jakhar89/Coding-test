@@ -1,0 +1,25 @@
+{"disputecomp": {
+  "infoDisclaimer": "For more information please refer Complaints Policy",
+  "sling:resourceType": "sscp/components/disputeprocesscomponent",
+  "jcr:primaryType": "nt:unstructured",
+  "disputeComponentPropertiesItem": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "description": "Email us at\u00A0\u003Ca href=\"mailto:loremipsum&#64;toyotafinance.com.au\"\u003Eloremipsum&#64;toyotafinance.com.au\u003C/a\u003E\u00A0or call a Customer Solutions Representative on 137 200 8:30am \u2013 7:00pm (EST) Monday to Friday. All matters are dealt with seriously and are treated in total confidence. We will aim to resolve your complaint to your satisfaction as soon as possible.",
+      "jcr:primaryType": "nt:unstructured",
+      "title": "Let's us know"
+    },
+    "item1": {
+      "description": "\u003Cp\u003EIf we are unable to resolve your complaint within five business days, then the matter will be escalated to our Internal Dispute Resolution (IDR) team.The IDR team will:\u003C/p\u003E\r\n\u003Cul\u003E\u003Cli\u003EConduct a more detailed investigation into your complaint\u003C/li\u003E\u003Cli\u003EKeep you informed of the resolution process\u003C/li\u003E\u003Cli\u003EAnswer any of your questions\u003C/li\u003E\u003Cli\u003EAim to resolve the complaint promptly, and consistently.\u003C/li\u003E\u003C/ul\u003E\r\n\u003Cp\u003EThe IDR team can be contacted at any time as follows:\u003C/p\u003E\r\n\u003Cul\u003E\u003Cli\u003EMail: IDR Manager: PowerTorque Finance, PO Box 9215, Scoresby VIC 3179\u003C/li\u003E\u003Cli\u003EEmail:\u00A0\u003Ca href=\"mailto:loremipsum&#64;toyotafinance.com.au\"\u003Eloremipsum&#64;toyotafinance.com.au\u003C/a\u003E\u003C/li\u003E\u003C/ul\u003E\r\n",
+      "jcr:primaryType": "nt:unstructured",
+      "title": "Escalation to our Internal Dispute Resolution team"
+    },
+    "item2": {
+      "description": "\u003Cp\u003ESeek an external review\u003C/p\u003E\r\n\u003Cp\u003EIf you aren't satisfied with the outcome of your complaint after taking Steps 1 and 2, you may lodge a dispute with the Australian Financial Complaints Authority (AFCA). AFCA is an external independent impartial body that has been set up to resolve financial services disputes. There is no charge for this service.The Australian Financial Complaints Authority can be contacted by:\u003C/p\u003E\r\n\u003Cul\u003E\r\n\u003Cli\u003EPhone:&nbsp;1800 931 678\u003C/li\u003E\r\n\u003Cli\u003EMail: Australian Financial Complaints Authority, GPO Box 3, Melbourne VIC 3001\u003C/li\u003E\r\n\u003Cli\u003EEmail:&nbsp;\u003Ca href=\"mailto:info@afca.org.au\"\u003Einfo@afca.org.au\u003C/a\u003E\u003C/li\u003E\r\n\u003Cli\u003EWeb:&nbsp;\u003Ca href=\"https://automatic-guacamole-gvo86qk.pages.github.io/www.afca.org.au\"\u003Eafca.org.au\u003C/a\u003E\u003C/li\u003E\r\n\u003C/ul\u003E\r\n",
+      "jcr:primaryType": "nt:unstructured",
+      "title": "Seek an external review"
+    }
+  }
+} 
+
+}

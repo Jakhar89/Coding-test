@@ -1,0 +1,153 @@
+{"contactUs": {
+"accountsSelectorLabel": "Which account does this relate to?",
+"relatesToTextField": "RELATES TO",
+"textIsRich": [
+"true",
+"true"
+],
+"sling:resourceType": "sscp/components/contactus",
+"yourMessageInsuranceDisclaimer": "For Insurance Sales only. If you have an after-policy Insurance enquiries...",
+"enquiryTypeLabelText": "WHAT MAY WE HELP YOU WITH?",
+"prefferedPhone": "My Preffered Phone",
+"yourMessageComplaintDisclaimer": "Please include names, dates and other information relevant to your complaint.",
+"successMessageDescription": "We’ll be in touch within 1-2 business days. An email confirmation will be sent to you shortly.",
+"hardshipRadio1": "This is about an existing hardship request",
+"refinanceRadio1": "New finance quote or application",
+"yourMessageLabel": "Your Message",
+"hardshipRadio2": "I am experiencing hardship and would like to make an application",
+"refinanceRadio2": "Refinance",
+"updatePhone": "Update Phone",
+"prefferedRadio3": "N/A",
+"prefferedResponseLabel": "Your preferred response method",
+"prefferedRadio2": "Phone",
+"prefferedRadio1": "Email",
+"jcr:created": "Thu Jul 20 2023 01:06:48 GMT+0000",
+"jcr:lastModifiedBy": "geeti.anand@tfal.com.au",
+"updateEmailPath": "/content/sscp/blueprint/homepage/profile",
+"yourMessageHardshipDisclaimer": "If you have an existing hardship request…",
+"jcr:createdBy": "hafiz.ahmad@tfal.com.au",
+"sendEnquiryButtonText": "Send Enquiry",
+"updatePhonePath": "/content/sscp/blueprint/homepage/profile",
+"redirectionPath": "/",
+"enquiryInfoLabel": "Enquiry Info",
+"complaintMessageBoxPlaceholder": "Please provide details of the outcome you are looking to achieve.",
+"thankYouText": "Thank You!",
+"yourMessageRefinanceDisclaimer": "If you have a particular dealership that you’d like to finance with, please let us know.",
+"successMessageDescriptionNewHardship": "<p>We’ll be in touch within 1-2 business days. An email confirmation will be sent to you shortly.</p>\r\n<p>To allow us to process your Hardship request as soon as possible, please commence a hardship application online, for more information see the <a href=\"/content/sscp/blueprint/homepage/financial-hardship.html\">hardship information page</a>.</p>\r\n",
+"updateEmail": "Update Email",
+"prefferedEmail": "My Preffered Email",
+"jcr:lastModified": "Mon Jul 24 2023 04:15:59 GMT+0000",
+"jcr:primaryType": "nt:unstructured",
+"yourMessagePlaceholder": "Tell us about what you need help with and we’ll get back to you within 48 hours.",
+"complaintMessageBoxLabel": "How can we best address your complaint",
+"enquiryTypeItem": {
+"jcr:primaryType": "nt:unstructured",
+"item0": {
+"jcr:primaryType": "nt:unstructured",
+"enquiryItem": "General Enquiry"
+},
+"item1": {
+"jcr:primaryType": "nt:unstructured",
+"enquiryItem": "Complaints"
+},
+"item2": {
+"jcr:primaryType": "nt:unstructured",
+"enquiryItem": "Hardship"
+},
+"item3": {
+"jcr:primaryType": "nt:unstructured",
+"enquiryItem": "New finance / Change my finance"
+}
+},
+"generalRelatesToItem": {
+"jcr:primaryType": "nt:unstructured",
+"item0": {
+"generalRelatesItem": "Account Enquiry",
+"jcr:primaryType": "nt:unstructured"
+},
+"item1": {
+"generalRelatesItem": "Repayment Enquiry",
+"jcr:primaryType": "nt:unstructured"
+},
+"item2": {
+"generalRelatesItem": "Compliment or Feedback",
+"jcr:primaryType": "nt:unstructured"
+},
+"item3": {
+"generalRelatesItem": "Insurance",
+"jcr:primaryType": "nt:unstructured"
+},
+"item4": {
+"generalRelatesItem": "Roadside assistance",
+"jcr:primaryType": "nt:unstructured"
+},
+"item5": {
+"generalRelatesItem": "Other",
+"jcr:primaryType": "nt:unstructured"
+}
+},
+"complaintRelatesToItem": {
+"jcr:primaryType": "nt:unstructured",
+"item0": {
+"complaintRelatesItem": "Advice",
+"jcr:primaryType": "nt:unstructured"
+},
+"item1": {
+"complaintRelatesItem": "Fees, interest or charges",
+"jcr:primaryType": "nt:unstructured"
+},
+"item2": {
+"complaintRelatesItem": "Consumer Data Right",
+"jcr:primaryType": "nt:unstructured"
+},
+"item3": {
+"complaintRelatesItem": "Credit reporting",
+"jcr:primaryType": "nt:unstructured"
+},
+"item4": {
+"complaintRelatesItem": "Disclosure",
+"jcr:primaryType": "nt:unstructured"
+},
+"item5": {
+"complaintRelatesItem": "Collections",
+"jcr:primaryType": "nt:unstructured"
+},
+"item6": {
+"complaintRelatesItem": "Financial difficulty and hardship",
+"jcr:primaryType": "nt:unstructured"
+},
+"item7": {
+"complaintRelatesItem": "Credit Assessment",
+"jcr:primaryType": "nt:unstructured"
+},
+"item8": {
+"complaintRelatesItem": "Insurance",
+"jcr:primaryType": "nt:unstructured"
+},
+"item9": {
+"complaintRelatesItem": "Delay/failure to follow instructions",
+"jcr:primaryType": "nt:unstructured"
+},
+"item10": {
+"complaintRelatesItem": "Privacy and confidentiality",
+"jcr:primaryType": "nt:unstructured"
+},
+"item11": {
+"complaintRelatesItem": "Fraud and scams",
+"jcr:primaryType": "nt:unstructured"
+},
+"item12": {
+"complaintRelatesItem": "Service quality",
+"jcr:primaryType": "nt:unstructured"
+},
+"item13": {
+"complaintRelatesItem": "Account set up and maintenance",
+"jcr:primaryType": "nt:unstructured"
+},
+"item14": {
+"complaintRelatesItem": "Transaction and payment disputes",
+"jcr:primaryType": "nt:unstructured"
+}
+}
+}
+}

@@ -1,0 +1,25 @@
+{
+  "paymentMethods": {
+    "brandVariablesMapping": {},
+    "bpayDescriptionText": "Contact your bank or financial institution",
+    "bpayIcon": "bpay",
+    "bpayLabelText": "BPAY",
+    "cq:lastRolledout": "2023-08-08T05:39:46.947Z",
+    "cq:lastRolledoutBy": "hafiz.ahmad@tfal.com.au",
+    "directDebitDescriptionText": "To setup or change your Direct Debit",
+    "directDebitIcon": "pay-date",
+    "directDebitLabelText": "Direct debit",
+    "editIcon": "edit",
+    "eftDescriptionText": "Make EFT payments directly from your cheque",
+    "eftIcon": "online-payment-with-a-credit-card",
+    "eftLabelText": "EFT",
+    "jcr:lastModified": "2023-08-08T05:39:46.944Z",
+    "jcr:lastModifiedBy": "tim.muir@tfal.com.au",
+    "jcr:mixinTypes": ["cq:LiveRelationship"],
+    "jcr:primaryType": "nt:unstructured",
+    "nominatedFlagText": "Nominated Payment Method",
+    "paymentMethodsDescriptionText": "We offer a range of payment methods to suit you.",
+    "paymentMethodsLabelText": "Payment methods",
+    "sling:resourceType": "sscp/components/paymentmethods"
+  }
+}

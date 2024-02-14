@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sscp.core.support.dialog.form.TextFieldTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.043 s - in com.sscp.core.support.dialog.form.TextFieldTest

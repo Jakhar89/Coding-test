@@ -1,0 +1,4 @@
+com\sscp\it\tests\CreatePageIT.class
+com\sscp\it\tests\PublishPageValidationIT.class
+com\sscp\it\tests\GetPageIT.class
+com\sscp\it\tests\HtmlUnitClient.class

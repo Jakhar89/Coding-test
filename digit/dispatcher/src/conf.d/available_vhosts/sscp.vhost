@@ -1,0 +1,154 @@
+Include conf.d/variables/custom.vars
+
+<VirtualHost *:80>
+	ServerName	"publish"
+
+	# specific alias used for testing
+	ServerAlias "*"
+
+	# The below aliases allow for local development while allowing Cloud Manager activities to interact
+	# with our vhost correctly
+
+	# The aliases below required to enable cache invalidation requests to a dispatcher in AEM as a Cloud Manager
+	ServerAlias "127.0.0.1"
+	ServerAlias "localhost"
+
+	# The aliases below are suggested by Adobe team for FRED crawler to enable RO / RV
+	ServerAlias "*.local"
+	ServerAlias "*.adobeaemcloud.com"
+	ServerAlias "*.adobeaemcloud.net"
+	ServerAlias "*.localhost"
+	ServerAlias "publish*.adobeaemcloud.net"
+	ServerAlias "publish*.adobeaemcloud.com"
+
+	# Use a document root that matches the one in conf.dispatcher.d/sscp.farm
+	DocumentRoot "${DOCROOT}"
+
+	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+	AllowEncodedSlashes NoDecode
+
+	# Add header breadcrumbs for help in troubleshooting
+	<IfModule mod_headers.c>
+		Header add X-Vhost "publish"
+	</IfModule>
+
+	<Directory />
+		<IfModule disp_apache2.c>
+			# Some items cache with the wrong mime type
+			# Use this option to use the name to auto-detect mime types when cached improperly
+			ModMimeUsePathInfo On
+
+			# Use this option to avoid cache poisoning
+			# Sling will return /content/image.jpg as well as /content/image.jpg/ but apache can't search /content/image.jpg/ as a file
+			# Apache will treat that like a directory.  This assures the last slash is never stored in cache
+			DirectorySlash Off
+
+			# Enable the dispatcher file handler for apache to fetch files from AEM
+			SetHandler dispatcher-handler
+		</IfModule>
+
+		Options FollowSymLinks
+		AllowOverride None
+
+		# Insert filter
+		SetOutputFilter DEFLATE
+
+		# Don't compress images
+		SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+
+		# Prevent clickjacking
+		Header always append X-Frame-Options SAMEORIGIN
+	</Directory>
+
+	<Directory "${DOCROOT}">
+		AllowOverride None
+		Require all granted
+	</Directory>
+
+	<IfModule disp_apache2.c>
+		# Enabled to allow rewrites to take affect and not be ignored by the dispatcher module
+		DispatcherUseProcessedURL	On
+
+		# Default setting to allow all errors to come from the aem instance
+		DispatcherPassError		1
+	</IfModule>
+
+	<IfModule mod_rewrite.c>
+		RewriteEngine	on
+		Include conf.d/rewrites/rewrite.rules
+
+		# Redirect all traffic to maintenance page
+		# RewriteRule ^/maintenance.html /content/${CONTENT_FOLDER_NAME}/${TOYOTA_BRAND}/au/en/homepage/maintenance.html [PT,L]
+		# RewriteCond %{REQUEST_URI} !/maintenance.html$
+		# RewriteCond %{REQUEST_URI} ^(/|.*.html|[\w/-]+)$
+		# RewriteRule ^.*$ /maintenance.html [R=302,L]
+
+		RewriteCond %{REQUEST_URI} !^/content/${CONTENT_FOLDER_NAME}/${TOYOTA_BRAND}/(.*)$
+		RewriteCond %{REQUEST_URI} !^(/[\w/-]+)$
+		RewriteCond %{REQUEST_URI} ^/content/${CONTENT_FOLDER_NAME}/(.*)$
+		RewriteCond %{REQUEST_URI} .(json|jpe?g|png|html)$
+		RewriteRule ^.*$ /404.html [PT,L]
+
+		# remove the /content path from the url
+		RewriteRule ^/content/${CONTENT_FOLDER_NAME}/${TOYOTA_BRAND}/au/en/homepage/(.*)$ /$1 [NE,L,R=301]
+
+		# rewrite for root redirect
+		RewriteRule ^/?$ /content/${CONTENT_FOLDER_NAME}/${TOYOTA_BRAND}/au/en/homepage/portal-gateway.html [PT,L]
+
+		# ensure all internal page requests have the .html extension
+		RewriteCond %{REQUEST_URI} !^/apps
+		RewriteCond %{REQUEST_URI} !^/bin
+		RewriteCond %{REQUEST_URI} !^/content
+		RewriteCond %{REQUEST_URI} !^/etc
+		RewriteCond %{REQUEST_URI} !^/home
+		RewriteCond %{REQUEST_URI} !^/libs
+		RewriteCond %{REQUEST_URI} !^/saml_login
+		RewriteCond %{REQUEST_URI} !^/system
+		RewriteCond %{REQUEST_URI} !^/tmp
+		RewriteCond %{REQUEST_URI} !^/var
+		RewriteCond %{REQUEST_URI} !(.css|.eot|.gif|.ico|.jpeg|.jpg|.js|.gif|.pdf|.png|.svg|.swf|.ttf|.woff|.woff2|.html|.xlsx|.xls|.pptx|.ppt|.doc|.docx|.csv|.xml|.txt|.json)$
+		RewriteRule ^/(.+)/?$ /content/${CONTENT_FOLDER_NAME}/${TOYOTA_BRAND}/au/en/homepage/$1.html [NC,PT,L]
+
+		# handle all other standard requests
+		RewriteCond %{REQUEST_URI} !^/apps
+		RewriteCond %{REQUEST_URI} !^/bin
+		RewriteCond %{REQUEST_URI} !^/content
+		RewriteCond %{REQUEST_URI} !^/etc
+		RewriteCond %{REQUEST_URI} !^/home
+		RewriteCond %{REQUEST_URI} !^/libs
+		RewriteCond %{REQUEST_URI} !^/saml_login
+		RewriteCond %{REQUEST_URI} !^/system
+		RewriteCond %{REQUEST_URI} !^/tmp
+		RewriteCond %{REQUEST_URI} !^/var
+		RewriteRule ^/(.+)/?$ /content/${CONTENT_FOLDER_NAME}/${TOYOTA_BRAND}/au/en/homepage/$1 [NC,PT,L]
+	</IfModule>
+
+    # Ensure content is cached for a long period
+    # This can be extended to include dynamic JSON for example simply by adding the 'json' extension
+    # The 'Cache-Control' setting below ensures content is cached for a maximum of 5 minutes but can
+    # revalidate up to an hour later
+	<LocationMatch "^/content/.*\.(html)$">
+		Header unset Cache-Control
+		# Header always set Cache-Control "public, max-age=60, s-maxage=300, stale-while-revalidate=86400, stale-if-error=86400"
+		Header always set Cache-Control "public, max-age=10, s-maxage=10, stale-while-revalidate=10, stale-if-error=10"
+	</LocationMatch>
+
+    # Add additional extensions here for any other static assets that need long-cache periods
+    # CSS & JS files are excluded as AEMaaCS automatically handles caching for these assets
+    # The 'Cache-Control' setting below ensures static assets are cached for 28 days
+	<LocationMatch "^/content/.*\.(ico|gif|jpeg|jpg|png|svg)$">
+		Header unset Cache-Control
+		# Header always set Cache-Control "immutable, public, max-age=2419200, s-maxage=2419200"
+		Header always set Cache-Control "immutable, public, max-age=10, s-maxage=10"
+	</LocationMatch>
+
+	# Subsequent to the previous rule but to handle Vite chunks
+	# This ensures that the chunks are cached for 28 days compared to an hour
+	# We can get away with 30 days as chunks are hashed which gives us confidence that a new version will
+	# provide a new hash
+	<LocationMatch "^/etc.clientlibs/.*/resources/.*\.(js|woff|woff2)$">
+		Header unset Cache-Control
+		# Header always set Cache-Control "immutable, public, max-age=2419200, s-maxage=2419200"
+		Header always set Cache-Control "immutable, public, max-age=10, s-maxage=10"
+	</LocationMatch>
+</VirtualHost>

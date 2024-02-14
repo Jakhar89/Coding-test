@@ -1,0 +1,12 @@
+{
+  "id":"com.sscp:sscp.all:slingosgifeature:publish.stage:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "com.sscp.core.filters.HtmlCompressionFilter":    {
+      "enabled":true,
+      "paths":[
+        "/content/sscp"
+      ],
+      ":configurator:content-package-origins":"com.sscp:sscp.all:1.0.0-SNAPSHOT|com.sscp:sscp.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}
