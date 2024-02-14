@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Forgot Password Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <step1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Step 1"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <forgotPasswordTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Forgot your password?"
+                                                fieldLabel="Forgot Password Title"
+                                                name="./forgotPasswordTitle"
+                                                required="{Boolean}true"
+                                                value="Forgot your password?"/>                                                
+                                            <forgotPasswordDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Please enter the email associated with your account."
+                                                fieldLabel="Forgot Password Description"
+                                                name="./forgotPasswordDescription"
+                                                required="{Boolean}true"
+                                                value="Please enter the email associated with your account."/>
+                                            <forgotPasswordButton
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Continue"
+                                                fieldLabel="Continue button label Text"
+                                                name="./forgotPasswordButton"
+                                                value="Continue"/>
+                                            <forgotPasswordContact
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Forgot Password Contact Details"
+                                                required="{Boolean}true"
+                                                name="./forgotPasswordContact">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/sscp/components/rteplugin-config/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/sscp/components/rteplugin-config/uiSettings"/>
+                                            </forgotPasswordContact>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </step1>
+                    <step2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Step 2"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyEmail/items/columns"/>
+                        </items>
+                    </step2>
+                    <step3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Step 3"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyMobile/items/columns"/>
+                        </items>
+                    </step3>
+                    <step4
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Step 4"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <columns
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/include"
+                                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/managePassword/items/columns"/>
+                                            <setPasswordText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Set Password &amp; log in"
+                                                fieldLabel="Set password button text"
+                                                name="./setPasswordText"
+                                                required="{Boolean}true"
+                                                value="Set Password &amp; log in"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </step4>
+                    <step5
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Step 5"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <termsTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Terms and conditions"
+                                                fieldLabel="Terms Section Title"
+                                                name="./termsTitle"
+                                                required="{Boolean}true"
+                                                value="Terms and conditions"/>
+                                            <agreeTermsTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Agree to Terms and Conditions"
+                                                fieldLabel="Agree terms title"
+                                                name="./agreeTermsTitle"
+                                                required="{Boolean}true"
+                                                value="Agree to Terms and Conditions"/>
+                                            <agreeTerms
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="I have read and accept all the Terms and Conditions"
+                                                fieldLabel="Read terms text"
+                                                name="./agreeTerms"
+                                                required="{Boolean}true"
+                                                value="I have read and accept all the Terms and Conditions"/>
+                                            <agreeTermsButton
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Continue"
+                                                fieldLabel="Agree terms button text"
+                                                name="./agreeTermsButton"
+                                                required="{Boolean}true"
+                                                value="Continue"/>
+                                            <termsOfUse
+                                                jcr:primaryType="nt:unstructured"
+                                                cq:showOnCreate="{Boolean}true"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Enter Terms of Use"
+                                                name="./termsOfUse">
+                                                <rtePlugins
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/sscp/components/rteplugin-config/rtePlugins"/>
+                                                <uiSettings
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceSuperType="/apps/sscp/components/rteplugin-config/uiSettings"/>
+                                            </termsOfUse>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </step5>
+                    <step6
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Step 6"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/thankyou/items/columns"/>
+                        </items>
+                    </step6>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

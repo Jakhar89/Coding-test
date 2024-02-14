@@ -1,0 +1,101 @@
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="nt:unstructured">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    maximized="{Boolean}true"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <layout
+                                                    granite:class="cq-dialog-dropdown-showhide"
+                                                    jcr:primaryType="nt:unstructured">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-dialog-dropdown-showhide-target=".container-option-layout-showhide-target"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <columns
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Columns"
+                                                            value="columns"/>
+                                                </items>
+                                            </layout>
+                                            <containerClass
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:orderBefore="backgroundColor"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Define how the component spans across the page."
+                                                    fieldLabel="Container Class"
+                                                    emptyOption="{Boolean}false"
+                                                    name="./containerClass">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="None (Default)"
+                                                            value=""/>
+                                                    <fixed
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Fixed"
+                                                            value="fixed"/>
+                                                    <fluid
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Fluid"
+                                                            value="fluid"/>
+                                                </items>
+                                            </containerClass>
+                                        </items>
+                                    </column>
+
+                                    <columnLayoutColumns
+                                            granite:class="hide container-option-layout-showhide-target"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            margin="{Boolean}true">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhidetargetvalue="columns"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <columnsLayout
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Choose a column layout to use."
+                                                    fieldLabel="Column Layout"
+                                                    name="./columnsLayout"
+                                                    emptyOption="{Boolean}true"
+                                                    required="{Boolean}false"
+                                                    value="">
+                                                <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="sscp/datasource/json"
+                                                        path="/apps/sscp/components/container/dialog/layouts.json"/>
+                                            </columnsLayout>
+                                            <columnLayoutNotice
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/alert"
+                                                    text="NOTE: Changing the column layout will cause any child columns that are outside of the column layout to become siblings of this component. If you don't want this to occur, please author another container component."
+                                                    variant="warning"/>
+                                            <gridAdjustmentMarker
+                                                    granite:class="cd-grid-marker"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                                        </items>
+                                    </columnLayoutColumns>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

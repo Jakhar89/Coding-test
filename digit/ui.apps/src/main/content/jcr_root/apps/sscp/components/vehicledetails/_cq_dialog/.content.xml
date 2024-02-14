@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Vehicle Details Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <vehicleDetailsLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Vehicle details"
+                        fieldLabel="Vehicle details Section Title"
+                        name="./vehicleDetailsLabelText"
+                        required="{Boolean}true"
+                        value="Vehicle details"/>
+                    <makeLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Make"
+                        fieldLabel="Make Label Text"
+                        name="./makeLabelText"
+                        required="{Boolean}true"
+                        value="Make"/>
+                    <modelLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Model"
+                        fieldLabel="Model Label Text"
+                        name="./modelLabelText"
+                        required="{Boolean}true"
+                        value="Model"/>
+                    <variantWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <variantLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Variant"
+                                fieldLabel="Variant Label Text"
+                                name="./variantLabelText"
+                                required="{Boolean}true"
+                                value="Variant"/>
+                            <variantCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Variant Caption Text"
+                                name="./variantCaptionText"/>
+                            </items>
+                    </variantWell>
+                    <yearLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Year"
+                        fieldLabel="Year Label Text"
+                        name="./yearLabelText"
+                        required="{Boolean}true"
+                        value="Year"/>
+                    <vinWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <vinLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="VIN"
+                                fieldLabel="VIN Label Text"
+                                name="./vinLabelText"
+                                required="{Boolean}true"
+                                value="VIN"/>
+                            <vinCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Account Term Caption Text"
+                                name="./vinCaptionText"/>
+                            </items>
+                    </vinWell>
+                    <engineNumLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Engine number"
+                        fieldLabel="Engine number Label Text"
+                        name="./engineNumLabelText"
+                        required="{Boolean}true"
+                        value="Engine number"/>
+                    <vehicleRegNumLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Vehicle registration number"
+                        fieldLabel="Vehicle Registration Number Label Text"
+                        name="./vehicleRegNumLabelText"
+                        required="{Boolean}true"
+                        value="Vehicle registration number"/>
+                    <vehicleRegStateLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Vehicle registration state"
+                        fieldLabel="Vehicle Registration State Label Text"
+                        name="./vehicleRegStateLabelText"
+                        required="{Boolean}true"
+                        value="Vehicle registration state"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

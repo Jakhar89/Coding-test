@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Account Statement Labels"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <generateStatementLabels
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Generate Statement Labels"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <generatestatementlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Account Statement"
+                                                fieldLabel="Statement Title"
+                                                name="./accountStatementTitle"
+                                                value="Account Statement"/>
+                                            <accounttoDateLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Account to date"
+                                                fieldLabel="Account to date Label"
+                                                name="./accountToDateLabel"
+                                                value="Account to date"/>
+                                            <dateRangeLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Date range"
+                                                fieldLabel="Date range label"
+                                                name="./dateRangeLabel"
+                                                value="Date range"/>
+                                            <dateFromLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                description="Label text for calendar input date from"
+                                                emptyText="DATE FROM"
+                                                fieldLabel="Date from Label"
+                                                name="./dateFromLabel"
+                                                value="DATE FROM"/>
+                                            <dateToLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                description="Label text for calendar input date to"
+                                                emptyText="DATE TO"
+                                                fieldLabel="Date to Label"
+                                                name="./dateToLabel"
+                                                value="Date To"/>
+                                            <generateStatementCta
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Generate Statement"
+                                                fieldLabel="Generate Statement CTA Label"
+                                                name="./generateStatementCta"
+                                                value="Generate Statement"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </generateStatementLabels>
+                    <statementResultLabels
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Statement Result Labels"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Previous Statements"
+                                                fieldLabel="Statement Title"
+                                                name="./statementTitle"
+                                                value="Previous Statements"/>
+                                            <dateLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Date"
+                                                fieldLabel="Statement Table Header 1"
+                                                name="./statementTableHeader1"
+                                                value="Date"/>
+                                            <descriptionLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Description"
+                                                fieldLabel="Statement Table Header Label 2"
+                                                name="./statementTableHeader2"
+                                                required="{Boolean}false"
+                                                value="Description"/>
+                                            <title2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Statement Downloaded"
+                                                fieldLabel="Statement Downloaded Label "
+                                                name="./statementDownloadedLabel"
+                                                value="Statement Downloaded"/>
+                                            <title3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Statement Generated"
+                                                fieldLabel="Statement Generated Label "
+                                                name="./statementGeneratedLabel"
+                                                value="Statement Generated"/>
+                                            <description1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Your statement has been downloaded"
+                                                fieldLabel="Statement Downloaded Description Label "
+                                                name="./downloadedDescription"
+                                                value="Your statement has been downloaded"/>
+                                            <description2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Click here to downloaded statement"
+                                                fieldLabel="Statement generated description Label "
+                                                name="./generatedDescription"
+                                                value="Click here to downloaded statement"/>
+                                            <noStatementLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="No Statements downloaded to preview"
+                                                fieldLabel="No Statements Downloaded Label"
+                                                name="./noStatementLabel"
+                                                value="No Statements downloaded to preview"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </statementResultLabels>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

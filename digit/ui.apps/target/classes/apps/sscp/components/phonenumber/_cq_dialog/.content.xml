@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Phone Number Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <sectionTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Section Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <phoneNumberTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Phone number"
+                                                fieldLabel="Phone Number Section Title"
+                                                name="./phoneNumberTitle"
+                                                required="{Boolean}true"
+                                                value="Phone number"/>
+                                            <mobileText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Mobile"
+                                                fieldLabel="Mobile Label Text"
+                                                name="./mobileLabelText"
+                                                required="{Boolean}true"
+                                                value="Mobile"/>
+                                            <homeText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Home"
+                                                fieldLabel="Home Label Text"
+                                                name="./homeLabelText"
+                                                required="{Boolean}true"
+                                                value="Home"/>
+                                            <workText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Work"
+                                                fieldLabel="Work Label Text"
+                                                name="./workLabelText"
+                                                required="{Boolean}true"
+                                                value="Work"/>
+                                            <otherText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Other"
+                                                fieldLabel="Other Label Text"
+                                                name="./otherLabelText"
+                                                required="{Boolean}true"
+                                                value="Other"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </sectionTab>
+                    <step1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Popup Step 1"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <phoneNumberEditTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Phone number"
+                                                fieldLabel="Phone number Edit Section Title"
+                                                name="./phoneNumberEditTitle"
+                                                required="{Boolean}true"
+                                                value="Phone number"/>
+                                            <preferredContactTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Preferred contact number"
+                                                fieldLabel="Preferred Contact Title Text"
+                                                name="./preferredContactTitle"
+                                                required="{Boolean}true"
+                                                value="Preferred contact number"/>
+                                            <preferredContactDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Please select your preferred contact number"
+                                                fieldLabel="Preferred Contact Description Text"
+                                                name="./preferredContactDescription"
+                                                required="{Boolean}true"
+                                                value="Please select your preferred contact number"/>
+                                            <saveButtonText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="save changes"
+                                                fieldLabel="Save button text"
+                                                name="./saveButtonText"
+                                                required="{Boolean}true"
+                                                value="save changes"/>
+                                            <cancelButtonText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="cancel"
+                                                fieldLabel="Cancel button text"
+                                                name="./cancelButtonText"
+                                                required="{Boolean}true"
+                                                value="cancel"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </step1>
+                    <step2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Email Step 2"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyEmail/items/columns"/>
+                        </items>
+                    </step2>
+                    <step3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Mobile Step 3"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyMobile/items/columns"/>
+                        </items>
+                    </step3>
+                    <step4
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Thank you Step 4"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/thankyou/items/columns"/>
+                        </items>
+                    </step4>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

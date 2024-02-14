@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Recent Messages Component Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <recentMessagesOption
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <recentMessagesTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Recent Messages Title"
+                                fieldLabel="Recent Messages Title"
+                                name="./recentMessagesTitle"
+                                required="{Boolean}true"
+                                value="Recent Messages"/>
+                            <buttonLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Button Label"
+                                fieldLabel="Button Label"
+                                name="./buttonLabel"
+                                required="{Boolean}true"
+                                value="All Messages"/>
+                            <buttonPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                emptyText="Button Path"
+                                fieldLabel="Button Path"
+                                name="./buttonPath"
+                                required="{Boolean}true"
+                                rootPath="/content/sscp"/>
+                            <noMessageTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="No Messages Title"
+                                fieldLabel="No Messages Title"
+                                name="./noMessageTitle"
+                                required="{Boolean}true"
+                                value="No messages"/>
+                            <noMessageDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="No Messages Description"
+                                fieldLabel="No Messages Description"
+                                name="./noMessageDescription"
+                                required="{Boolean}true"
+                                value="You don’t have new messages in your inbox."/>
+                        </items>
+                    </recentMessagesOption>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

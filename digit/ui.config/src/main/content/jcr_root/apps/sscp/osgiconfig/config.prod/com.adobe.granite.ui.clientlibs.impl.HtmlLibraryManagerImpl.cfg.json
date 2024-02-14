@@ -1,0 +1,10 @@
+{
+  "htmllibmanager.strict.versioning": true,
+  "htmllibmanager.minify": true,
+  "htmllibmanager.processor.js": "min:gcc",
+  "htmllibmanager.processor.css": "min:gcc",
+  "htmllibmanager.longcache.patterns": [
+    "/.*;hash"
+  ],
+  "htmllibmanager.longcache.format": "lc-%s-lc"
+}

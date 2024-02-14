@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Email Address Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <sectionTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Section Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <emailAddressLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Email address"
+                                                fieldLabel="Email Address Section Title"
+                                                name="./emailAddressLabelText"
+                                                required="{Boolean}true"
+                                                value="Email address"/>
+                                            <loginLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Login"
+                                                fieldLabel="Login Label Text"
+                                                name="./loginLabelText"
+                                                required="{Boolean}true"
+                                                value="Login"/>
+                                            <personalLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Personal"
+                                                fieldLabel="Personal Label Text"
+                                                name="./personalLabelText"
+                                                required="{Boolean}true"
+                                                value="Personal"/>
+                                            <workLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Work"
+                                                fieldLabel="Work Label Text"
+                                                name="./workLabelText"
+                                                required="{Boolean}true"
+                                                value="Work"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </sectionTab>
+                    <step1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Popup Step 1"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <emailAddressEditTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Email address"
+                                                fieldLabel="Email Address Edit Section Title"
+                                                name="./emailAddressEditTitle"
+                                                required="{Boolean}true"
+                                                value="Email address"/>
+                                            <introductoryText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Please select which email you prefer as your login and contact email. Your login email will also be used for Two-Factor Authentication."
+                                                fieldLabel="Introductory Label Text"
+                                                name="./introductoryText"
+                                                required="{Boolean}true"
+                                                value="Please select which email you prefer as your login and contact email. Your login email will also be used for Two-Factor Authentication."/>
+                                            <loginEmailText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Set as my login email"
+                                                fieldLabel="Set as my login email Label Text"
+                                                name="./loginEmailText"
+                                                required="{Boolean}true"
+                                                value="Set as my login email"/>
+                                            <preferredContactTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Preferred contact email"
+                                                fieldLabel="Preferred Contact Title Text"
+                                                name="./preferredContactTitle"
+                                                required="{Boolean}true"
+                                                value="Preferred contact email"/>
+                                            <preferredContactDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Please select your preferred contact email which will be used for all correspondence"
+                                                fieldLabel="Preferred Contact Description Text"
+                                                name="./preferredContactDescription"
+                                                required="{Boolean}true"
+                                                value="Please select your preferred contact email which will be used for all correspondence"/>
+                                            <loginEmailTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Set login email"
+                                                fieldLabel="Set login email Label Text"
+                                                name="./loginEmailTitle"
+                                                required="{Boolean}true"
+                                                value="Set login email"/>
+                                            <loginEmailDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="You must set your login email before proceeding"
+                                                fieldLabel="Set login email description Text"
+                                                name="./loginEmailDescription"
+                                                required="{Boolean}true"
+                                                value="You must set your login email before proceeding"/>
+                                            <saveButtonText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="save changes"
+                                                fieldLabel="Save button text"
+                                                name="./saveButtonText"
+                                                required="{Boolean}true"
+                                                value="save changes"/>
+                                            <cancelButtonText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="cancel"
+                                                fieldLabel="Cancel button text"
+                                                name="./cancelButtonText"
+                                                required="{Boolean}true"
+                                                value="cancel"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </step1>
+                    <step2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Mobile Step 2"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyMobile/items/columns"/>
+                        </items>
+                    </step2>
+                    <step3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Email Step 3"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyEmail/items/columns"/>
+                        </items>
+                    </step3>
+                    <step4
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Thank you Step 4"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/thankyou/items/columns"/>
+                        </items>
+                    </step4>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

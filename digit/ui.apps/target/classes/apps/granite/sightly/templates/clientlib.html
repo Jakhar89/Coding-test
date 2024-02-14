@@ -1,0 +1,108 @@
+<!--/*
+**
+* This Sightly component overlays the default AEM 6 component located at
+* /libs/granite/sightly/templates/clientlib.html and contains four updates.
+*
+* See: https://github.com/nateyolles/aem-clientlib-async
+*
+* 1) The addition of the "loading" expression option. This option accepts
+* "async" and "defer" and only affects JavaScript output.
+*
+* 2) The addition of the "onload" expression option. This option only affects
+* JavaScript output.
+*
+* 3) The addition of the "crossorigin" expression option. This option affects
+* both stylesheet and JavaScript output.
+*
+* 4) The addition of the "module" expression option. This option affects only
+* JavaScript output.
+*
+* 5) Changing the data-sly-use value to use the overlayed Java class. If you
+* want to add the Java class to your custom package, you only need to update
+* this value.
+*
+* @author    Nate Yolles <yolles@adobe.com>
+* @version   2.0.0
+* @since     2015-03-19
+*/-->
+
+<!--/*
+    Template used for including CSS client libraries
+*/-->
+<template data-sly-template.css="${@ categories='Client Library categories',
+                                     critical='Enable the use of a critical CSS file',
+                                     crossorigin='Accepts anonymous and use-credentials'}">
+    <section data-sly-test="${request.getResourceResolver}"
+             data-sly-use.clientlib="${'granite/sightly/templates/graniteClientLib.html'}"
+             data-sly-call="${clientlib.include @
+                                   categories  = categories,
+                                   mode        = 'css',
+                                   critical    = critical,
+                                   crossorigin = crossorigin,
+                                   prefetch    = false}"
+             data-sly-unwrap>
+    </section>
+</template>
+
+<!--/*
+    Template used for including JS client libraries
+*/-->
+<template data-sly-template.js="${@ categories='Client Library categories',
+                                    loading='Accepts async and defer',
+                                    onload='JavaScript to run for async and defer',
+                                    crossorigin='Accepts anonymous and use-credentials',
+                                    module='Load the script as a modern ES module',
+                                    moduleFallback='Load fallback scripts alongside ES modules'}">
+    <section data-sly-test="${request.getResourceResolver}"
+             data-sly-use.clientlib="${'granite/sightly/templates/graniteClientLib.html'}"
+             data-sly-call="${clientlib.include @
+                                   categories     = categories,
+                                   mode           = 'js',
+                                   loading        = loading,
+                                   onload         = onload,
+                                   crossorigin    = crossorigin,
+                                   module         = module,
+                                   moduleFallback = moduleFallback,
+                                   prefetch       = false}"
+             data-sly-unwrap>
+    </section>
+</template>
+
+<!--/*
+    Template used for including all client libraries
+*/-->
+<template data-sly-template.all="${@ categories='Client Library categories',
+                                     loading='Accepts async and defer',
+                                     onload='JavaScript to run for async and defer',
+                                     crossorigin='Accepts anonymous and use-credentials',
+                                     module='Load the script as a modern ES module',
+                                     moduleFallback='Load fallback scripts alongside ES modules'}">
+    <section data-sly-test="${request.getResourceResolver}"
+             data-sly-use.clientlib="${'granite/sightly/templates/graniteClientLib.html'}"
+             data-sly-call="${clientlib.include @
+                                   categories     = categories,
+                                   loading        = loading,
+                                   onload         = onload,
+                                   crossorigin    = crossorigin,
+                                   module         = module,
+                                   moduleFallback = moduleFallback,
+                                   prefetch       = false}"
+             data-sly-unwrap>
+    </section>
+</template>
+
+<!--/*
+    Template used for including all client libraries as prefetch links
+*/-->
+<template data-sly-template.prefetch="${@ categories='Client Library categories',
+                                          module='Load the script as a modern ES module',
+                                          moduleFallback='Load fallback scripts alongside ES modules'}">
+    <section data-sly-test="${request.getResourceResolver}"
+             data-sly-use.clientlib="${'granite/sightly/templates/graniteClientLib.html'}"
+             data-sly-call="${clientlib.include @ categories     = categories,
+                                                module         = module,
+                                                moduleFallback = moduleFallback,
+                                                prefetch       = true}"
+             data-sly-unwrap>
+    </section>
+</template>

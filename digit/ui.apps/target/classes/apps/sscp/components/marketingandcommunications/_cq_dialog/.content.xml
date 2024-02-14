@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Marketing and Communications Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <sectionTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Section Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <marketingAndCommunicationsTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Marketing and Communications"
+                                                fieldLabel="Marketing and Communications Title"
+                                                name="./marketingAndCommunicationsTitle"
+                                                required="{Boolean}true"
+                                                value="Marketing and Communications"/>
+                                            <marketingPreferenceWell
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <marketingPreferenceDescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="apps/sscp/components/text"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        removeSingleParagraphContainer="{Boolean}true"
+                                                        useFixedInlineToolbar="{Boolean}true"
+                                                        fieldLabel="Enter Marketing Preference Description"
+                                                        name="./marketingPreferenceDescription"/>
+                                                    <marketingPreferenceYes
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Yes"
+                                                        fieldLabel="Yes Label"
+                                                        name="./marketingPreferenceYes"
+                                                        required="{Boolean}true"
+                                                        value="Yes"/>
+                                                    <marketingPreferenceNo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="No"
+                                                        fieldLabel="No Label"
+                                                        name="./marketingPreferenceNo"
+                                                        required="{Boolean}true"
+                                                        value="No"/>
+                                                </items>
+                                            </marketingPreferenceWell>
+                                            <correspondenceMethodWell
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <correspondenceMethodDescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="apps/sscp/components/text"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        removeSingleParagraphContainer="{Boolean}true"
+                                                        useFixedInlineToolbar="{Boolean}true"
+                                                        fieldLabel="Enter Correspondence Method Description"
+                                                        name="./correspondenceMethodDescription"/>
+                                                    <correspondenceMethodEmail
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Email"
+                                                        fieldLabel="Email Label"
+                                                        name="./correspondenceMethodEmail"
+                                                        required="{Boolean}true"
+                                                        value="Email"/>
+                                                    <correspondenceMethodPaper
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Paper"
+                                                        fieldLabel="Paper Label"
+                                                        name="./correspondenceMethodPaper"
+                                                        required="{Boolean}true"
+                                                        value="Paper"/>
+                                                </items>
+                                            </correspondenceMethodWell>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </sectionTab>
+                    <step1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Popup Step 1"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <marketingAndCommunicationsEditTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Marketing and Communications"
+                                                fieldLabel="Marketing and Communications Title"
+                                                name="./marketingAndCommunicationsEditTitle"
+                                                required="{Boolean}true"
+                                                value="Marketing and Communications"/>
+                                            <marketingCommunicationsErrorTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Sorry, we are experiencing a problem."
+                                                fieldLabel="Error Title"
+                                                name="./marketingCommunicationsErrorTitle"
+                                                required="{Boolean}true"
+                                                value="Sorry, we are experiencing a problem."/>
+                                            <marketingCommunicationsErrorDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="apps/sscp/components/text"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Error description"
+                                                name="./marketingCommunicationsErrorDescription" />
+                                            <saveButtonText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="save changes"
+                                                fieldLabel="Save button text"
+                                                name="./saveButtonText"
+                                                required="{Boolean}true"
+                                                value="save changes"/>
+                                            <cancelButtonText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="cancel"
+                                                fieldLabel="Cancel button text"
+                                                name="./cancelButtonText"
+                                                required="{Boolean}true"
+                                                value="cancel"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </step1>
+                    <step2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Thank you Step 2"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/thankyou/items/columns"/>
+                        </items>
+                    </step2>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

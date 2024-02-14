@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "columns": 2,
+      "text": "Two Columns-(6-2-4)",
+      "value": "standard-two-columns",
+        "layout": [
+             {
+                "offset": 0,
+                "col": 6
+            },
+            {
+                "offset": 2,
+                "col": 4
+            }
+        ]
+    },
+    {
+      "columns": 2,
+      "text": "Two Columns-(7-1-4)",
+      "value": "two-columns-7-4-grid",
+        "layout": [
+             {
+                "offset": 0,
+                "col": 7
+            },
+            {
+                "offset": 1,
+                "col": 4
+            }
+        ]
+    },
+    {
+      "columns": 2,
+      "text": "Two Columns-(5-7 approx - 40%/60%)",
+      "value": "two-columns-5-7-grid",
+        "layout": [
+             {
+                "offset": 0,
+                "col": 40p
+            },
+            {
+                "offset": 2p,
+                "col": 58p
+            }
+        ]
+    },
+	 {
+      "columns": 2,
+      "text": "Two Columns-(6-1-5)",
+      "value": "two-columns-6-1-5-grid",
+        "layout": [
+             {
+                "offset": 0,
+                "col": 6
+            },
+            {
+                "offset": 1,
+                "col": 5
+            }
+        ]
+    }
+  ]
+}

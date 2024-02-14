@@ -1,0 +1,48 @@
+<!--/*
+**
+* This Sightly component overlays the default AEM 6 component located at
+* /libs/granite/sightly/templates/graniteClientLib.html and contains four
+* updates.
+*
+* See: https://github.com/nateyolles/aem-clientlib-async
+*
+* 1) The addition of the "loading" expression option. This option accepts
+* "async" and "defer" and only affects JavaScript output.
+*
+* 2) The addition of the "onload" expression option. This option only affects
+* JavaScript output.
+*
+* 3) The addition of the "crossorigin" expression option. This option affects
+* both stylesheet and JavaScript output.
+*
+* 4) The addition of the "module" expression option. This option affects only
+* JavaScript output.
+*
+* 5) Changing the data-sly-use value to use the overlayed Java class. If you
+* want to add the Java class to your custom package, you only need to update
+* this value.
+*
+* @author    Nate Yolles <yolles@adobe.com>
+* @version   2.0.0
+* @since     2015-03-19
+*/-->
+<template data-sly-template.include="${@ categories='Client Library categories',
+                                         mode='optional: JS or CSS, case-insensitive',
+                                         critical='optional: enable the use of a critical CSS file',
+                                         loading='optional: JS async or defer',
+                                         onload='optional: JS to run for async and defer',
+                                         crossorigin='optional: accepts anonymous and use-credentials',
+                                         module='optional: load the script as a modern ES module',
+                                         moduleFallback='Load fallback scripts alongside ES modules',
+                                         prefetch='optional: prefetch the provided ClientLib categories'}"
+          data-sly-use.clientlib="${'com.sscp.core.support.sightly.ClientLibUseObject' @ categories     = categories,
+                                                                                               mode           = mode,
+                                                                                               critical       = critical,
+                                                                                               loading        = loading,
+                                                                                               onload         = onload,
+                                                                                               crossorigin    = crossorigin,
+                                                                                               module         = module,
+                                                                                               moduleFallback = moduleFallback,
+                                                                                               prefetch       = prefetch}">
+    ${clientlib.include @ context='unsafe'}
+</template>

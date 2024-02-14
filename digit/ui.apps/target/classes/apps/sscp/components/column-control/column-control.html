@@ -1,0 +1,13 @@
+<sly data-sly-use.container="com.sscp.core.models.ColumnControl" />
+<sly data-sly-test="${(wcmmode.edit || wcmmode.design)}">
+    <div class="cq-placeholder"  data-emptyText="${component.title}"> </div>
+</sly>
+
+<div class="aem-Grid aem-Grid--12">
+   <sly data-sly-list='${container.layoutConfigList}' >
+      <sly data-sly-set.columnClass="${'aem-GridColumn aem-GridColumn--phone--12 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--{0} aem-GridColumn--default--{1}' @ format=[item.offset, item.col] }" />
+      <sly data-sly-set.parsysPath="${'column_{0}' @ format=[itemList.index]}" />
+      <sly data-sly-resource="${parsysPath @ resourceType='wcm/foundation/components/responsivegrid', decorationTagName='div',
+         cssClassName=columnClass }" ></sly>
+   </sly>
+</div>

@@ -1,0 +1,20 @@
+<sly
+  data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer"
+  data-sly-set.layout="${container.gridLayout}"
+>
+  <sly
+    data-sly-test="${layout == 'RESPONSIVE_GRID'}"
+    data-sly-use.responsiveGridTemplate="responsiveGrid.html"
+    data-sly-call="${responsiveGridTemplate.responsiveGrid @ container=container}"
+  ></sly>
+  <sly
+    data-sly-test="${layout == 'SIMPLE'}"
+    data-sly-use.simpleTemplate="simple.html"
+    data-sly-call="${simpleTemplate.simple @ container=container}"
+  ></sly>
+  <sly
+    data-sly-test="${layout == 'COLUMNS'}"
+    data-sly-use.columnsTemplate="columns.html"
+    data-sly-call="${columnsTemplate.columns @ container=container}"
+  ></sly>
+</sly>

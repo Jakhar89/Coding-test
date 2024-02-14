@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Account Details Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <accountDetailsLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Account details"
+                        fieldLabel="Section Label Text"
+                        name="./accountDetailsLabelText"
+                        required="{Boolean}true"
+                        value="Account details"/>
+                    <accountNumberLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Account number"
+                        fieldLabel="Account number Label Text"
+                        name="./accountNumberLabelText"
+                        required="{Boolean}true"
+                        value="Account number"/>
+                    <accountNameLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Borrower Name/s"
+                        fieldLabel="Account name Label Text"
+                        name="./accountNameLabelText"
+                        required="{Boolean}true"
+                        value="Borrower Name/s"/>
+                    <accountProductTypeLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Product type"
+                        fieldLabel="Account Product Type Label Text"
+                        name="./accountProductTypeLabelText"
+                        required="{Boolean}true"
+                        value="Product type"/>
+                    <accountStartDateLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Loan start date"
+                        fieldLabel="Loan Start Date Label Text"
+                        name="./accountStartDateLabelText"
+                        required="{Boolean}true"
+                        value="Loan start date"/>
+                    <accountEndDateLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Loan end date"
+                        fieldLabel="Loan End Date Label Text"
+                        name="./accountEndDateLabelText"
+                        required="{Boolean}true"
+                        value="Loan end date"/>
+                    <accountTermWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accountTermLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Term"
+                                fieldLabel="Account Term Label Text"
+                                name="./accountTermLabelText"
+                                required="{Boolean}true"
+                                value="Term"/>
+                            <accountTermCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="The duration of your loan in &lt;months>"
+                                fieldLabel="Account Term Caption Text"
+                                name="./accountTermCaptionText"
+                                value="The duration of your loan in &lt;months>"/>
+                        </items>
+                    </accountTermWell>
+                    <accountMonthsRunWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accountMonthsRunLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="&lt;Months> remaining"
+                                fieldLabel="Account Months Run Label Text"
+                                name="./accountMonthsRunLabelText"
+                                required="{Boolean}true"
+                                value="&lt;Months> remaining"/>
+                            <accountMonthsRunCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Account Months Run Caption Text"
+                                name="./accountMonthsRunCaptionText"/>
+                            </items>
+                    </accountMonthsRunWell>
+                    <accountStatusWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accountStatusLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Account status"
+                                fieldLabel="Account Status Label Text"
+                                name="./accountStatusLabelText"
+                                required="{Boolean}true"
+                                value="Account status"/>
+                            <accountStatusCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Account Status Caption Text"
+                                name="./accountStatusCaptionText"/>
+                            </items>
+                    </accountStatusWell>
+                    <accountFinancedAmountWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accountFinancedAmountLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Financed amount"
+                                fieldLabel="Account Financed amount Label Text"
+                                name="./accountFinancedAmountLabelText"
+                                required="{Boolean}true"
+                                value="Financed amount"/>
+                            <accountFinancedAmountCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Account Financed Amount Caption Text"
+                                emptyText="The total amount we financed under your contract"
+                                name="./accountFinancedAmountCaptionText"
+                                value="The total amount we financed under your contract"/>
+                        </items>
+                    </accountFinancedAmountWell>
+                    <outstandingBalanceWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accountCurrentBalanceLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Outstanding balance"
+                                fieldLabel="Outstanding Balance Label Text"
+                                name="./accountCurrentBalanceLabelText"
+                                required="{Boolean}true"
+                                value="Outstanding balance"/>
+                            <accountCurrentBalanceCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Account Financed Amount Caption Text"
+                                emptyText="Balance as of yesterday. Note: this may not be the total amount required to payout the loan"
+                                name="./accountCurrentBalanceCaptionText"
+                                value="Balance as of yesterday. Note: this may not be the total amount required to payout the loan"/>
+                        </items>
+                    </outstandingBalanceWell>                    
+                    <accountInterestRateLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Interest rate"
+                        fieldLabel="Interest Rate Label Text"
+                        name="./accountInterestRateLabelText"
+                        required="{Boolean}true"
+                        value="Interest rate"/>
+                    <accountMaturityOptionLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Account maturity option"
+                        fieldLabel="Account Maturity Option"
+                        name="./accountMaturityOptionLabelText"
+                        required="{Boolean}true"
+                        value="Account maturity option"/>
+                    <accountVehEndOdoWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accountVehEndOdoLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Agreed end odometer"
+                                fieldLabel="Agreed End Odometer Label Text"
+                                name="./accountVehEndOdoLabelText"
+                                required="{Boolean}true"
+                                value="Agreed end odometer"/>
+                            <accountVehEndOdoCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="The expected kilometres we agreed at the start of your loan"
+                                fieldLabel="Account vehicle End Odometer Caption Text"
+                                name="./accountVehEndOdoCaptionText"
+                                value="The expected kilometres we agreed at the start of your loan"/>
+                            </items>
+                    </accountVehEndOdoWell>
+                    <accountGuaranteedFutureWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accountGuaranteedFutureValLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Guaranteed Future Value"
+                                fieldLabel="Guaranteed Future Value Label Text"
+                                name="./accountGuaranteedFutureValLabelText"
+                                required="{Boolean}true"
+                                value="Guaranteed Future Value"/>
+                            <accountGuaranteedFutureValCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="The minimum value of your vehicle at the end of your contract loan subject to fair wear and tear, and agreed kilometres being met"
+                                fieldLabel="Guaranteed Future Value Caption Text"
+                                name="./accountGuaranteedFutureValCaptionText"
+                                value="The minimum value of your vehicle at the end of your contract loan subject to fair wear and tear, and agreed kilometres being met"/>
+                            </items>
+                    </accountGuaranteedFutureWell>
+                    <balloonPaymentWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <balloonPaymentAmountLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Balloon payment"
+                                fieldLabel="Balloon Payment Amount Label Text"
+                                name="./balloonPaymentAmountLabelText"
+                                required="{Boolean}true"
+                                value="Balloon payment"/>
+                            <balloonPaymentAmountCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="The amount that is due at the end of the contract"
+                                fieldLabel="Balloon Payment Amount Caption Text"
+                                name="./balloonPaymentAmountCaptionText"
+                                value="The amount that is due at the end of the contract"/>
+                        </items>
+                    </balloonPaymentWell>
+                    <dealershipNameWell
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <dealershipNameLabelText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Dealership"
+                                fieldLabel="Dealership Label Text"
+                                name="./dealershipNameLabelText"
+                                required="{Boolean}true"
+                                value="Dealership"/>
+                            <dealershipNameCaptionText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Dealership Name Caption Text"
+                                name="./dealershipNameCaptionText"/>
+                            </items>
+                    </dealershipNameWell>
+                    <viewRepaymentsButtonText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="View repayments"
+                        fieldLabel="View Repayments Button Text"
+                        name="./viewRepaymentsButtonText"
+                        required="{Boolean}true"
+                        value="View repayments"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

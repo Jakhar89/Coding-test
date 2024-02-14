@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 17
+Implementation-Title: SSCP - UI Apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: application
+Content-Package-Id: com.sscp:sscp.ui.apps:1.0.0-SNAPSHOT
+Content-Package-Description: UI apps package for SSCP
+Content-Package-Roots: /apps/granite,/apps/sling,/apps/sscp/clientlibs-s
+ tatic,/apps/sscp/components,/apps/sscp/i18n
+Import-Package: com.adobe.cq.sightly;version="[3.2.1,4.0.0)",com.adobe.c
+ q.wcm.core.components.models;version="[12.23.1,13.0.0)",com.sscp.core.m
+ odels;version="[1.0.0,2.0.0)",org.apache.sling.api;version="[2.3.4,3.0.
+ 0)",org.apache.sling.scripting.sightly;version="[2.0.0,3.0.0)",org.apac
+ he.sling.scripting.sightly.pojo;version="[1.0.1,2.0.0)"
+

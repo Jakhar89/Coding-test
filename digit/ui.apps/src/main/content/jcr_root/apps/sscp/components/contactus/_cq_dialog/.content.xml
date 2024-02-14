@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Contact Us Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+                  
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container"> 
+                <items jcr:primaryType="nt:unstructured">
+
+                    <enquiryTypeLabelText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Enquiry Type"
+                        fieldLabel="Enquiry Type Label Text"
+                        name="./enquiryTypeLabelText"
+                        required="{Boolean}true"
+                        value="Enquiry Type"/>
+
+                    <enquiryTypeMulti
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Enquiry Type List">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./enquiryTypeItem">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <itemWell
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <enquiryItem
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Enquiry Item"
+                                                    fieldLabel="Enquiry Item"
+                                                    name="./enquiryItem"
+                                                    required="{Boolean}true"
+                                                    value="Enquiry Item"/>
+                                            </items>
+                                        </itemWell>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </enquiryTypeMulti>
+
+                    <relatesToTextField
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Relates To"
+                        fieldLabel="Relates To Label Text"
+                        name="./relatesToTextField"
+                        required="{Boolean}true"
+                        value="Relates To"/>
+
+                    <generalRelatesToMulti
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="General Enquity Relates To List">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./generalRelatesToItem">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <itemWell
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <relatesItem
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Relates To"
+                                                    fieldLabel="Relates Item"
+                                                    name="./generalRelatesItem"
+                                                    required="{Boolean}true"
+                                                    value="Relates To"/>
+                                            </items>
+                                        </itemWell>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </generalRelatesToMulti>
+                    
+                    <complaintRelatesToMulti
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Complaint Relates To List">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./complaintRelatesToItem">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <itemWell
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <relatesItem
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Relates To"
+                                                    fieldLabel="Relates Item"
+                                                    name="./complaintRelatesItem"
+                                                    required="{Boolean}true"
+                                                    value="Relates To"/>
+                                            </items>
+                                        </itemWell>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </complaintRelatesToMulti>
+
+                    <hardshipRadios
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    level="4"
+                                    text="Hardship Radio"
+                                    sling:resourceType="granite/ui/components/coral/foundation/heading"/>    
+                            <hardshipRadio1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Radio 1"
+                                fieldLabel="Radio 1 Text (Existing Hardship)"
+                                name="./hardshipRadio1"
+                                required="{Boolean}true"
+                                value="Radio 1"/>
+                            <hardshipRadio2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Radio 2"
+                                fieldLabel="Radio 2 Text (New Hardship)"
+                                name="./hardshipRadio2"
+                                required="{Boolean}true"
+                                value="Radio 2"/>
+                        </items>
+                    </hardshipRadios>
+
+                    <refinanceRadios
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                level="4"
+                                text="Refinance Radio"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"/>    
+                            <refinanceRadio1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Radio 1"
+                                fieldLabel="Radio 1 Text (New Finance)"
+                                name="./refinanceRadio1"
+                                required="{Boolean}true"
+                                value="Radio 1"/>
+                            <refinanceRadio2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Radio 2"
+                                fieldLabel="Radio 2 Text (Refinance)"
+                                name="./refinanceRadio2"
+                                required="{Boolean}true"
+                                value="Radio 2"/>
+                        </items>
+                    </refinanceRadios>
+
+                    <accountsSelectorLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Accounts Available"
+                        fieldLabel="Accounts Selector Label"
+                        name="./accountsSelectorLabel"
+                        required="{Boolean}true"
+                        value="Accounts Available"
+                    />
+
+                    <yourMessage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">     
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                level="4"
+                                text="Your Message Textbox"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"/>                   
+
+                            <yourMessageLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Your Message"
+                                fieldLabel="Your Message Label"
+                                name="./yourMessageLabel"
+                                required="{Boolean}true"
+                                value="Your Message"
+                            />
+                            
+                            <yourMessagePlaceholder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Your Message Placeholder"
+                                fieldLabel="Your Message Placeholder"
+                                name="./yourMessagePlaceholder"
+                                required="{Boolean}true"
+                                value="Tell us about what you need help with and we’ll get back to you within 48 hours."
+                            />
+
+                            <ymComplaint
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Disclaimer for Complaint Type"
+                                fieldLabel="Disclaimer for Complaint Type"
+                                name="./yourMessageComplaintDisclaimer"
+                                required="{Boolean}true"
+                                value="Please include names, dates and other information relevant to your complaint."
+                            />
+                            <ymHardship
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Disclaimer for Hardship Type"
+                                fieldLabel="Disclaimer for Hardship Type"
+                                name="./yourMessageHardshipDisclaimer"
+                                required="{Boolean}true"
+                                value="If you have an existing hardship request…"
+                            />
+
+                            <ymRefinance
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Disclaimer for Refinance Type"
+                                fieldLabel="Disclaimer for Refinance Type"
+                                name="./yourMessageRefinanceDisclaimer"
+                                required="{Boolean}true"
+                                value="If you have a particular dealership that you’d like to finance with, please let us know."
+                            />
+
+                            <ymInsurance
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Disclaimer for Insurance Type"
+                                fieldLabel="Disclaimer for Insurance Type"
+                                name="./yourMessageInsuranceDisclaimer"
+                                required="{Boolean}true"
+                                value="For Insurance Sales only. If you have an after-policy Insurance enquiries..."
+                            />
+                        </items>
+
+                    </yourMessage>
+                    
+                    <complaintTextboxLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Complaint Message Box Label"
+                        fieldLabel="Complaint Message Box Label"
+                        name="./complaintMessageBoxLabel"
+                        required="{Boolean}true"
+                        value="How can we best address your complaint"
+                    />
+                    
+                    <complaintTextboxPlaceholder
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Complaint Message Box Placeholder"
+                        fieldLabel="Complaint Message Box Placeholder Text"
+                        name="./complaintMessageBoxPlaceholder"
+                        required="{Boolean}true"
+                        value="Please provide details of the outcome you are looking to achieve."
+                    />
+
+                    <enquiryInfoLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Enquiry Info"
+                        fieldLabel="Enquiry Info Label"
+                        name="./enquiryInfoLabel"
+                        required="{Boolean}true"
+                        value="Enquiry Info"
+                    />
+
+                    <prefferedResponse
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">     
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                level="4"
+                                text="Preffered Response"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"/>                   
+
+                            <prefferedResponseLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Preffered Response"
+                                fieldLabel="Preffered Response Label"
+                                name="./prefferedResponseLabel"
+                                required="{Boolean}true"
+                                value="Preffered Response"
+                            />
+                            <prefferedRadio1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Preffered Radio 1"
+                                fieldLabel="Preffered Radio 1 Label"
+                                name="./prefferedRadio1"
+                                required="{Boolean}true"
+                                value="Preffered Radio 1"
+                            />
+                            <prefferedRadio2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Preffered Radio 2"
+                                fieldLabel="Preffered Radio 2 Label"
+                                name="./prefferedRadio2"
+                                required="{Boolean}true"
+                                value="Preffered Radio 2"
+                            />
+                            <prefferedRadio3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Preffered Radio "
+                                fieldLabel="Preffered Radio 3 Label"
+                                name="./prefferedRadio3"
+                                required="{Boolean}true"
+                                value="Preffered Radio 3"
+                            />
+                        </items>
+
+                    </prefferedResponse>
+                    <prefferedPhone
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Preffered Phone"
+                        fieldLabel="Preffered Phone Label"
+                        name="./prefferedPhone"
+                        required="{Boolean}true"
+                        value="Preffered Phone"
+                    />
+
+                    <updatePhone
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Update Phone"
+                        fieldLabel="Update Phone Label"
+                        name="./updatePhone"
+                        required="{Boolean}true"
+                        value="Update Phone"
+                    />
+
+                    <updatePhonePath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Update Phone Link"
+                        name="./updatePhonePath"
+                        required="{Boolean}true"
+                        rootPath="/content/sscp/"
+                    />
+
+                    <prefferedEmail
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Preffered Email"
+                        fieldLabel="Preffered Email Label"
+                        name="./prefferedEmail"
+                        required="{Boolean}true"
+                        value="Preffered Email"
+                    />
+
+                    <updateEmail
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Update Email"
+                        fieldLabel="Update Email Label"
+                        name="./updateEmail"
+                        required="{Boolean}true"
+                        value="Update Email"
+                    />
+
+                    <updateEmailPath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Update Email Link"
+                        name="./updateEmailPath"
+                        required="{Boolean}true"
+                        rootPath="/content/sscp/"
+                    />
+
+                    <sendEnquiryButtonText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Send Enquiry"
+                        fieldLabel="Send Enquiry Button Text"
+                        name="./sendEnquiryButtonText"
+                        required="{Boolean}true"
+                        value="Send Enquiry"
+                    />
+
+                    <thankYouText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Thank You!"
+                        fieldLabel="Thank You Text"
+                        name="./thankYouText"
+                        required="{Boolean}true"
+                        value="Thank You!"
+                    />
+
+                    <successMessageDescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                        removeSingleParagraphContainer="{Boolean}true"
+                        useFixedInlineToolbar="{Boolean}true"
+                        emptyText="Success Message 1"
+                        fieldLabel="Success Message Description"
+                        name="./successMessageDescription"
+                        required="{Boolean}true"
+                        value="Success Message 1"
+                    />
+                    <successMessageDescriptionNewHardship
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                        removeSingleParagraphContainer="{Boolean}true"
+                        useFixedInlineToolbar="{Boolean}true"
+                        emptyText="Success Message 2"
+                        fieldLabel="Success Message Description for New Hardship"
+                        name="./successMessageDescriptionNewHardship"
+                        required="{Boolean}true"
+                        value="Success Message 2"
+                    />
+
+                    <redirectionPath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Redirection Path"
+                        name="./redirectionPath"
+                        required="{Boolean}true"
+                        rootPath="/content/sscp/"
+                        value="/"
+                    />
+                    
+                </items>
+            </column>
+
+        </items>
+    </content>
+</jcr:root>

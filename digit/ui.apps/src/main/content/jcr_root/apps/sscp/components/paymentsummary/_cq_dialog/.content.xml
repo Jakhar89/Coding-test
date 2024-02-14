@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Payment Summary Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <sectionTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Section Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <paymentSummaryLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Payment summary"
+                                                fieldLabel="Section Title"
+                                                name="./paymentSummaryLabelText"
+                                                required="{Boolean}true"
+                                                value="Payment summary"/>
+                                            <arrearsAmountLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Amount in arrears"
+                                                fieldLabel="Amount in Arrears Label Text"
+                                                name="./arrearsAmountLabelText"
+                                                required="{Boolean}true"
+                                                value="Amount in arrears"/>
+                                            <arrearsAmountDisclaimerLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="The amount you are behind your repayment schedule, any additional charges won’t be shown as arrears until the following day"
+                                                fieldLabel="Amount in Arrears Disclaimer Label Text"
+                                                name="./arrearsAmountDisclaimerLabelText"
+                                                required="{Boolean}true"
+                                                value="The amount you are behind your repayment schedule, any additional charges won’t be shown as arrears until the following day"/>
+                                            <advanceAmountLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Amount in advance"
+                                                fieldLabel="Amount in Advance Label Text"
+                                                name="./advanceAmountLabelText"
+                                                required="{Boolean}true"
+                                                value="Amount in advance"/>
+                                            <advanceAmountDisclaimerLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="The amount you are ahead of your repayment schedule"
+                                                fieldLabel="Amount in Advance Disclaimer Label Text"
+                                                name="./advanceAmountDisclaimerLabelText"
+                                                required="{Boolean}true"
+                                                value="The amount you are ahead of your repayment schedule"/>
+                                            <nominatedPaymentMethodLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Nominated payment method"
+                                                fieldLabel="Nominated Payment method Label Text"
+                                                name="./nominatedPaymentMethodLabelText"
+                                                required="{Boolean}true"
+                                                value="Nominated payment method"/>
+                                            <paymentFrequencyLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Payment frequency"
+                                                fieldLabel="Payment Frequency Label Text"
+                                                name="./paymentFrequencyLabelText"
+                                                required="{Boolean}true"
+                                                value="Payment frequency"/>
+                                            <paymentFrequencyDisclaimerText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Payment frequency disclaimer"
+                                                fieldLabel="Payment Frequency Disclaimer Text"
+                                                name="./paymentFrequencyDisclaimerText"
+                                                required="{Boolean}true"
+                                                value="Payment frequency disclaimer"/>
+                                            <paymentFrequencyDueDateLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Payment frequency due date"
+                                                fieldLabel="Payment Frequency Due Date Label Text"
+                                                name="./paymentFrequencyDueDateLabelText"
+                                                required="{Boolean}true"
+                                                value="Payment frequency due date"/>
+                                            <repaymentAmountLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Repayment amount"
+                                                fieldLabel="Repayment amount Label Text"
+                                                name="./repaymentAmountLabelText"
+                                                required="{Boolean}true"
+                                                value="Repayment amount"/>
+                                            <repaymentAmountDisclaimerLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="The total repayment schedule amount, including any administration fees"
+                                                fieldLabel="Repayment amount Disclaimer Label Text"
+                                                name="./repaymentAmountDisclaimerLabelText"
+                                                required="{Boolean}true"
+                                                value="The total repayment schedule amount, including any administration fees"/>
+                                            <nextDueDateLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Next due date"
+                                                fieldLabel="Next Due Date Label Text"
+                                                name="./nextDueDateLabelText"
+                                                required="{Boolean}true"
+                                                value="Next due date"/>
+                                            <nextRepaymentAmountLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Next repayment amount"
+                                                fieldLabel="Next Repayment Amount Label Text"
+                                                name="./nextRepaymentAmountLabelText"
+                                                required="{Boolean}true"
+                                                value="Next repayment amount"/>
+                                            <nextRepaymentAmountDisclaimerLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Your next repayment amount, including any administration fees"
+                                                fieldLabel="Next Repayment Amount Disclaimer Label Text"
+                                                name="./nextRepaymentAmountDisclaimerLabelText"
+                                                required="{Boolean}true"
+                                                value="Your next repayment amount, including any administration fees"/>
+                                            <outstandingBalanceLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Outstanding balance"
+                                                fieldLabel="Outstanding Balance Label Text"
+                                                name="./outstandingBalanceLabelText"
+                                                required="{Boolean}true"
+                                                value="Outstanding balance"/>
+                                            <outstandingBalanceDisclaimerLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Balance as of yesterday. Note: this may not be the total amount required to payout the loan"
+                                                fieldLabel="Outstanding Balance Disclaimer Label Text"
+                                                name="./outstandingBalanceDisclaimerLabelText"
+                                                required="{Boolean}true"
+                                                value="Balance as of yesterday. Note: this may not be the total amount required to payout the loan"/>
+                                            <addManageBankAccountButtonText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Add and Manage Bank Accounts"
+                                                fieldLabel="Add and Manage Bank Account Button Text"
+                                                name="./addManageBankAccountButtonText"
+                                                required="{Boolean}true"
+                                                value="Add Text for Button"/>
+                                            <successModalHeading
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Thank You!"
+                                                fieldLabel="Success Modal Heading"
+                                                name="./successModalHeading"
+                                                required="{Boolean}true"
+                                                value="Thank You!"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </sectionTab>
+                    <nextDueDate
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Next due date"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                            <items jcr:primaryType="nt:unstructured">
+                                <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <nextDueDateTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Next due date"
+                                                    fieldLabel="Title"
+                                                    name="./nextDueDateTitle"
+                                                    required="{Boolean}true"
+                                                    value="Next due date"/>
+                                                <nextDueDateDescriptionArrears
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                    removeSingleParagraphContainer="{Boolean}true"
+                                                    useFixedInlineToolbar="{Boolean}true"
+                                                    emptyText="Next Due Date Description Arrears"
+                                                    fieldLabel="Next Due Date Description Arrears"
+                                                    name="./nextDueDateDescriptionArrears"
+                                                    required="{Boolean}true"
+                                                    value=""/>
+                                                <nextDueDateDescriptionAdvance
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                    removeSingleParagraphContainer="{Boolean}true"
+                                                    useFixedInlineToolbar="{Boolean}true"
+                                                    emptyText="Next Due Date Description Advance"
+                                                    fieldLabel="Next Due Date Description Advance"
+                                                    name="./nextDueDateDescriptionAdvance"
+                                                    required="{Boolean}true"
+                                                    value=""/>
+                                                <nextDueDateCalendarSubheading
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="NEXT DUE DATE"
+                                                    fieldLabel="Calendar Sub Heading"
+                                                    name="./nextDueDateCalendarSubheading"
+                                                    required="{Boolean}false"
+                                                    value="NEXT DUE DATE"/>
+                                                <nextDueDateQuoteTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Next Due Date Quote Title"
+                                                    fieldLabel="Next Due Date Quote Title"
+                                                    name="./nextDueDateQuoteTitle"
+                                                    required="{Boolean}true"
+                                                    value="Proposed Changes"/>
+                                                <nextDueDateChangeLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Due date change"
+                                                    fieldLabel="Due Date Change Label"
+                                                    name="./nextDueDateChangeLabel"
+                                                    required="{Boolean}true"
+                                                    value="Due date change"/>
+                                                <nextDueDateEndDateLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Loan end date"
+                                                    fieldLabel="Loan End Date Label"
+                                                    name="./nextDueDateEndDateLabel"
+                                                    required="{Boolean}true"
+                                                    value="Loan end date"/>
+                                                <nextDueDateBalloonLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Balloon amount"
+                                                    fieldLabel="Balloon Amount Label"
+                                                    name="./nextDueDateBalloonLabel"
+                                                    required="{Boolean}true"
+                                                    value="Balloon amount"/>
+                                                <nextDueDateBalloonTooltip
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Balloon Amount Tooltip"
+                                                    fieldLabel="Balloon Amount Tooltip"
+                                                    name="./nextDueDateBalloonTooltip"
+                                                    required="{Boolean}true"
+                                                    value=""/>
+                                                <nextDueDateCloseButton
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Close"
+                                                    fieldLabel="Close button text"
+                                                    name="./nextDueDateCloseButtonText"
+                                                    required="{Boolean}false"
+                                                    value="Close"/>
+                                                <nextDueDateCancelButton
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Cancel"
+                                                    fieldLabel="Cancel button text"
+                                                    name="./nextDueDateCancelButtonText"
+                                                    required="{Boolean}false"
+                                                    value="Cancel"/>
+                                                <nextDueDateSaveButton
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Save"
+                                                    fieldLabel="Save button text"
+                                                    name="./nextDueDateSaveButtonText"
+                                                    required="{Boolean}false"
+                                                    value="Save changes"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                            </columns>
+                        </items>
+                    </nextDueDate>
+                    <manageBankAccount
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Manage Bank Account"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <manageBankAccountTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Manage Bank Accounts"
+                                fieldLabel="Section Title"
+                                name="./manageBankAccountTitle"
+                                required="{Boolean}true"
+                                value="Manage Bank Account Title"/>
+                            <tableTitle1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Account Name"
+                                fieldLabel="Table Title 1"
+                                name="./tableTitle1"
+                                required="{Boolean}true"
+                                value="Account Name"/>
+                            <tableTitle2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Account Number"
+                                fieldLabel="Table Title 2"
+                                name="./tableTitle2"
+                                required="{Boolean}true"
+                                value="Account Number"/>
+                            <tableTitle3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Direct Debit"
+                                fieldLabel="Table Title 3"
+                                name="./tableTitle3"
+                                required="{Boolean}true"
+                                value="Direct Debit"/>
+                            <tableTitle4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Edit/Delete"
+                                fieldLabel="Table Title 4"
+                                name="./tableTitle4"
+                                required="{Boolean}true"
+                                value="Edit/Delete"/>
+                            <addBankAccountText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Add Bank Account +"
+                                fieldLabel="Add Bank Account Text"
+                                name="./addBankAccountText"
+                                required="{Boolean}true"
+                                value="Add Bank Account +"/>
+                        
+                        </items>
+                    </manageBankAccount>
+                    <addEditBankAccount
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Add/Edit Bank Account"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <addBankAccountTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Add Bank Account"
+                                fieldLabel="Add Bank Account Section Title"
+                                name="./addBankAccountTitle"
+                                required="{Boolean}true"
+                                value="Add Bank Account"/>
+                            <editBankAccountTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Edit Bank Account"
+                                fieldLabel="Edit Bank Account Section Title"
+                                name="./editBankAccountTitle"
+                                required="{Boolean}true"
+                                value="Edit Bank Account"/>
+                            <accountNameFieldLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Account Name"
+                                fieldLabel="Account Name Field Label"
+                                name="./accountNameFieldLabel"
+                                required="{Boolean}true"
+                                value="Account Name"/>
+                            <bsbnumberFieldLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="BSB Number"
+                                fieldLabel="BSB Number Field Label"
+                                name="./bsbnumberFieldLabel"
+                                required="{Boolean}true"
+                                value="BSB Number"/>
+                            <accountNumberFieldLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Account Number"
+                                fieldLabel="Account Number Field Label"
+                                name="./accountNumberFieldLabel"
+                                required="{Boolean}true"
+                                value="Account Number"/>
+                            <addEditSectionCancelButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Cancel"
+                                fieldLabel="Cancel Button Text"
+                                name="./addEditSectionCancelButtonText"
+                                required="{Boolean}true"
+                                value="Cancel"/>
+                            <addBankAccountSaveButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Add Bank Account"
+                                fieldLabel="Add Bank Account Save Button Text"
+                                name="./addBankAccountSaveButtonText"
+                                required="{Boolean}true"
+                                value="Add Bank Account"/>
+                            <editBankAccountSaveButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Edit Bank Account"
+                                fieldLabel="Edit Bank Account Save Button Text"
+                                name="./editBankAccountSaveButtonText"
+                                required="{Boolean}true"
+                                value="Save Changes"/>
+                            <thankYouHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Thank You!"
+                                fieldLabel="Thank You Heading"
+                                name="./thankYouHeading"
+                                required="{Boolean}true"
+                                value="Thank you!"/>
+                            <addBankAccountSuccessDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="You have successfully added another bank account."
+                                fieldLabel="Add Bank Account Success Description"
+                                name="./addBankAccountSuccessDescription"
+                                required="{Boolean}true"
+                                value="You have successfully added another bank account."/>
+                            <editBankAccountSuccessDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Your bank account have been successfully updated."
+                                fieldLabel="Edit Bank Account Success Description"
+                                name="./editBankAccountSuccessDescription"
+                                required="{Boolean}true"
+                                value="Your bank account have been successfully updated."/>
+                        </items>
+                    </addEditBankAccount>
+                    <deleteBankAccount
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Delete Bank Account"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <deleteBATitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Delete Bank Account Modal Title"
+                                fieldLabel="Delete Bank Account Modal Title"
+                                name="./deleteBankAccountTitle"
+                                required="{Boolean}true"
+                                value="Are you sure?"/>
+                            <deleteLinkedBADescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true"
+                                emptyText="Delete Linked Account Description"
+                                fieldLabel="Delete Direct Debit Account Description"
+                                name="./deleteLinkedBankAccountDescription"
+                                required="{Boolean}true"
+                                value=""/>
+                            <deleteOtherBADescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true"
+                                emptyText="Delete Non-Direct Debit Account Description"
+                                fieldLabel="Delete Other Account Description"
+                                name="./deleteOtherBankAccountDescription"
+                                required="{Boolean}true"
+                                value=""/>
+                            <deleteBARemoveButton
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Delete Bank Account Remove Button Text"
+                                fieldLabel="Delete Bank Account Remove Button Text"
+                                name="./deleteBankAccountRemoveButtonText"
+                                required="{Boolean}true"
+                                value="Yes, remove"/>
+                            <deleteBACancelButton
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Delete Bank Account Cancel Button Text"
+                                fieldLabel="Delete Bank Account Cancel Button Text"
+                                name="./deleteBankAccountCancelButtonText"
+                                required="{Boolean}true"
+                                value="No, cancel"/>
+                            <deleteBASuccessModalTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Delete Bank Account Success Modal Title"
+                                fieldLabel="Delete Bank Account Success Title"
+                                name="./deleteBankAccountSuccessTitle"
+                                required="{Boolean}true"
+                                value="Thank you!"/>
+                            <deleteBASuccessModalDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Delete Bank Account Success Modal Description"
+                                fieldLabel="Delete Bank Account Success Description"
+                                name="./deleteBankAccountSuccessDescription"
+                                required="{Boolean}true"
+                                value="Your bank account has been successfully removed"/>
+                        </items>
+                    </deleteBankAccount>
+                    <paymentMethod
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Payment Method"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <paymentMethodTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Payment Method"
+                                fieldLabel="Section Title"
+                                name="./paymentMethodTitle"
+                                required="{Boolean}true"
+                                value="Payment Method Title"/>
+                            <paymentMethodDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Payment Method Description"
+                                fieldLabel="Description"
+                                name="./paymentMethodDescription"
+                                required="{Boolean}true"
+                                value="Payment Method Description"/>
+                            <leftToggle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Left Toggle Button Text"
+                                fieldLabel="Left Toggle Button"
+                                name="./leftToggle"
+                                required="{Boolean}true"
+                                value="Left Toggle Button Text"/>
+                            <rightToggle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Right Toggle Button Text"
+                                fieldLabel="Right Toggle Button"
+                                name="./rightToggle"
+                                required="{Boolean}true"
+                                value="Right Toggle Button Text"/>
+                            <eftBpayoption
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        level="4"
+                                        text="EFT BPAY"
+                                        sling:resourceType="granite/ui/components/coral/foundation/heading"/>
+                                    <eftTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="EFT"
+                                        fieldLabel="EFT Title"
+                                        name="./eftTitle"
+                                        required="{Boolean}true"
+                                        value="EFT"/>
+                                    <bsbNumber
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Bsb"
+                                        fieldLabel="Bsb Text"
+                                        name="./bsbNumber"
+                                        required="{Boolean}true"
+                                        value="Bsb"/>
+                                    <accountNumber
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Account"
+                                        fieldLabel="Account Text"
+                                        name="./accountNumber"
+                                        required="{Boolean}true"
+                                        value="Account"/>
+                                    <bpayTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="BPAY"
+                                        fieldLabel="BPAY Title"
+                                        name="./bpayTitle"
+                                        required="{Boolean}true"
+                                        value="BPAY"/>
+                                    <billerCode
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Biller Code"
+                                        fieldLabel="Biller Code Text"
+                                        name="./billerCode"
+                                        required="{Boolean}true"
+                                        value="Biller Code"/>
+                                    <refNumber
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Ref"
+                                        fieldLabel="Ref Number Text"
+                                        name="./refNumber"
+                                        required="{Boolean}true"
+                                        value="Ref"/>
+                                </items>
+                            </eftBpayoption>
+                            <directDebitOption
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        level="4"
+                                        text="Direct Debit"
+                                        sling:resourceType="granite/ui/components/coral/foundation/heading"/>
+                                    <directDebitSelect
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Direct Debit Account"
+                                        fieldLabel="Direct Debit Select Box"
+                                        name="./directDebitSelect"
+                                        required="{Boolean}true"
+                                        value="Direct Debit Account"/>
+                                    <directDebitPlaceholderText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        emptyText="Direct Debit Placeholder Text"
+                                        fieldLabel="Direct Debit Placeholder Text"
+                                        name="./paymentMethodDirectDebitPlaceholderText"
+                                        required="{Boolean}true"
+                                        value="Select bank account"/>
+                                </items>
+                            </directDebitOption>
+                            <addManageAccountButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Add and Manage Bank Accounts Button Text"
+                                fieldLabel="Add and Manage Bank Accounts Button Text"
+                                name="./paymentMethodAddManageBAButtonText"
+                                required="{Boolean}true"
+                                value="Add &amp; Manage Bank Accounts "/>
+                            <submitButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Save Changes Text"
+                                fieldLabel="Submit Button Text"
+                                name="./submitButtonText"
+                                required="{Boolean}true"
+                                value="Save Changes Text"/>
+                            <cancelButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Cancel Button Text"
+                                fieldLabel="Cancel Button Text"
+                                name="./paymentMethodCancelButtonText"
+                                required="{Boolean}true"
+                                value="Cancel"/>
+                            <successModalDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                emptyText="You have successfully ..."
+                                fieldLabel="Success Modal Text"
+                                name="./successModalDescription"
+                                required="{Boolean}true"
+                                value="You have successfully ..."/>
+                            <successModalHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Thank You!"
+                                fieldLabel="Success Modal Heading"
+                                name="./successModalHeading"
+                                required="{Boolean}true"
+                                value="Thank You!"/>
+                            <paymentMethodDiscalimer
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true"
+                                emptyText=""
+                                fieldLabel="Payment method disclaimer"
+                                fieldDescription="Disclaimer text for payment method and bank account add/edit button"
+                                name="./paymentMethodDiscalimer"
+                                required="{Boolean}true"
+                                value=""/>
+                        </items>
+                    </paymentMethod>
+                    <managePaymentFrequency
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Manage Payment Frequency"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <paymentFrequencyTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Payment Frequency Title"
+                                fieldLabel="Payment Frequency Title"
+                                name="./paymentFrequencyTitle"
+                                required="{Boolean}true"
+                                value="Payment frequency"/>
+                            <paymentFrequencyDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true"
+                                emptyText="Payment Frequency Section Arrears Description"
+                                fieldLabel="Payment Frequency Section Arrears Description"
+                                fieldDescription="Add '{Next due date}'- place holder text for dynamic date value" 
+                                name="./paymentFrequencyDescription"
+                                required="{Boolean}true"
+                                value="Your payment frequency will change after your current next due date, {Next due date}"/>
+                            <paymentFrequencyAdvancedDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true"
+                                emptyText="Payment Frequency Section Advanced Description"
+                                fieldLabel="Payment Frequency Section Advanced Description"
+                                required="{Boolean}true"
+                                name="./paymentFrequencyAdvancedDescription"
+                                value="You can change the payment frequency, and the new repayment amount and due date will be calculated and shown below."/>
+                            <paymentFrequencySubHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Payment Frequency SubHeading"
+                                fieldLabel="Payment Frequency SubHeading"
+                                name="./paymentFrequencySubHeading"
+                                required="{Boolean}true"
+                                value="Select Frequency"/>
+                            <paymentFrequencyQuoteTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Payment Frequency Quote Title"
+                                fieldLabel="Payment Frequency Quote Title"
+                                name="./managePFQuoteTitle"
+                                required="{Boolean}true"
+                                value="Proposed changes"/>
+                            <paymentFrequencyNextDueDate
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Next due date label"
+                                fieldLabel="Next due date label"
+                                name="./managePFNextDueDate"
+                                required="{Boolean}true"
+                                value="Next due date"/>
+                            <paymentFrequencyRepaymentAmount
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Repayment Amount label"
+                                fieldLabel="Repayment Amount label"
+                                name="./managePFRepaymentAmount"
+                                required="{Boolean}true"
+                                value="Repayment Amount"/>
+                            <paymentFrequencyLoanEndDate
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Loan end date label"
+                                fieldLabel="Loan end date label"
+                                name="./managePFLoanEndDate"
+                                required="{Boolean}true"
+                                value="Loan end date"/>
+                            <paymentFrequencyBalloonLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Balloon Amount label"
+                                fieldLabel="Balloon Amount label"
+                                name="./managePFBalloonLabel"
+                                required="{Boolean}true"
+                                value="Balloon Amount"/>
+                            <paymentFrequencyBalloonAmont
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Balloon Amount Tooltip"
+                                fieldLabel="Balloon Amount Tooltip"
+                                name="./managePFBalloonAmountTooltip"
+                                required="{Boolean}true"
+                                value="Balloon Amount Tooltip"/>
+                            <paymentFrequencyAdminFee
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Admin Fee label"
+                                fieldLabel="Admin Fee label"
+                                name="./managePFAdminFee"
+                                required="{Boolean}true"
+                                value="Admin Fee"/>
+                            <paymentFrequencyCancelButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Cancel Button Text"
+                                fieldLabel="Cancel Button Text"
+                                name="./paymentFrequencyCancelButtonText"
+                                required="{Boolean}true"
+                                value="Cancel"/>
+                            <paymentFrequencySaveButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Save Button Text"
+                                fieldLabel="Save Button Text"
+                                name="./paymentFrequencySaveButtonText"
+                                required="{Boolean}true"
+                                value="Save Changes"/>
+                            <managePaymentFrequencythankYouHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Thank you Heading Text"
+                                fieldLabel="Thank You Heading Text"
+                                name="./managePaymentFrequencythankYouHeading"
+                                required="{Boolean}true"
+                                value="Thank you!"/>
+                            <managePaymentFrequencythankYouHeadingSuccessDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Thank You Success Description"
+                                fieldLabel="Thank You Success Description"
+                                name="./managePaymentFrequencythankYouHeadingSuccessDescription"
+                                required="{Boolean}true"
+                                value="You have successfully updated your payment frequency."/>
+                        </items>
+                    </managePaymentFrequency>
+                    <manageRepaymentAmount
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Manage Repayment Amount"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <manageRepaymentTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Repayment Amount Title"
+                                fieldLabel="Repayment Amount Title"
+                                name="./manageRepaymentTitle"
+                                required="{Boolean}true"
+                                value="Repayment amount"/>
+                            <manageRepaymentDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                useFixedInlineToolbar="{Boolean}true"
+                                emptyText="Repayment Amount Description"
+                                fieldLabel="Repayment Amount Description"
+                                fieldDescription="&lt;minimumRepaymentAmount>, &lt;currentRepaymentAmount> and &lt;repaymentFrequency>  will be replaced with values from api"
+                                name="./manageRepaymentDescription"
+                                required="{Boolean}true"
+                                value=""/>
+                            <manageRepaymentInputLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Repayment Amount SubHeading"
+                                fieldLabel="Repayment Amount SubHeading"
+                                fieldDescription="&lt;repaymentFrequency> will be replaced with value from api"
+                                name="./manageRepaymentSubHeading"
+                                required="{Boolean}true"
+                                value="New &lt;repaymentFrequency> repayment"/>
+                            <manageRepaymentInputPlaceholder
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Repayment Amount Placeholder"
+                                fieldLabel="Repayment Amount Placeholder"
+                                name="./manageRepaymentInputPlaceholder"
+                                required="{Boolean}true"
+                                value="New &lt;repaymentFrequency> repayment"/>
+                            <manageRepaymentCancelButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Cancel Button Text"
+                                fieldLabel="Cancel Button Text"
+                                name="./manageRepaymentCancelButtonText"
+                                required="{Boolean}true"
+                                value="Cancel"/>
+                            <manageRepaymentSaveButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Save Button Text"
+                                fieldLabel="Save Button Text"
+                                name="./manageRepaymentSaveButtonText"
+                                required="{Boolean}true"
+                                value="Save Changes"/>
+                            <manageRepaymentSuccessModalHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Success Modal Title"
+                                fieldLabel="Success Modal Title"
+                                name="./manageRepaymentSuccessTitle"
+                                required="{Boolean}true"
+                                value="Thank you!"/>
+                            <manageRepaymentSuccessModalDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Success Modal Description"
+                                fieldLabel="Success Modal Description"
+                                name="./manageRepaymentSuccessDescription"
+                                required="{Boolean}true"
+                                value="You have successfully updated your repayment amount."/>
+                        </items>
+                    </manageRepaymentAmount>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

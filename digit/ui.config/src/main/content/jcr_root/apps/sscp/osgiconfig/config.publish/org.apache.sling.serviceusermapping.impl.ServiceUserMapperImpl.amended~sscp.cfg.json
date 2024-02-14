@@ -1,0 +1,10 @@
+{
+  "service.ranking": 0,
+  "user.default": "admin",
+  "user.mapping": [
+    "com.sscp.sscp.core:sscp-system=[sscp-system]",
+    "com.sscp.core:content-services=[repository-reader-service]",
+    "com.sscp.core=[repository-reader-service]",
+    "org.apache.sling.models.impl:sscp-system=[sscp-system]"
+  ]
+}

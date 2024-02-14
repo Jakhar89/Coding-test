@@ -1,0 +1,5 @@
+{
+    "scripts":[
+      "# Create Service \n create service user toyotaWorkflowUser\n set ACL for toyotaWorkflowUser \n allow jcr:read, jcr:versionManagement, rep:write, jcr:lockManagement on /libs,/content,/conf,/etc\n end"
+    ]
+  }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>SSCP - UI Config</comment>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2024-02-12T14:41:21.480Z</entry>
+<entry key="groupId">com.sscp</entry>
+<entry key="name">sscp.ui.config</entry>
+<entry key="description">UI config package for SSCP</entry>
+<entry key="artifactId">sscp.ui.config</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.sscp</entry>
+</properties>

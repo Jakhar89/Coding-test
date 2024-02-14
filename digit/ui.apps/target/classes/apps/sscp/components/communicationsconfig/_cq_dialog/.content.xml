@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Communications Config"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <verifyMobile
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Mobile"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <verifyMobileTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Verify your mobile"
+                                                fieldLabel="Verify your mobile Label Text"
+                                                name="./verifyMobileTitle"
+                                                value="Verify your mobile"/>
+                                            <verifyMobileDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below."
+                                                fieldLabel="Verify your mobile description Label"
+                                                name="./verifyMobileDescription"
+                                                value="You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below."/>
+                                            <verifyMobileOTPText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Enter your OTP code"
+                                                fieldLabel="Enter your OTP code Label Text"
+                                                name="./verifyMobileOTPText"
+                                                value="Enter your OTP code"/>
+                                            <verifyMobileCancelButton
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="cancel"
+                                                fieldLabel="OTP Cancel button text"
+                                                name="./verifyMobileCancelButton"
+                                                value="cancel"/>
+                                            <verifyMobileContinueButton
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Continue"
+                                                fieldLabel="Continue button label Text"
+                                                name="./verifyMobileContinueButton"
+                                                value="Continue"/>
+                                            <verifyMobileResendText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="You can resend the SMS in {timer} seconds"
+                                                fieldLabel="Resend SMS timer Label Text"
+                                                name="./verifyMobileResendText"
+                                                value="You can resend the SMS in {timer} seconds"/>
+                                            <resendSMSText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="resend sms"
+                                                fieldLabel="Resend SMS Button Label Text"
+                                                name="./resendSMSText"
+                                                value="resend sms"/>
+                                            <verifyMobileDisclaimer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Verify your mobile disclaimer Label"
+                                                name="./verifyMobileDisclaimer"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </verifyMobile>
+                    <verifyEmail
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Email"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <verifyEmailTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Verify your email"
+                                                fieldLabel="Verify your email Label Text"
+                                                name="./verifyEmailTitle"
+                                                value="Verify your email"/>
+                                            <verifyEmailDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below."
+                                                fieldLabel="Verify your email description Label"
+                                                name="./verifyEmailDescription"
+                                                value="You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below."/>
+                                            <verifyEmailOTPText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Enter your OTP code"
+                                                fieldLabel="Enter your OTP code Label Text"
+                                                name="./verifyEmailOTPText"
+                                                value="Enter your OTP code"/>
+                                            <verifyEmailCancelButton
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="cancel"
+                                                fieldLabel="OTP Cancel button text"
+                                                name="./verifyEmailCancelButton"
+                                                value="cancel"/>
+                                            <verifyEmailContinueButton
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Continue"
+                                                fieldLabel="Continue button label Text"
+                                                name="./verifyEmailContinueButton"
+                                                value="Continue"/>
+                                            <verifyEmailResendText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="You can resend the email in {timer} seconds"
+                                                fieldLabel="Resend Email timer Label Text"
+                                                name="./verifyEmailResendText"
+                                                value="You can resend the email in {timer} seconds"/>
+                                            <resendEmailText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="resend email"
+                                                fieldLabel="Resend Email Button Label Text"
+                                                name="./resendEmailText"
+                                                value="resend email"/>
+                                            <verifyEmailDisclaimer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Verify your email disclaimer Label"
+                                                name="./verifyEmailDisclaimer"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </verifyEmail>
+                    <thankyou
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Thank you"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <thankYouOverlayTimer
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                emptyText="3000"
+                                                fieldDescription="Please configure the timer in milliseconds"
+                                                fieldLabel="Thank you Overlay Timer"
+                                                name="./thankYouOverlayTimer"
+                                                value="3000"/>
+                                            <thankYouIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="receipt-approved"
+                                                fieldLabel="Thank you Icon"
+                                                name="./thankYouIcon"
+                                                value="receipt-approved"/>
+                                            <thankYouTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Thank you!"
+                                                fieldLabel="Thank you title"
+                                                name="./thankYouTitle"
+                                                value="Thank you!"/>
+                                            <thankYouDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Your details has been updated"
+                                                fieldLabel="Thank you description"
+                                                name="./thankYouDescription"
+                                                value="Your details has been updated"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </thankyou>
+                    <managePassword
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Manage Password"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <managePasswordEditTitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Manage Password"
+                                                fieldLabel="Manage Password Title"
+                                                name="./managePasswordEditTitle"
+                                                value="Manage Password"/>
+                                            <managePasswordDescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Manage Password Description"
+                                                name="./managePasswordDescription"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </managePassword>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

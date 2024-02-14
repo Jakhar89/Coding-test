@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Card Component Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.author.multifield]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <cardOneOption
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                level="4"
+                                text="Card One Specification"/>
+                            <card1imagePath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                emptyText="Image Path"
+                                fieldLabel="Card 1 Image Path"
+                                name="./card1imagePath"
+                                required="{Boolean}true"
+                                rootPath="/content/dam/sscp"/>
+                            <card1title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Card Title"
+                                fieldLabel="Card Title"
+                                name="./card1title"
+                                required="{Boolean}true"
+                                value="Title"/>
+                            <card1description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Card Description"
+                                fieldLabel="Card Description"
+                                name="./card1description"
+                                required="{Boolean}true"
+                                value="Description"/>
+                            <card1CtaLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Card Button Label"
+                                fieldLabel="Card Button Label"
+                                name="./card1CtaLabel"
+                                required="{Boolean}true"
+                                value="Button Label"/>
+                            <card1CtaPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldLabel="Card Button Path"
+                                name="./card1CtaPath"
+                                required="{Boolean}true"
+                                rootPath="/content/sscp/"/>
+                        </items>
+                    </cardOneOption>
+                    <cardTwoOption
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                level="4"
+                                text="Card Two Specification"/>
+                            <card2imagePath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                emptyText="Image Path"
+                                fieldLabel="Card 2 Image Path"
+                                name="./card2imagePath"
+                                required="{Boolean}true"
+                                rootPath="/content/dam/sscp"/>
+                            <card2title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Card Title"
+                                fieldLabel="Card Title"
+                                name="./card2title"
+                                required="{Boolean}true"
+                                value="Title"/>
+                            <card2description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Card Description"
+                                fieldLabel="Card Description"
+                                name="./card2description"
+                                required="{Boolean}true"
+                                value="Description"/>
+                            <card2CtaLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Card Button Label"
+                                fieldLabel="Card Button Label"
+                                name="./card2CtaLabel"
+                                required="{Boolean}true"
+                                value="Button Label"/>
+                            <card2CtaPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                fieldLabel="Card Button Path"
+                                name="./card2CtaPath"
+                                required="{Boolean}true"
+                                rootPath="/content/sscp/"/>
+                        </items>
+                    </cardTwoOption>
+                    <cardContainerList
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Maximum number of multifield that can be added is : 1"
+                        fieldLabel="Third Card Container List">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./cardContainerItem">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <itemWell
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <imagePath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    emptyText="Image Path"
+                                                    fieldLabel="Card Image Path"
+                                                    name="./imagePath"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/dam/sscp"/>
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Card Title"
+                                                    fieldLabel="Card Title"
+                                                    name="./title"
+                                                    required="{Boolean}true"
+                                                    value="Title"/>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Card Description"
+                                                    fieldLabel="Card Description"
+                                                    name="./description"
+                                                    required="{Boolean}true"
+                                                    value="Description"/>
+                                                <ctaLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    emptyText="Card Button Label"
+                                                    fieldLabel="Card Button Label"
+                                                    name="./ctaLabel"
+                                                    required="{Boolean}true"
+                                                    value="Button Label"/>
+                                                <ctaPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                    fieldLabel="Card Button Path"
+                                                    name="./ctaPath"
+                                                    required="{Boolean}true"
+                                                    rootPath="/content/sscp/"/>
+                                            </items>
+                                        </itemWell>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            max-item="1"/>
+                    </cardContainerList>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

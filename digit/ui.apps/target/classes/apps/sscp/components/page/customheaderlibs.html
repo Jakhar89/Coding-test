@@ -1,0 +1,51 @@
+<!--/*
+    Copyright 2017 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<sly data-sly-use.style="${'com.sscp.core.models.StyleNameModel' @brandSlug=inheritedPageProperties.brandSlug}"
+    data-sly-use.restrictedPage="${'com.sscp.core.models.RestrictPageUrlModel'}" />
+
+<sly data-sly-use.clientLib="/apps/granite/sightly/templates/clientlib.html">
+  <sly data-sly-call="${clientlib.css @ categories=[style.styleNameSite, style.styleNameDependency] }"></sly>
+  <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}" />
+</sly>
+
+<meta property="cq:wcmmode" content="${(wcmmode.edit || wcmmode.design) ? 'edit' : 'preview'}" />
+
+<!-- Dynatrace Script -->
+<script type="text/javascript" src="${style.dynaTraceDomainUrl}" crossorigin="anonymous"></script>
+<sly data-sly-use.caConfigModel="${'com.sscp.core.models.BrandContextConfigModel'}" />
+<sly data-sly-use.errorModel="${'com.sscp.core.models.ErrorSuccessModel'}" />
+<!--Error MAP-->
+<script type="text/javascript">
+  globalThis.errorJson = '${errorModel.json @ context="scriptString"}';
+  globalThis.globalConfigs = '${caConfigModel.json @ context="scriptString"}';
+  globalThis.restrictedPages = '${restrictedPage.json @ context="scriptString"}'
+</script>
+</sly>
+<!-- Analytics Script -->
+<script type="text/javascript">
+  var digitalData = {
+    page: {
+      pageName: '${style.pageName @ context="scriptString"}',
+      pageURL: '${style.pageUrl @ context="scriptString"}',
+      pageBrand: '${inheritedPageProperties.brandSlug @ context="scriptString"}'
+    }
+  };
+</script>
+
+<!--Fetch Context configs verify -->
+<script type="text/javascript">
+  var baseApiUrlCa = '${caconfig['com.sscp.core.services.ContextBrandConfigService'].baseApiUrl @ context="scriptString"}'; 
+</script>

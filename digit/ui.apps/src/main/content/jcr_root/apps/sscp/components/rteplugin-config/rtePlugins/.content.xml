@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <format
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <findreplace
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <keys
+        jcr:primaryType="nt:unstructured"
+        tabSize="4"/>
+    <justify
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <edit
+        jcr:primaryType="nt:unstructured"
+        defaultPasteMode="plaintext"
+        features="[cut,copy,paste-default,paste-plaintext,paste-wordhtml]"
+        stripHtmlTags="{Boolean}true"/>
+    <links
+        jcr:primaryType="nt:unstructured"
+        features="*">
+        <linkDialogConfig
+            jcr:primaryType="nt:unstructured"
+            rootPath="/content"/>
+    </links>
+    <subsuperscript
+            jcr:primaryType="nt:unstructured"
+            features="*"/>
+    <lists
+        jcr:primaryType="nt:unstructured"
+        indentSize="{Long}4"
+        lists="*"/>
+    <misctools
+        jcr:primaryType="nt:unstructured"
+        features="[sourceedit,*]">
+    </misctools>
+    <paraformat
+        jcr:primaryType="nt:unstructured"
+        features="*">
+        <formats jcr:primaryType="cq:WidgetCollection">
+            <p
+                jcr:primaryType="nt:unstructured"
+                description="Paragraph"
+                tag="p"/>
+            <h1
+                jcr:primaryType="nt:unstructured"
+                description="Heading 1"
+                tag="h1"/>
+            <h2
+                jcr:primaryType="nt:unstructured"
+                description="Heading 2"
+                tag="h2"/>
+            <h3
+                jcr:primaryType="nt:unstructured"
+                description="Heading 3"
+                tag="h3"/>
+            <h4
+                jcr:primaryType="nt:unstructured"
+                description="Heading 4"
+                tag="h4"/>
+            <h5
+                jcr:primaryType="nt:unstructured"
+                description="Heading 5"
+                tag="h5"/>
+            <h6
+                jcr:primaryType="nt:unstructured"
+                description="Heading 6"
+                tag="h6"/>
+            <hr
+                jcr:primaryType="nt:unstructured"
+                description="Horizontal Line"
+                tag="hr"/>
+            <blockquote
+                jcr:primaryType="nt:unstructured"
+                description="Block Quote"
+                tag="blockquote"/>
+        </formats>
+    </paraformat>
+    <spellcheck
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <!-- <styles
+        jcr:primaryType="nt:unstructured"
+        features="*">
+        <styles jcr:primaryType="cq:WidgetCollection">
+            <ht-heading_1
+                jcr:primaryType="nt:unstructured"
+                cssName="ht-heading_1"
+                text="Heading 1"/>
+            <ht-heading_2
+                jcr:primaryType="nt:unstructured"
+                cssName="ht-heading_2"
+                text="Heading 2"/>
+            <ht-heading_3
+                jcr:primaryType="nt:unstructured"
+                cssName="ht-heading_3"
+                text="Heading 3"/>
+            <ht-heading_4
+                jcr:primaryType="nt:unstructured"
+                cssName="ht-heading_4"
+                text="Heading 4"/>
+            <ht-heading_5
+                jcr:primaryType="nt:unstructured"
+                cssName="ht-heading_5"
+                text="Heading 5"/>
+            <ht-heading_6
+                jcr:primaryType="nt:unstructured"
+                cssName="ht-heading_6"
+                text="Heading 6"/>
+        </styles>
+    </styles> -->
+    <subsuperscript
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <undo
+        jcr:primaryType="nt:unstructured"
+        features="*"/>
+    <table
+        jcr:primaryType="nt:unstructured"
+        features="*">
+        <defaultValues
+            jcr:primaryType="nt:unstructured"
+            tableTemplate="&lt;div class=&quot;table-wrapper&quot;>&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;>&lt;tbody>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&lt;td>&amp;nbsp;&lt;/td>&lt;td>&amp;nbsp;&lt;/td>&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&lt;td>&amp;nbsp;&lt;/td>&lt;td>&amp;nbsp;&lt;/td>&lt;/tr>&lt;/tbody>&lt;/table>&lt;/div>&lt;br>&lt;/br>"/>
+    </table>
+</jcr:root>

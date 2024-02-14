@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties]"
+    helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
+    mode="edit"
+    trackingFeature="core-components:page:v2">
+    <content
+        granite:class="cq-dialog-content-page"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <loadingoverlayfield
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Overlay Configuration"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <loadingOverlay
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                path="/apps/sscp/components/loadingoverlay/cq:dialog/content/items/column/items/loadingText"/>
+                                            <updatingOverlay
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                path="/apps/sscp/components/loadingoverlay/cq:dialog/content/items/column/items/updatingText"/>
+                                            <removingOverlay
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                path="/apps/sscp/components/loadingoverlay/cq:dialog/content/items/column/items/removingText"/>
+                                        </items>
+                                    </loadingoverlayfield>
+									<hideMenuFields
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:orderBefore="branding"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <headerMenuOverlay
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:orderBefore="branding"
+                                                sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                path="/apps/sscp/components/loadingoverlay/cq:dialog/content/items/column/items/hideHeaderMenu"/>
+                                        </items>
+                                    </hideMenuFields>
+                                    <restricturl
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Restrict URL"
+                                        sling:orderBefore="moretitles"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <restrictpath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                cq-msm-lockable="restrictPath"
+                                                fieldLabel="Restrict Page URL">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="restrictPath"/>
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    name="./restrictPath"
+                                                    rootPath="/content"/>
+                                            </restrictpath>
+                                        </items>
+                                    </restricturl>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                    <errorconfig
+                        cq:showOnCreate="{Boolean}true"
+                        jcr:description="Configure error mapping for the errors on the forms"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Error / Success Configuration"
+                        sling:orderBefore="socialmedia"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <idleRedirectDesktop
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        emptyText="900000"
+                                        fieldDescription="Please configure the timer in milliseconds"
+                                        fieldLabel="Idle Redirect Desktop Timer"
+                                        name="./idleRedirectDesktop"
+                                        value="900000"/>
+                                    <idleRedirectMobileTablet
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        emptyText="300000"
+                                        fieldDescription="Please configure the timer in milliseconds"
+                                        fieldLabel="Idle Redirect Mobile / Tablet Timer"
+                                        name="./idleRedirectMobileTablet"
+                                        value="300000"/>
+                                    <idleWarningDesktop
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        emptyText="600000"
+                                        fieldDescription="Please configure the timer in milliseconds"
+                                        fieldLabel="Idle Warning Desktop Timer"
+                                        name="./idleWarningDesktop"
+                                        value="600000"/>
+                                    <idleWarningMobileTablet
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        emptyText="210000"
+                                        fieldDescription="Please configure the timer in milliseconds"
+                                        fieldLabel="Idle Warning Mobile / Tablet Timer"
+                                        name="./idleWarningMobileTablet"
+                                        value="210000"/>
+                                    <successPagePath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Login / Registration Success Redirect Page Path"
+                                        rootPath="/content/sscp"
+                                        name="./successPagePath"/>
+                                    <errorPagePath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Error Page Path"
+                                        rootPath="/content/sscp"
+                                        name="./errorPagePath"/>
+                                    <lockedPagePath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Locked Account Page Path"
+                                        rootPath="/content/sscp"
+                                        name="./lockedPagePath"/>
+                                    <autoLogoutPagePath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Auto Logout Page Path"
+                                        rootPath="/content/sscp"
+                                        name="./autoLogoutPagePath"/>
+                                    <loginPagePath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Login Page Path"
+                                        rootPath="/content/sscp"
+                                        name="./loginPagePath"/>
+                                    <section
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Error Code Mapping"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <errorMapField
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Configure error mapping for the errors on the forms"
+                                                fieldLabel="Error Message Configurations">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    acs-commons-nested="JSON_STORE"
+                                                    name="./errorMap">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <errorCode
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldLabel="Error Code"
+                                                                    name="./errorCode"
+                                                                    required="{Boolean}true"/>
+                                                                <errorMessage
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                                    fieldLabel="Error Message"
+                                                                    name="./errorMessage"
+                                                                    required="{Boolean}true"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </errorMapField>
+                                        </items>
+                                    </section>
+                                </items>
+                            </column>
+                        </items>
+                    </errorconfig>
+                    <managePassword
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Manage Password"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/managePassword/items/columns"/>
+                        </items>
+                    </managePassword>
+                    <verifyMobile
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Mobile"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyMobile/items/columns"/>
+                        </items>
+                    </verifyMobile>
+                    <verifyEmail
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Verify Email"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/verifyEmail/items/columns"/>
+                        </items>
+                    </verifyEmail>
+                    <thankyou
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Thank you"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/communicationsconfig/cq:dialog/content/items/tabs/items/thankyou/items/columns"/>
+                        </items>
+                    </thankyou>
+                    <termsOfUseconfig
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Terms of Use"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <termsOfUse
+                                jcr:primaryType="nt:unstructured"
+                                cq:showOnCreate="{Boolean}true"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                useFixedInlineToolbar="{Boolean}true"
+                                fieldLabel="Enter Terms of Use"
+                                name="./termsOfUse">
+                                <rtePlugins
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/sscp/components/rteplugin-config/rtePlugins"/>
+                                <uiSettings
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceSuperType="/apps/sscp/components/rteplugin-config/uiSettings"/>
+								<granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="termsOfUse"/>	
+                            </termsOfUse>
+                        </items>
+                    </termsOfUseconfig>
+                    <brandVariables
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Brand Variables"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/include"
+                                path="/apps/sscp/components/brandVariablesConfig/cq:dialog/content/items/columns"/>
+                        </items>
+                    </brandVariables>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Transaction History Labels &amp; Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <searchdatalabbels
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Search Data labels"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Transactions History"
+                                                fieldLabel="Title"
+                                                name="./transactionTitle"
+                                                value="Transactions History"/>
+                                            <content
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Search Field Labels"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <layout
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/layouts/collapsible"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <content
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <searchLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Search"
+                                                                fieldLabel="Search Field Label"
+                                                                name="./filter1"
+                                                                value="Search"/>
+                                                            <searchPlaceholderText
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Search by description"
+                                                                fieldLabel="Search Field Placeholder Text"
+                                                                name="./filter1Placeholder"
+                                                                value="Search by description"/>
+                                                            <searchIcon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Search Icon"
+                                                                name="./filter1Icon"
+                                                                value="We're here to help"/>
+                                                        </items>
+                                                    </content>
+                                                </items>
+                                            </content>
+                                            <contentdates
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Date Field Labels"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <layout
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/layouts/collapsible"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <content
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <dateFromLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Date From"
+                                                                fieldLabel="Date From Label"
+                                                                name="./filter2"
+                                                                value="Date From"/>
+                                                            <dateToLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Date To"
+                                                                fieldLabel="Date To Label"
+                                                                name="./filter3"
+                                                                value="Date To"/>
+                                                        </items>
+                                                    </content>
+                                                </items>
+                                            </contentdates>
+                                            <contenttransaction
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Transaction Type Labels"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <layout
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/layouts/collapsible"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <content
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <transactionLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Transaction Type"
+                                                                fieldLabel="Transaction Type Label"
+                                                                name="./filter4"
+                                                                value="Transaction Type"/>
+                                                            <transactionPlaceholderText
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Select Transaction Type"
+                                                                fieldLabel="Search Field Placeholder Text"
+                                                                name="./filter4Placeholder"
+                                                                value="Select Transaction Type"/>
+                                                            <transactionTypes
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                composite="{Boolean}true"
+                                                                fieldLabel="Transaction Types">
+                                                                <field
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/container"
+                                                                    name="./transactionTypes">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <column
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <itemsWell
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <type
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                            fieldLabel="Add Transaction Type"
+                                                                                            name="./type"
+                                                                                            required="{Boolean}true"/>
+                                                                                    </items>
+                                                                                </itemsWell>
+                                                                            </items>
+                                                                        </column>
+                                                                    </items>
+                                                                </field>
+                                                            </transactionTypes>
+                                                        </items>
+                                                    </content>
+                                                </items>
+                                            </contenttransaction>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </searchdatalabbels>
+                    <searchresultslabels
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Search Results Labels"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <dateLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Date"
+                                                fieldLabel="Date Label"
+                                                name="./tableHeader1"
+                                                value="Date"/>
+                                            <descriptionLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Description"
+                                                fieldLabel="Description Label"
+                                                name="./tableHeader2"
+                                                required="{Boolean}false"
+                                                value="Description"/>
+                                            <AmountLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Amount"
+                                                fieldLabel="Amount Label"
+                                                name="./tableHeader3"
+                                                required="{Boolean}false"
+                                                value="Amount"/>
+                                            <balanceLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Balance"
+                                                fieldLabel="Balance Label"
+                                                name="./tableHeader4"
+                                                required="{Boolean}false"
+                                                value="Balance Label"/>
+                                            <noTransactionText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="No Transaction Details"
+                                                fieldLabel="No Transaction Label"
+                                                name="./noTransactions"
+                                                required="{Boolean}false"
+                                                value="No Transaction Details"/>
+                                            <exportButtonLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Export PDF/Print"
+                                                fieldLabel="Export Pdf CTA label"
+                                                name="./exportButtonLabel"
+                                                required="{Boolean}false"
+                                                value="Export PDF/Print"/>
+                                            <content
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="PDF Text Labels"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <layout
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/layouts/collapsible"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <content
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <accountNumberLabel
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Account Number"
+                                                                fieldLabel="Account Number Text"
+                                                                name="./accountNumberText"
+                                                                value="Account Number"/>
+                                                            <transactionPeriodText
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                emptyText="Transaction Period"
+                                                                fieldLabel="Transaction Period Text"
+                                                                name="./transactionPeriodText"
+                                                                value="Transaction Period"/>
+                                                            <filtersText
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="Filters"
+                                                                name="./filtersText"
+                                                                value="Filters"/>
+                                                        </items>
+                                                    </content>
+                                                </items>
+                                            </content>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </searchresultslabels>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

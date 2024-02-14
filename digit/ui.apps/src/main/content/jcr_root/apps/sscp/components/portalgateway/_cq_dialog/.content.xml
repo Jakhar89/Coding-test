@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Portal Gateway Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <vehicleRegiNum
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Vehicle Registration Number"
+                        fieldLabel="Vehicle Registration number Label"
+                        name="./vehicleRegoNumberLabel"
+                        required="{Boolean}true"
+                        value="Vehicle Registration Number"/>
+                    <surnameLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Surname"
+                        fieldLabel="Surname Label"
+                        name="./surnameLabel"
+                        required="{Boolean}true"
+                        value="Surname"/>
+                    <vehicleRegiNumplaceholdertxt
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Enter your vehicle registration"
+                        fieldLabel="Vehicle Registration No. Placeholder Text"
+                        name="./vehicleRegoNoPlaceholderText"
+                        required="{Boolean}true"
+                        value="Enter your vehicle registration"/>
+                    <surnamPlaceholdertxt
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Enter your surname"
+                        fieldLabel="Surname Placeholder Text"
+                        name="./surnamePlaceholderText"
+                        required="{Boolean}true"
+                        value="Enter your surname"/>
+                    <gotoPortalCtatext
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Go To My Portal"
+                        fieldLabel="Go To My Portal Button Text"
+                        name="./buttonLabel"
+                        required="{Boolean}true"
+                        value="Go To My Portal"/>
+                    <gotoPortalAlfaUri
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Go To My Portal Alfa Uri"
+                        name="./myPortalAlfaUri"
+                        required="{Boolean}true"/>
+                    <gotoPortalLTUri
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Go To My Portal LeasTrace Uri"
+                        name="./myPortalLtUri"
+                        required="{Boolean}true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

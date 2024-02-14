@@ -1,0 +1,7 @@
+{
+  "resource.resolver.mapping": [
+    "/:/",
+    "/content/sscp/au/en.html</",
+    "/content/sscp/au/en/(.+)\\.html</$1"
+  ]
+}

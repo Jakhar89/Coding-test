@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Get in touch Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Get in touch"
+                        fieldLabel="Title"
+                        name="./title"
+                        required="{Boolean}true"
+                        value="Get in touch"/>
+                    <summary
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="For any problems or loan-related inquiries."
+                        fieldLabel="Summary"
+                        name="./summary"
+                        required="{Boolean}false"
+                        value="For any problems or loan-related inquiries."/>
+                    <buttonLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Contact Us"
+                        fieldLabel="Button Label"
+                        name="./buttonLabel"
+                        required="{Boolean}true"
+                        value="Contact Us"/>
+                    <iconName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="customer-service"
+                        fieldLabel="Icon Name"
+                        name="./iconName"
+                        required="{Boolean}true"
+                        value="customer-service"/>
+                    <buttonPath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                        fieldLabel="Button Path / URL"
+                        name="./buttonPath"
+                        required="{Boolean}true"
+                        rootPath="/content/sscp/"
+                        value="/"    
+                    />
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

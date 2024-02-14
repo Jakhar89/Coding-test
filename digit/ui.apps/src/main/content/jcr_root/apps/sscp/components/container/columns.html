@@ -1,0 +1,77 @@
+<template data-sly-template.columns="${@ container}"
+          data-sly-set.columnsLayout="${container.mappedColumnsLayout}"
+          data-sly-set.containerClass="${container.containerClass}"
+          data-sly-set.gridColumnsClasses="${''}">
+    <sly data-sly-test="${wcmmode.edit}"
+         data-sly-use.allowed="com.day.cq.wcm.foundation.AllowedComponentList"></sly>
+    <sly data-sly-test="${container.containerClass}">
+        <sly data-sly-set.containerClass="cmp-container--${containerClass}"></sly>
+    </sly>
+    <!--/* Set the 'grid-cols-' class for each breakpoint */-->
+    <sly data-sly-repeat.layoutKey="${columnsLayout}">
+        <sly data-sly-set.breakpointPrefix="${layoutKey == 'initial' ? '' : '{0}:' @ format=[layoutKey]}"></sly>
+        <sly data-sly-set.gridColumnsClasses="${'{0} {1}grid-cols-{2}' @ format=[
+            gridColumnsClasses,
+            breakpointPrefix,
+            columnsLayout[layoutKey].displayColumns
+        ]}"></sly>
+    </sly>
+
+    <div id="${container.id}"
+         class="cmp-container ${containerClass} cmp-container--columns grid ${gridColumnsClasses} ${wcmmode.edit ? '{0}' : '' @ format=[allowed.cssClass]}"
+         aria-label="${container.accessibilityLabel}"
+         role="${container.roleAttribute}"
+         style="${container.backgroundStyle @ context='styleString'}">
+        <sly data-sly-list.containerColumns="${container.containerColumns}">
+            <sly data-sly-repeat.layoutKey="${columnsLayout}"
+                 data-sly-set.columnClasses="${''}">
+                <sly data-sly-test.columnConfig="${columnsLayout[layoutKey].columns[containerColumnsList.index]}"
+                     data-sly-set.breakpointPrefix="${layoutKey == 'initial' ? '' : '{0}:' @ format=[layoutKey]}">
+                    <!--/* Row span */-->
+                    <sly data-sly-test.rowSpan="${columnConfig.rowSpan}"
+                         data-sly-set.columnClasses="${'{0} {1}row-span-{2}' @ format=[
+                       columnClasses,
+                       breakpointPrefix,
+                       rowSpan
+                     ]}"></sly>
+
+                    <!--/* Column span */-->
+                    <sly data-sly-test.columnSpan="${columnConfig.columnSpan}"
+                         data-sly-set.columnClasses="${'{0} {1}col-span-{2}' @ format=[
+                       columnClasses,
+                       breakpointPrefix,
+                       columnSpan
+                     ]}"></sly>
+
+                    <!--/* Column offset */-->
+                    <sly data-sly-test.offset="${columnConfig.offset}"
+                         data-sly-set.columnClasses="${'{0} {1}col-start-{2} {1}col-end-{3}' @ format=[
+                       columnClasses,
+                       breakpointPrefix,
+                       offset.start,
+                       offset.end
+                     ]}"></sly>
+                </sly>
+            </sly>
+
+            <div class="${columnClasses}">
+                <sly data-sly-test.isAllowedApplicable="${allowed.isApplicable}"
+                     data-sly-test="${isAllowedApplicable}"
+                     data-sly-use.allowedTemplate="allowedcomponents.html"
+                     data-sly-call="${allowedTemplate.allowedcomponents @ title=allowed.title, components=allowed.components}"></sly>
+                <sly data-sly-test="${!isAllowedApplicable}"
+                     data-sly-list="${container.items}">
+                    <sly data-sly-set.columnName="${'column_{0}' @ format=[containerColumnsList.index]}"
+                         data-sly-test="${columnName == item.name}"
+                         data-sly-resource="${item.path @ decoration=false}"></sly>
+                </sly>
+                <sly data-sly-test="${!isAllowedApplicable && !wcmmode.disabled}"
+                     data-sly-set.parsysPath="${'{0}/column_{1}' @ format=[resource.path, containerColumnsList.index]}"
+                     data-sly-resource="${parsysPath @ resourceType='sscp/components/container/new',
+                                                       appendPath='/*',
+                                                       decorationTagName='div',
+                                                       cssClassName='new section'}"></sly>
+            </div>
+        </sly>
+    </div>
+</template>

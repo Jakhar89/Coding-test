@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Notification Banner Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <notificationId
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Notification Id"
+                        name="./notificationId"
+                        type="editable"
+                        required="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <generalNotification
+                                jcr:primaryType="nt:unstructured"
+                                text="General notification"
+                                value="generalNotification"/>
+                            <idleWarningNotification
+                                jcr:primaryType="nt:unstructured"
+                                text="Idle warning notification"
+                                value="idleWarningNotification"/>
+                        </items>
+                    </notificationId>
+                    <isNotificationHasNoLimit
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        fieldDescription="Defaulted to Once per session"
+                        name="./isNotificationHasNoLimit"
+                        text="Please enable if notification bar has No limits per session"
+                        uncheckedValue="false"
+                        value="true"/>
+                    <notificationType
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Notification Type"
+                        name="./notificationType"
+                        type="editable"
+                        required="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <success
+                                jcr:primaryType="nt:unstructured"
+                                text="Success"
+                                value="success"/>
+                            <error
+                                jcr:primaryType="nt:unstructured"
+                                text="Error"
+                                value="error"/>
+                            <info
+                                jcr:primaryType="nt:unstructured"
+                                text="Info"
+                                value="info"/>
+                            <warning
+                                jcr:primaryType="nt:unstructured"
+                                text="Warning"
+                                value="warning"/>
+                        </items>
+                    </notificationType>
+                    <notificationDescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Notification Description"
+                        name="./notificationDescription"
+                        required="{Boolean}true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

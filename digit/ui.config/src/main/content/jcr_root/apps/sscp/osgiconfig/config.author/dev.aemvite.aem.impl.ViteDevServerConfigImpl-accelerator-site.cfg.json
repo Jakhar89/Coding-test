@@ -1,0 +1,18 @@
+{
+  "automatic.injection": "$[env:AEM_VITE_ENABLED;default=true]",
+  "clientlib.categories": [
+    "sscp.site"
+  ],
+  "content.paths": [
+    "/content/sscp"
+  ],
+  "manual.injection.selector": "sscp-vite",
+  "devserver.protocol": "http",
+  "devserver.hostname": "127.0.0.1",
+  "devserver.port": "3000",
+  "devserver.entrypoints": [
+    "src/site/scss/app.scss",
+    "src/site/js/main.ts"
+  ],
+  "using.react": true
+}

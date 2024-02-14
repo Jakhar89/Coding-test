@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Address Details Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <streetTypeFilePath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Street type CSV file path"
+                        name="./streetTypeFilePath"
+                        rootPath="/content/dam/sscp"/>
+                    <suburbListFilePath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Suburb List CSV file path"
+                        name="./suburbListFilePath"
+                        rootPath="/content/dam/sscp"/>
+                    <residentialAddressTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Residential Address"
+                        fieldLabel="Residential Address Title"
+                        name="./residentialAddressTitle"
+                        required="{Boolean}true"
+                        value="Residential Address"/>
+                    <mailingAddressTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Mailing Address"
+                        fieldLabel="Mailing Address Title"
+                        name="./mailingAddressTitle"
+                        required="{Boolean}true"
+                        value="Mailing Address"/>
+                     <residentialAddressSubTitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Mailing address is same as residential address"
+                        fieldLabel="Residential Address Sub Heading"
+                        name="./residentialAddressSubTitle"
+                        required="{Boolean}true"
+                        value="Mailing address is same as residential address"/>
+                    <resAddressLine1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Address Line 1"
+                        fieldLabel="Address Line 1 Label"
+                        name="./resAddressLine1"
+                        required="{Boolean}true"
+                        value="Address Line 1"/>
+                    <resAddressLine2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Address Line 2"
+                        fieldLabel="Address Line 2 Label"
+                        name="./resAddressLine2"
+                        required="{Boolean}true"
+                        value="Address Line 2"/>
+                    <resCitySuburb
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Suburb"
+                        fieldLabel="Suburb Label"
+                        name="./resCitySuburb"
+                        required="{Boolean}true"
+                        value="Suburb"/>
+                    <resStateTerritory
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="State/Territory"
+                        fieldLabel="State/Territory Label"
+                        name="./resStateTerritory"
+                        required="{Boolean}true"
+                        value="State/Territory"/>
+                    <resPostZipCode
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Post Code"
+                        fieldLabel="Post Code Label"
+                        name="./resPostZipCode"
+                        required="{Boolean}true"
+                        value="Post Code"/>
+                    <resCountry
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        emptyText="Country"
+                        fieldLabel="Country Label"
+                        name="./resCountry"
+                        required="{Boolean}true"
+                        value="Country"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Payment Methods Properties"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <paymentMethodsTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Payment Methods"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <paymentMethodsLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Payment methods"
+                                                fieldLabel="Payment Methods Label Text"
+                                                name="./paymentMethodsLabelText"
+                                                required="{Boolean}true"
+                                                value="Payment methods"/>
+                                            <paymentMethodsDescriptionText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Payment Methods Description Text"
+                                                name="./paymentMethodsDescriptionText"/>
+                                            <nominatedFlagText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Nominated Payment Method"
+                                                fieldLabel="Nominated Payment Method Label Text"
+                                                name="./nominatedFlagText"
+                                                required="{Boolean}true"
+                                                value="Nominated Payment Method"/>
+                                            <editIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Nominated Payment Method Edit Icon"
+                                                fieldLabel="Nominated Payment Method Edit Icon"
+                                                name="./editIcon"
+                                                required="{Boolean}true"
+                                                value="edit"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </paymentMethodsTab>
+                    <directDebitTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Direct Debit"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <directDebitLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Direct debit"
+                                                fieldLabel="Direct debit Label Text"
+                                                name="./directDebitLabelText"
+                                                required="{Boolean}true"
+                                                value="Direct debit"/>
+                                            <directDebitIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="pay-date"
+                                                fieldLabel="Direct debit Icon"
+                                                name="./directDebitIcon"
+                                                required="{Boolean}true"
+                                                value="pay-date"/>
+                                            <directDebitDescriptionText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="Direct Debit Description Text"
+                                                name="./directDebitDescriptionText"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </directDebitTab>
+                    <eftTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="EFT"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <eftLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="EFT"
+                                                fieldLabel="EFT Label Text"
+                                                name="./eftLabelText"
+                                                required="{Boolean}true"
+                                                value="EFT"/>
+                                            <eftIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="online-payment-with-a-credit-card"
+                                                fieldLabel="EFT Icon"
+                                                name="./eftIcon"
+                                                required="{Boolean}true"
+                                                value="online-payment-with-a-credit-card"/>
+                                            <eftDescriptionText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="EFT Description Text"
+                                                name="./eftDescriptionText"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </eftTab>
+                    <bpayTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="BPAY"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <bpayLabelText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="BPAY"
+                                                fieldLabel="BPAY Label Text"
+                                                name="./bpayLabelText"
+                                                required="{Boolean}true"
+                                                value="BPAY"/>
+                                            <bpayIcon
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="bpay"
+                                                fieldLabel="BPAY Icon"
+                                                name="./bpayIcon"
+                                                required="{Boolean}true"
+                                                value="bpay"/>
+                                            <bpayDescriptionText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                removeSingleParagraphContainer="{Boolean}true"
+                                                useFixedInlineToolbar="{Boolean}true"
+                                                fieldLabel="BPAY Description Text"
+                                                name="./bpayDescriptionText"/>
+                                        </items>
+                                    </column1>
+                                </items>
+                            </columns>
+                        </items>
+                    </bpayTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
