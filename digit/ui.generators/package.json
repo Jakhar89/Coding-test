@@ -1,0 +1,33 @@
+{
+  "author": "Chris Shaw <Chris.Shaw@merkleinc.com.au>",
+  "description": "Creates all of the support structures/files needed for things such as data sources.",
+  "engines": {
+    "node": ">= 16",
+    "yarn": ">= 1.10.x < 2"
+  },
+  "private": true,
+  "name": "ui.generators",
+  "version": "1.0.0-SNAPSHOT",
+  "scripts": {
+    "lint": "eslint --ext .ts .",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "run-generator": "ts-node",
+    "run-generator:all": "ts-node generators/all.ts",
+    "run-generator:datasource": "ts-node generators/datasource/index.ts",
+    "vlt:checkout": "./support/scripts/vlt.sh checkout",
+    "vlt:checkout:force": "./support/scripts/vlt.sh checkout:force",
+    "vlt:add": "./support/scripts/vlt.sh add",
+    "vlt:commit": "./support/scripts/vlt.sh commit",
+    "vlt:update": "./support/scripts/vlt.sh update",
+    "watch": "cross-env ENV_WATCH=true ts-node support/watch.ts",
+    "watch:debug": "nodemon --watch 'structs/**' --ext 'ts' --exec 'yarn watch'"
+  },
+  "devDependencies": {
+    "@types/mkdirp": "^1.0.2",
+    "mkdirp": "^1.0.4",
+    "node-watch": "^0.7.1",
+    "nodemon": "^2.0.12",
+    "queue": "^6.0.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.json",
+
+  "compilerOptions": {
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "lib": ["DOM", "ESNext"],
+    "module": "CommonJS",
+    "target": "ESNext",
+
+    "paths": {
+      "@/base/types/*": ["../support/types/*"],
+      "@/base/utility/*": ["../support/utilities/*"],
+      "@/generator/support/*": ["support/*"],
+      "@/generator/structs/*": ["structs/*"]
+    }
+  },
+
+  "include": ["generators/**/*.ts", "structs/**/*.ts", "support/**/*.ts"],
+
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "transpileOnly": true
+  }
+}

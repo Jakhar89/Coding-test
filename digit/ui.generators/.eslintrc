@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "../.eslintrc"
+  ],
+
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json"
+  },
+
+  "rules": {
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+
+    "class-methods-use-this": "off",
+    "no-console": "off",
+    "no-restricted-syntax": "off"
+  },
+
+  "overrides": [
+    {
+      "files": ["./generators/**/*.ts"],
+
+      "rules": {
+        "import/no-default-export": "error"
+      }
+    },
+    {
+      "files": ["./support/types/**/*.ts"],
+
+      "rules": {
+        "no-use-before-define": "off"
+      }
+    }
+  ]
+}
