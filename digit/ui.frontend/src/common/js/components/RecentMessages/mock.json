@@ -1,0 +1,11 @@
+{
+  "recentMessagesTitle": "Recent Messsages",
+
+  "buttonLabel": "All Messages",
+
+  "buttonPath": "/",
+
+  "noMessageTitle": "No messages",
+
+  "noMessageDescription": "You don’t have new messages in your inbox."
+}

@@ -1,0 +1,16 @@
+{
+  "vehicleRegoNumberLabel": "Vehicle Registration Number",
+  "surnameLabel": "Surname",
+  "vehicleRegoNoPlaceholderText": "Enter your vehicle registration",
+  "surnamePlaceholderText": "Enter your surname",
+  "buttonLabel": "Go to my portal",
+  "myPortalAlfaUri": "https://www.toyota.com.au/",
+  "myPortalLtUri": "https://www.toyota.com.au/car-finance",
+  "globalConfig": {
+    "forgerockUrl": "https://openam-tfs-anz-staging.id.forgerock.io/am",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP",
+    "baseApiUrl": "https://api-sit4.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  }
+}

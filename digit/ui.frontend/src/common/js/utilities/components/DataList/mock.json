@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "title": "Amount in arrears",
+      "value": "-$156.75"
+    },
+    {
+      "title": "Nominated payment option",
+      "value": "EFT/BPAY"
+    },
+    {
+      "title": "Payment frequency",
+      "value": "Monthly"
+    },
+    {
+      "title": "Payment frequency due date",
+      "value": "4th day of the month"
+    },
+    {
+      "title": "Minimum payment",
+      "value": "$345"
+    },
+    {
+      "title": "Next due date",
+      "value": "04/06/22"
+    },
+    {
+      "title": "Next payment amount",
+      "disclaimer": "Reminder text to pay EFT/BPAY fee if applicable (please advise on exact content)",
+      "value": "$345"
+    },
+    {
+      "title": "Minimum payment",
+      "value": "$345"
+    }
+  ],
+  "listHeaders": {
+    "first": "First Header",
+    "second": "Second",
+    "third": "Third",
+    "fourth": "Fourth"
+  },
+  "dynamicData": [
+    {
+      "first": "First 1",
+      "second": "Second sec",
+      "third": "Third 1",
+      "fourth": "Fourth 1"
+    },
+    {
+      "first": "First 1",
+      "second": "Second 2",
+      "third": "Third third",
+      "fourth": "Fourth frt"
+    },
+    {
+      "first": "First 1",
+      "second": "Second 3rd",
+      "third": "3rd third",
+      "fourth": "Fourth 4th"
+    },
+    {
+      "first": "First 1",
+      "second": "Second 4th",
+      "third": "third 4th",
+      "fourth": "Fourth fourth one"
+    }
+  ]
+}

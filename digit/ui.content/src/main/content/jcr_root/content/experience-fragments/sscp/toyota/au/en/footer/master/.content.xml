@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:tags="[]"
+        cq:template="/conf/sscp/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer"
+        sling:resourceType="sscp/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            id="site-footer"
+            layout="responsiveGrid">
+            <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/footer"
+                contactUsDetails="&lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET&lt;br />&lt;a href=&quot;mailto:toyotafinance@toyota.com.au&quot;>toyotafinance@toyota.com.au&lt;/a>"
+                contactUsText="Contact Us"
+                licenceDetails="© TOYOTA FINANCE AUSTRALIA LIMITED 2009 ABN 48 002 435 181, AFSL and Australian Credit Licence 392536"
+                logoAltText="alt text"
+                logoPath="/content/dam/sscp/jcr:content"
+                logoRedirectUrl="/content/sscp/toyota/au/en/homepage/accounts"
+                postalAddress="&lt;p>PO BOX 1354&lt;/p>&#xd;&#xa;&lt;p>Macquarie Centre NSW 2113&lt;/p>&#xd;&#xa;"
+                textIsRich="[true,true,true]">
+                <menuItem jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        text="my toyota"
+                        url="/content/sscp/toyota/au/en/homepage"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        text="Toyota Genuine Parts"
+                        url="/content/sscp/toyota/au/en/homepage"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        text="servicing"
+                        url="/content/sscp/toyota/au/en/homepage"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        text="accessories"
+                        url="/content/sscp/toyota/au/en/homepage"/>
+                </menuItem>
+                <bottomFooterMenuItem jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        text="Privacy Policy"
+                        url="/content/sscp/toyota/au/en/homepage"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        text="Terms &amp; Conditions"
+                        url="/content/sscp/toyota/au/en/homepage/terms-of-use"/>
+                </bottomFooterMenuItem>
+            </footer>
+        </root>
+    </jcr:content>
+</jcr:root>

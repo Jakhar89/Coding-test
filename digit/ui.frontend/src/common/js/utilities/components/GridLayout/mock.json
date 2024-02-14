@@ -1,0 +1,10 @@
+{
+  "iconTextList": [
+    { "icon": "phone", "alt": "Image 1", "description": "Some text about image 1" },
+    {
+      "icon": "read-message",
+      "alt": "Img 2",
+      "description": "\u003cp\u003eToyota Finance is committed to helping our customers, especially during this challenging time. We understand the evolving COVID-19 may be affecting our customers and so we're here to help.\u003cp\u003eShould you lose your employment because of COVID-19, you may be eligible for financial support.\u003cp\u003e\u003ca href\u003d\"stage.toyotafinanceonline.com.au\"\u003eApply Online\u003c/a\u003e to start the process."
+    }
+  ]
+}

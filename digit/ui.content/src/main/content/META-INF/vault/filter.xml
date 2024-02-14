@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+
+<filter root="/conf/sscp" mode="replace">
+        <exclude pattern="/conf/sscp/settings/cloudconfigs/dtm-reactor"></exclude>
+</filter>
+
+    <filter root="/content/sscp" mode="merge"/>
+    <filter root="/content/showcase" mode="merge"/>
+    <filter root="/content/showcase/sscp" mode="replace"/>
+
+    <filter root="/content/dam/sscp" mode="merge"/>
+
+    <filter root="/content/experience-fragments/sscp" mode="merge"/>
+    
+</workspaceFilter>

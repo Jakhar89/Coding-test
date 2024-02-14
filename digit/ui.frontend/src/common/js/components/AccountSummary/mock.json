@@ -1,0 +1,34 @@
+{
+  "actionMenuList": [
+    {
+      "actionMenu": "Home",
+      "actionMenuLink": "/"
+    },
+    {
+      "actionMenu": "Services",
+      "actionMenuLink": "/services"
+    },
+    {
+      "actionMenu": "About",
+      "actionMenuLink": "/about"
+    }
+  ],
+  "accountNumberTitle": "Account Number",
+  "paidToDateTitle": "Paid To Date",
+  "outstandingBalanceTitle": "Outstanding Balance ",
+  "nextRepaymentDueTitle": "Next Repayment Due",
+  "loanProgressTitle": "Loan Progress",
+  "paidToDateTooltip": "Paid To Date Tooltip",
+  "outstandingBalanceTooltip": "Outstanding Balance  Tooltip",
+  "recentTransactionsTitle": "Recent Transactions",
+  "recentTransactionsTooltip": "Recent transactions are shown as of yesterday.",
+  "buttonLabel": "Button Label",
+  "date": "Date",
+  "paymentAmount": "Payment Amount",
+  "balance": "Balance",
+  "buttonLink": "/content/sscp/toyota",
+  "globalConfig": {
+    "baseApiUrl": " https://api-sit4.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  }
+}

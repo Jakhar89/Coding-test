@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:crx="http://www.day.com/crx/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:primaryType="rep:ACL">
+    <deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="workflow-users"
+        rep:privileges="{Name}[jcr:versionManagement,rep:write,jcr:lockManagement]"/>
+    <allow1
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="workflow-editors"
+        rep:privileges="{Name}[jcr:versionManagement,rep:write,crx:replicate,jcr:lockManagement]"/>
+    <allow2
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="ga_AEM_SSCP_AAAF_ContentAuthors_PRD"
+        rep:privileges="{Name}[jcr:versionManagement,rep:write,jcr:lockManagement]"/>
+    <allow3
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="ga_AEM_SSCP_AAAF_ContentApprovers_PRD"
+        rep:privileges="{Name}[jcr:versionManagement,jcr:read,jcr:readAccessControl,jcr:lockManagement]"/>
+    <allow4
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="ga_AEM_SSCP_TFA_ContentAuthors_PRD"
+        rep:privileges="{Name}[jcr:versionManagement,rep:write,jcr:lockManagement]"/>
+    <allow5
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="ga_AEM_SSCP_TFA_ContentApprovers_PRD"
+        rep:privileges="{Name}[jcr:versionManagement,jcr:read,jcr:readAccessControl,jcr:lockManagement]"/>
+    <allow6
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="ga_AEM_SSCP_Global_LegalApprovers_PRD"
+        rep:privileges="{Name}[jcr:versionManagement,jcr:read,jcr:readAccessControl,jcr:lockManagement]"/>
+    <allow7
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="ga_AEM_SSCP_Global_Admin_PRD"
+        rep:privileges="{Name}[jcr:versionManagement,rep:write,crx:replicate,jcr:readAccessControl,jcr:lockManagement]"/>
+</jcr:root>
+

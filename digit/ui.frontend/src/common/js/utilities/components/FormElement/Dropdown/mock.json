@@ -1,0 +1,20 @@
+{
+  "name": "dropdown",
+  "items": [
+    {
+      "label": "Apple"
+    },
+    {
+      "label": "Grapefruit"
+    },
+    {
+      "label": "Strawberry"
+    },
+    {
+      "label": "Papaya"
+    },
+    {
+      "label": "Pineapple"
+    }
+  ]
+}

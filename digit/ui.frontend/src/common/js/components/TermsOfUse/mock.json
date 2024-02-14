@@ -1,0 +1,58 @@
+{
+  "termsOfUseTitle": "Contents",
+  "termsOfUse": "\u003ch2 id\u003d\"1\"\u003eSome of your things\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"2\"\u003eMeanings of Words\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"3\"\u003eUse of Toyota Finance Online\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"4\"\u003eChanges to Conditions of Use\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"5\"\u003eTermination of Toyota Finance Online\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"6\"\u003eAvailability of information\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"7\"\u003eYour general responsibilities\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"8\"\u003eWhat you must tell us\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"9\"\u003eExclusion of our liability\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"10\"\u003eYour liability for unauthorised transactions\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"11\"\u003eIndemnity\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"12\"\u003ePrivacy\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"13\"\u003eGoverning Law\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n",
+  "itemList": [
+    {
+      "text": "Some things you should know",
+      "id": "1"
+    },
+    {
+      "text": "Meaning of words",
+      "id": "2"
+    },
+    {
+      "text": "Use of Toyota Finance Online",
+      "id": "3"
+    },
+    {
+      "text": "Changes to Conditions of Use",
+      "id": "4"
+    },
+    {
+      "text": "Termination of Toyota Finance Online",
+      "id": "5"
+    },
+    {
+      "text": "Availability of information",
+      "id": "6"
+    },
+    {
+      "text": "Your general responsibilities",
+      "id": "7"
+    },
+    {
+      "text": "What you must tell us",
+      "id": "8"
+    },
+    {
+      "text": "Exclusion of our liability",
+      "id": "9"
+    },
+    {
+      "text": "Your liability for unauthorised transactions",
+      "id": "10"
+    },
+    {
+      "text": "Indemnity",
+      "id": "11"
+    },
+    {
+      "text": "Privacy",
+      "id": "12"
+    },
+    {
+      "text": "Governing Law",
+      "id": "13"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+import { AEMErrorMap, GlobalConfigProps } from '@/types/global/aem-definition';
+
+export type ContactUsProps = {
+  attributes: string;
+  errorSuccessMap: any;
+  errorComponent: any;
+  errorMap: AEMErrorMap;
+  handleOnClickCancel: (e: any) => void;
+  isLoading?: boolean;
+};
+
+export type ContactUsParsedProps = {
+  cancelButtonText?: string;
+  emailAddressLabelText?: string;
+  globalConfig?: GlobalConfigProps;
+  saveButtonText?: string;
+  enquiryTypeList: any[];
+  relatesToList: any[];
+  enquiryTypeLabelText: string;
+  relatesToTextField: string;
+  hardshipRadio1: string;
+  hardshipRadio2: string;
+  refinanceRadio1: string;
+  refinanceRadio2: string;
+  accountsSelectorLabel: string;
+  yourMessageLabel: string;
+  yourMessagePlaceholder: string;
+  yourMessageComplaintDisclaimer: string;
+  yourMessageHardshipDisclaimer: string;
+  yourMessageRefinanceDisclaimer: string;
+  yourMessageInsuranceDisclaimer: string;
+  complaintMessageBoxLabel: string;
+  complaintMessageBoxPlaceholder: string;
+  prefferedResponseLabel: string;
+  prefferedRadio1: string;
+  prefferedRadio2: string;
+  prefferedRadio3: string;
+  prefferedPhone: string;
+  updatePhone: string;
+  updatePhonePath: string;
+  prefferedEmail: string;
+  updateEmail: string;
+  updateEmailPath: string;
+  sendEnquiryButtonText: string;
+  thankYouText?: string;
+  successMessageDescription?: string;
+  successMessageDescriptionNewHardship?: string;
+  redirectionPath?: string;
+  generalRelatesToList?: any[];
+  complaintRelatesToList?: any[];
+};

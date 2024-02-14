@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-prettier"
+  ],
+
+  "ignoreFiles": [
+    "node_modules/",
+    "target/",
+    "**/*.ts"
+  ],
+
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "order/properties-order": null
+  }
+}

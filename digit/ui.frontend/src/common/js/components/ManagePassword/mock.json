@@ -1,0 +1,27 @@
+{
+  "cancelButtonText": "cancel",
+  "communicationsConfig": {
+    "managePasswordDescription": "\u003cp\u003eYour password must be \u003cb\u003eat least 8\u003c/b\u003e characters in length and different to previously used passwords.\u003c/p\u003e\r\n\u003cp\u003eIt must meet \u003cb\u003eat least 3\u003c/b\u003e of the 4 conditions listed below:\u003c/p\u003e\r\n\u003cul\u003e\r\n\u003cli\u003eAt least 1 UPPER CASE letter (A-Z)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 lower case letter (a-z)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 number (0-9)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 special character e.g. (@,#,$,%,\u0026amp;, ?)\u003c/li\u003e\r\n\u003c/ul\u003e\r\n",
+    "managePasswordEditTitle": "Manage Password",
+    "verifyMobileTitle": "Verify your mobile",
+    "verifyMobileCancelButton": "cancel",
+    "verifyMobileContinueButton": "Continue",
+    "verifyMobileDescription": "You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below.",
+    "verifyMobileOTPText": "Enter your OTP code",
+    "verifyMobileResendText": "You can resend the SMS in {timer} seconds",
+    "resendSMSText": "resend sms",
+    "verifyMobileDisclaimer": "Still haven’t received your OTP code? Please contact our customer service team on 137 200 Mon-Fri 8.30am - 7.00pm AET.",
+    "thankYouOverlayTimer": 3000,
+    "thankYouIcon": "receipt-approved",
+    "thankYouTitle": "Thank you!",
+    "thankYouDescription": "You have successfully reset your password. We’ll now take you to your account page."
+  },
+  "globalConfig": {
+    "forgerockUrl": "https://api-dev1.powertorquefinance.com.au/c1/v1/customerone/am",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP"
+  },
+  "managePasswordTitle": "Manage Password",
+  "passwordText": "Password",
+  "saveButtonText": "save changes"
+}

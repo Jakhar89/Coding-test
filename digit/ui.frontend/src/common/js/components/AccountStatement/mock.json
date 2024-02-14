@@ -1,0 +1,20 @@
+{
+  "accountStatementTitle": "Account statements",
+  "accountToDateLabel": "Account to date",
+  "dateRangeLabel": "Date range",
+  "dateFromLabel": "Date from",
+  "dateToLabel": "Date to",
+  "generateStatementCta": "Generate a statement",
+  "statementTitle": "Previous statements",
+  "statementTableHeader1": "Date",
+  "statementTableHeader2": "Statement",
+  "statementDownloadedLabel": "",
+  "statementGeneratedLabel": "",
+  "downloadedDescription": "",
+  "generatedDescription": "",
+  "noStatementLabel": "No previous statements found",
+  "globalConfig": {
+    "baseApiUrl": " https://api-sit4.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  }
+}

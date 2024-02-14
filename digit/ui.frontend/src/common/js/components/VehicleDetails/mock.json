@@ -1,0 +1,17 @@
+{
+  "engineNumLabelText": "Engine number",
+  "globalConfig": {
+    "baseApiUrl": " https://api-sit1.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  },
+  "makeLabelText": "Make",
+  "modelLabelText": "Model",
+  "variantCaptionText": "Tool tip copy will sit here instead of in an actual  tool tip",
+  "variantLabelText": "Variant",
+  "vehicleDetailsLabelText": "Vehicle details",
+  "vehicleRegNumLabelText": "Vehicle registration number",
+  "vehicleRegStateLabelText": "Vehicle registration state",
+  "vinCaptionText": "Tool tip copy will sit here instead of in an actual  tool tip",
+  "vinLabelText": "VIN",
+  "yearLabelText": "Year"
+}

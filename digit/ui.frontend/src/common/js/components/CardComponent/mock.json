@@ -1,0 +1,21 @@
+{
+  "card1imagePath": "https://picsum.photos/1024/768",
+  "card1title": "Help during covid-19",
+  "card1description": "If you’re a Toyota Finance customer and have been personally impacted by COVID-19, we’re here to provide support if you’re unable to make your repayments.",
+  "card1CtaLabel": "Apply Now",
+  "card1CtaPath": "/content/sscp/showcase/toyota",
+  "card2imagePath": "https://picsum.photos/1024/768",
+  "card2title": "Natural disasters",
+  "card2description": "If you’ve recently been affected by a natural disaster, please get in touch. Flooding, bushfires and drought can heavily impact your financial situation. We can take you through a range of options to help ease the pressure for your circumstances.",
+  "card2CtaLabel": "Apply Now",
+  "card2CtaPath": "/content/sscp/showcase/toyota",
+  "cardContainerList": [
+    {
+      "imagePath": "https://picsum.photos/1024/768",
+      "title": "Life events",
+      "description": "We know how hard unforeseen situations, like loss of employment, illness or injury, or even the loss of a family member can impact your finances. We are here to help.",
+      "ctaLabel": "Apply now",
+      "ctaPath":"/content/sscp/showcase/toyota"
+    }
+  ]
+}

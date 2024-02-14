@@ -1,0 +1,48 @@
+{
+  "idleRedirectDesktop": "900000",
+  "idleRedirectMobileTablet": "300000",
+  "idleWarningDesktop": "600000",
+  "idleWarningMobileTablet": "210000",
+  "isLogoReversed": false,
+  "logoPath": "/content/dam/sscp",
+  "logoRedirectUrl": "/content/sscp/showcase/accounts",
+  "logoAltText": "alt text",
+  "globalConfig": {
+    "forgerockUrl": "https://api-dev1.powertorquefinance.com.au/c1/v1/customerone/am",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP"
+  },
+  "menuList": [
+    {
+      "text": "Account",
+      "flag": "true",
+      "icon": null,
+      "url": "/content/sscp/account"
+    },
+    {
+      "text": "Repayments",
+      "flag": "true",
+      "icon": null,
+      "url": "/content/sscp/repayment"
+    },
+    {
+      "text": "Profile",
+      "flag": "true",
+      "icon": "profile",
+      "url": "/content/sscp/profile"
+    },
+    {
+      "text": "Log in",
+      "flag": "false",
+      "icon": "logout",
+      "url": "/content/sscp/login"
+    },
+    {
+      "text": "Log out",
+      "flag": "true",
+      "icon": "logout",
+      "url": "/content/sscp/logout"
+    }
+  ],
+  "hideHeaderMenu": false
+}

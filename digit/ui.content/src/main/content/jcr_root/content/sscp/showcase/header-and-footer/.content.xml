@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastReplicationAction="Activate"
+        cq:lastReplicationAction_publish="Activate"
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header and Footer"
+        sling:resourceType="sscp/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid">
+                <container
+                    cq:styleIds="[1643201822514]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container"/>
+                <teaser
+                    cq:styleIds="[1654518709495]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/teaser"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

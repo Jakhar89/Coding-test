@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Forgot Password"
+        sling:resourceType="sscp/components/page"
+        textIsRich="true">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid">
+                <container_1028550112
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container">
+                    <spacer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sscp/components/spacer"
+                        desktopSpace="90"
+                        mobileSpace="60"
+                        tabletSpace="90"/>
+                </container_1028550112>
+                <container
+                    cq:styleIds="[1643201822514]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container"
+                    containerClass="fixed"
+                    layout="simple">
+                    <forgotpassword
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sscp/components/forgotpassword"
+                        forgotPasswordButton="Continue"
+                        forgotPasswordContact="&lt;p>Having trouble registering your account? Please contact our customer service team on&amp;nbsp;&lt;a href=&quot;tel:137200&quot;>137 200&lt;/a>&amp;nbsp;Mon-Fri 8.30am - 7.00pm AET.&lt;/p>&#xd;&#xa;"
+                        forgotPasswordDescription="Please enter the email associated with your account."
+                        forgotPasswordTitle="Forgot your password?"
+                        managePasswordDescription="&lt;p>This password will be used for any future logins. Your password must be&amp;nbsp;&lt;b>at least 8&lt;/b>&amp;nbsp;characters in length and different to previously used passwords.&lt;/p>&#xd;&#xa;&lt;p>It must meet&lt;b>&amp;nbsp;at least 3&lt;/b>&amp;nbsp;of the 4 conditions listed below:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>At least 1 UPPER CASE letter (A-Z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 lower case letter (a-z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 number (0-9)&lt;/li>&#xd;&#xa;&lt;li>At least 1 special character e.g. (@,#,$,%,&amp;amp;, ?)&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                        managePasswordEditTitle="Reset your password"
+                        resendEmailText="resend email"
+                        resendSMSText="resend sms"
+                        setPasswordText="Set Password &amp; log in"
+                        textIsRich="[true,true,true,true]"
+                        thankYouDescription="You have successfully reset your password. We’ll now take you to your account page."
+                        thankYouIcon="receipt-approved"
+                        thankYouOverlayTimer="3000"
+                        thankYouTitle="Thank you!"
+                        verifyEmailCancelButton="cancel"
+                        verifyEmailContinueButton="Continue"
+                        verifyEmailDescription="You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below."
+                        verifyEmailDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on&amp;nbsp;&lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a>&amp;nbsp;Mon-Fri 8.30am - 7.00pm AET."
+                        verifyEmailOTPText="Enter your OTP code"
+                        verifyEmailResendText="You can resend the email in {timer} seconds"
+                        verifyEmailTitle="Verify your email"
+                        verifyMobileCancelButton="cancel"
+                        verifyMobileContinueButton="Continue"
+                        verifyMobileDescription="You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below."
+                        verifyMobileDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on&amp;nbsp;&lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a>&amp;nbsp;Mon-Fri 8.30am - 7.00pm AET."
+                        verifyMobileOTPText="Enter your OTP code"
+                        verifyMobileResendText="You can resend the SMS in {timer} seconds"
+                        verifyMobileTitle="Verify your mobile"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

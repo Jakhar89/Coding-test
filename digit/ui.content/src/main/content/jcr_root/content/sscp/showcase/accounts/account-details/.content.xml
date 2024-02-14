@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-full-width-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Account Details"
+        sling:resourceType="sscp/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid"/>
+            <teaser
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/teaser"/>
+            <container_1836306217
+                cq:styleIds="[1643201822514,1654668802297]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                containerClass="fixed"
+                layout="simple">
+                <accountdetails
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/accountdetails"
+                    accountCurrentBalanceCaptionText="Balance as of yesterday. Note: this may not be the total amount required to payout the loan"
+                    accountCurrentBalanceLabelText="Outstanding balance"
+                    accountDetailsLabelText="Account details"
+                    accountEndDateLabelText="Loan end date"
+                    accountFinancedAmountCaptionText="The total amount we financed under your contract"
+                    accountFinancedAmountLabelText="Financed amount"
+                    accountGuaranteedFutureValCaptionText="The minimum value of your vehicle at the end of your contract loan subject to fair wear and tear, and agreed kilometres being met"
+                    accountGuaranteedFutureValLabelText="Guaranteed Future Value"
+                    accountInterestRateLabelText="Interest rate"
+                    accountMaturityOptionLabelText="Account maturity option"
+                    accountMonthsRunCaptionText=" "
+                    accountMonthsRunLabelText="&lt;Months> remaining"
+                    accountNameLabelText="Borrower Name/s"
+                    accountNumberLabelText="Account number"
+                    accountProductTypeLabelText="Product type"
+                    accountStartDateLabelText="Loan start date"
+                    accountStatusCaptionText=" "
+                    accountStatusLabelText="Account status"
+                    accountTermCaptionText="The duration of your loan in &lt;months>"
+                    accountTermLabelText="Term"
+                    accountVehEndOdoCaptionText="The expected kilometres we agreed at the start of your loan"
+                    accountVehEndOdoLabelText="Agreed end odometer"
+                    balloonPaymentAmountCaptionText="The amount that is due at the end of the contract"
+                    balloonPaymentAmountLabelText="Balloon payment"
+                    dealershipNameCaptionText=" "
+                    dealershipNameLabelText="Dealership"
+                    viewRepaymentsButtonText="View repayments"/>
+            </container_1836306217>
+        </root>
+    </jcr:content>
+</jcr:root>

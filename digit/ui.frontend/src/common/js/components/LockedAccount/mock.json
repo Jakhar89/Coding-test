@@ -1,0 +1,39 @@
+{
+  "communicationsConfig": {
+    "managePasswordDescription": "\u003cp\u003eThis password will be used for any future logins. Your password must be \u003cb\u003eat least 8 \u003c/b\u003echaracters in length and different to previously used passwords. \u003c/p\u003e\r\n\u003cp\u003eIt must meet \u003cb\u003eat least 3 \u003c/b\u003eof the 4 conditions listed below:\u003c/p\u003e\r\n\u003cul\u003e\r\n\u003cli\u003eAt least 1 UPPER CASE letter (A-Z)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 lower case letter (a-z)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 number (0-9)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 special character e.g. (@,#,$,%,\u0026amp;, ?)\u003c/li\u003e\r\n\u003c/ul\u003e\r\n",
+    "managePasswordEditTitle": "Reset your password",
+    "resendEmailText": "resend email",
+    "resendSMSText": "resend sms",
+    "verifyEmailContinueButton": "Continue",
+    "verifyEmailDescription": "You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below.",
+    "verifyEmailDisclaimer": "Still haven't received your OTP code? Please contact our customer service team on \u003ca href\u003d\"tel:137200\"\u003e137 200\u003c/a\u003e Mon-Fri 8.30am - 7.00pm AET.",
+    "verifyEmailOTPText": "Enter your OTP code",
+    "verifyEmailResendText": "You can resend the email in {timer} seconds",
+    "verifyEmailTitle": "Verify your email",
+    "verifyMobileContinueButton": "Continue",
+    "verifyMobileDescription": "You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below.",
+    "verifyMobileDisclaimer": "Still haven't received your OTP code? Please contact our customer service team on \u003ca href\u003d\"tel:137200\"\u003e137 200\u003c/a\u003e Mon-Fri 8.30am - 7.00pm AET.",
+    "verifyMobileOTPText": "Enter your OTP code",
+    "verifyMobileResendText": "You can resend the SMS in {timer} seconds",
+    "verifyMobileTitle": "Verify your mobile",
+    "thankYouDescription": "You have successfully unlocked your account. We'll now take you to your account page.",
+    "thankYouIcon": "receipt-approved",
+    "thankYouOverlayTimer": 3000,
+    "thankYouTitle": "Thank you!"
+  },
+  "globalConfig": {
+    "forgerockUrl": "https://api-dev1.powertorquefinance.com.au/c1/v1/customerone/am",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP"
+  },
+  "lockedButtonText": "unlock account",
+  "lockedDescription": "\u003cp\u003eYou can unlock your account by clicking the button below, otherwise if you are continuing to experience issues please contact our customer service team on \u003ca href\u003d\"tel:137200\"\u003e137 200\u003c/a\u003e Mon-Fri 8.30am - 7.00pm AET.\u003c/p\u003e",
+  "lockedIcon": "error",
+  "lockedTitle": "Your account has been locked",
+  "loginButtonText": "Login \u0026 Continue",
+  "resetButtonText": "reset password",
+  "setPasswordText": "Set Password \u0026 log in",
+  "unlockedDescription": "\u003cp\u003eYour account has been unlocked. You can now continue with your login or alternatively, you can reset your password.\u003c/p\u003e",
+  "unlockedIcon": "paper-money",
+  "unlockedTitle": "Your account has been unlocked"
+}

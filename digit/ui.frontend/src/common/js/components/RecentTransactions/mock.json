@@ -1,0 +1,14 @@
+{
+  "title": "Recent transactions",
+  "tooltip": "Recent transactions are as-of yesterday",
+  "noTransactionsText": "No transaction details",
+  "ctaPath": "/transactions",
+  "buttonText": "See all transactions",
+  "date": "Date",
+  "paymentAmount": "Payment amount",
+  "balance": "Outstanding Balance",
+  "globalConfig": {
+    "baseApiUrl": " https://api-sit1.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  }
+}

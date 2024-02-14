@@ -1,0 +1,22 @@
+.DS_Store
+Thumbs.db
+.eslintcache
+.env
+
+# Build-time folders
+public/
+target/
+
+# IDE's
+.idea/
+.vscode/
+*.iml
+
+!.vscode/settings.json
+
+# Node
+node/
+node_modules/
+
+# Generated
+src/**/js/modules/icons.ts

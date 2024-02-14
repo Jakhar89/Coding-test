@@ -1,0 +1,25 @@
+{
+  "cancelButtonText": "cancel",
+  "communicationsConfig": {
+    "thankYouOverlayTimer": 3000,
+    "thankYouIcon": "receipt-approved",
+    "thankYouTitle": "Thank you!",
+    "thankYouDescription": "Your marketing and communications preferences have been updated"
+  },
+  "globalConfig": {
+    "baseApiUrl": " https://api-sit1.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  },
+  "correspondenceMethodDescription": "My chosen method of correspondence to receive notices and other documents from brand is via Email. I acknowledge that I can change or cancel my nominated email address, in writing, at any time.",
+  "correspondenceMethodEmail": "Email",
+  "correspondenceMethodPaper": "Mail",
+  "marketingAndCommunicationsEditTitle": "Marketing and Communications",
+  "marketingAndCommunicationsTitle": "Marketing and Communications",
+  "marketingCommunicationsErrorDescription": "Please try again or contact our customer service team on 137 200 Mon-Fri 8.30am - 7.00pm AET.",
+  "marketingCommunicationsErrorTitle": "Sorry, we are experiencing a problem.",
+  "marketingPreference": "yes",
+  "marketingPreferenceDescription": "I would like to be informed about the latest products and services, special offers, promotions and events.",
+  "marketingPreferenceNo": "No",
+  "marketingPreferenceYes": "Yes",
+  "saveButtonText": "save changes"
+}

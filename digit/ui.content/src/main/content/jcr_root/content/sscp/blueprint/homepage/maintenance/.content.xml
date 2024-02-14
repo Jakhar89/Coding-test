@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-maintenance-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Maintenance"
+        sling:resourceType="sscp/components/page"
+        textIsRich="true">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                containerClass="fixed"
+                layout="responsiveGrid">
+                <pagenotification
+                    cq:styleIds="[1657878181145]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/pagenotification"
+                    description="&lt;p>We’re currently conducting maintenance and this service is unavailable. Please contact for any information and assistance regarding your finance, or visit us at a later time. We apologise for any inconvenience!&lt;/p>&#xd;&#xa;"
+                    icon="maintenance"
+                    isMaintainencePage="true"
+                    textIsRich="true"
+                    title="Sorry, we’re down for maintenance"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,124 @@
+{
+  "cancelButtonText": "cancel",
+  "globalConfig": {
+    "forgerockUrl": "https://openam-tfs-anz-staging.id.forgerock.io/am",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF",
+    "baseApiUrl": "https://api-sit1.powertorquefinance.com.au"
+  },
+  "enquiryTypeList": [
+    {
+        "enquiryItem": "General enquiry"
+    },
+    {
+        "enquiryItem": "Hardship"
+    },
+    {
+        "enquiryItem": "New finance / Change my finance"
+    },
+    {
+        "enquiryItem": "Complaints"
+    }
+],
+"generalRelatesToList": [
+    {
+        "generalRelatesItem": "Account Enquiry"
+    },
+    {
+        "generalRelatesItem": "Repayment Enquiry"
+    },
+    {
+        "generalRelatesItem": "Compliment or Feedback"
+    },
+    {
+        "generalRelatesItem": "Insurance"
+    },
+    {
+        "generalRelatesItem": "Roadside Assistance"
+    },
+    {
+        "generalRelatesItem": "Other"
+    }
+],
+"complaintRelatesToList": [
+  {
+      "complaintRelatesItem": "Advice"
+  },
+  {
+      "complaintRelatesItem": "Fees, interest or charges"
+  },
+  {
+      "complaintRelatesItem": "Consumer Data Right"
+  },
+  {
+      "complaintRelatesItem": "Credit reporting"
+  },
+  {
+      "complaintRelatesItem": "Disclosure"
+  },
+  {
+      "complaintRelatesItem": "Collections"
+  },
+  {
+      "complaintRelatesItem": "Financial difficulty and hardship"
+  },
+  {
+      "complaintRelatesItem": "Credit Assessment"
+  },
+  {
+      "complaintRelatesItem": "Insurance "
+  },
+  {
+      "complaintRelatesItem": "N/A "
+  },
+  {
+      "complaintRelatesItem": "Delay/failure to follow instructions"
+  },
+  {
+      "complaintRelatesItem": "Privacy and confidentiality"
+  },
+  {
+      "complaintRelatesItem": "Fraud and scams"
+  },
+  {
+      "complaintRelatesItem": "Service quality"
+  },
+  {
+      "complaintRelatesItem": "Account set up and maintenance"
+  },
+  {
+      "complaintRelatesItem": "Transaction and payment disputes"
+  }
+],
+"enquiryTypeLabelText": "What may we help you with?",
+"relatesToTextField": "What does it relate to?",
+"hardshipRadio1": "This is about an existing hardship request",
+"hardshipRadio2": "I am experiencing hardship and would like to make an application",
+"refinanceRadio1": "New finance quote or application",
+"refinanceRadio2": "Refinance",
+"accountsSelectorLabel": "Which account does this relate to?",
+"yourMessageLabel": "Your Message",
+"yourMessagePlaceholder": "Tell us about what you need help with and we'll get back to you within 48 hours.",
+"yourMessageComplaintDisclaimer": "Please include names, dates and other information relevant to your complaint.",
+"yourMessageHardshipDisclaimer": "If you have an existing hardship request… or are you currently suffering hardship and would like to make an application…",
+"yourMessageRefinanceDisclaimer": "If you have a particular dealership that you’d like to finance with, please let us know.",
+"yourMessageInsuranceDisclaimer": "For Insurance Sales only. If you have an after-policy Insurance enquiries, want to renew a policy, or make a claim, contact…",
+"complaintMessageBoxLabel": "How can we best address your complaint",
+"complaintMessageBoxPlaceholder": "Please provide details of the outcome you are looking to achieve.",
+"prefferedResponseLabel": "Your preferred response method",
+"prefferedRadio1": "Email",
+"prefferedRadio2": "Phone",
+"prefferedRadio3": "N/A",
+"prefferedPhone": "Preferred phone number",
+"updatePhone": "Update phone number",
+"updatePhonePath": "/profile",
+"prefferedEmail": "My preferred email",
+"updateEmail": "Update Email",
+"updateEmailPath": "/profile",
+"sendEnquiryButtonText": "Send Enquiry",
+"thankYouText": "Thank You!",
+"successMessageDescription": "We’ll be in touch within 1-2 business days. An email confirmation will be sent to you shortly.",
+"successMessageDescriptionNewHardship": "<p>We’ll be in touch within 1-2 business days. An email confirmation will be sent to you shortly.&nbsp;&nbsp;</p>\r\n<p>To allow us to process your Hardship request as soon as possible, please commence a <a title=\"External Link\" href=\"https://google.com\" target=\"_blank\">hardship application here</a>.</p>\r\n",
+"redirectionPath": "Success Message 2 second"
+}

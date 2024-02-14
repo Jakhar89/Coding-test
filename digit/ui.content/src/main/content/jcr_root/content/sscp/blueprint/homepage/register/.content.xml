@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-full-width-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Register"
+        sling:resourceType="sscp/components/page"
+        textIsRich="true">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid"/>
+            <teaser
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Welcome to Toyota Finance online"
+                sling:resourceType="sscp/components/teaser"
+                actionsEnabled="false"
+                descriptionFromPage="false"
+                fileReference="/content/dam/sscp/toyota_login.jpg"
+                isGreyOverlay="false"
+                isHalfWidthBanner="true"
+                textIsRich="true"
+                titleFromPage="false"/>
+            <container_1836306217
+                cq:styleIds="[1643201822514,1654668802297]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                containerClass="fixed"
+                layout="simple">
+                <registration
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/registration"
+                    agreeTerms="I have read and accept all the Terms and Conditions"
+                    agreeTermsButton="Continue"
+                    agreeTermsTitle="Agree to Terms and Conditions"
+                    loginButton="Log in"
+                    loginButtonUrl="/content/sscp/blueprint/homepage/login"
+                    loginIcon="car-badge"
+                    loginTitle="Already have an account?"
+                    managePasswordDescription="&lt;p>This password will be used for any future logins. Your password must be &lt;b>at least 8&lt;/b> characters in length and different to previously used passwords. &lt;/p>&#xd;&#xa;&lt;p>It must meet &lt;b>at least 3&lt;/b> of the 4 conditions listed below:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>At least 1 UPPER CASE letter (A-Z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 lower case letter (a-z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 number (0-9)&lt;/li>&#xd;&#xa;&lt;li>At least 1 special character e.g. (@,#,$,%,&amp;amp;, ?)&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                    managePasswordEditTitle="Set your password"
+                    registerButton="Continue"
+                    registerContact="&lt;p>Having trouble registering your account? Please contact our customer service team on &lt;a href=&quot;tel:137200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AEST.&lt;/p>&#xd;&#xa;"
+                    registerDescription="To register please use an email address known to us or used during your finance application."
+                    registerTitle="Register your account"
+                    resetPasswordText="Set password"
+                    termsTitle="Terms and conditions"
+                    textIsRich="[true,true,true,true]"
+                    thankYouDescription="You have successfully completed your registration. We’ll now take you to your account page."/>
+            </container_1836306217>
+        </root>
+    </jcr:content>
+</jcr:root>

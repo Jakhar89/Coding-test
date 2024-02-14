@@ -1,0 +1,91 @@
+{
+  "authId": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+  "callbacks": [
+    {
+      "type": "StringAttributeInputCallback",
+      "output": [
+        { "name": "name", "value": "frUnindexedString4" },
+        { "name": "prompt", "value": "Brand" },
+        { "name": "required", "value": true },
+        { "name": "policies", "value": {} },
+        { "name": "failedPolicies", "value": [] },
+        { "name": "validateOnly", "value": false },
+        { "name": "value", "value": "" }
+      ],
+      "input": [
+        { "name": "IDToken1", "value": "" },
+        { "name": "IDToken1validateOnly", "value": false }
+      ],
+      "_id": 0
+    },
+    {
+      "type": "StringAttributeInputCallback",
+      "output": [
+        { "name": "name", "value": "mail" },
+        { "name": "prompt", "value": "Email Address" },
+        { "name": "required", "value": true },
+        { "name": "policies", "value": {} },
+        { "name": "failedPolicies", "value": [] },
+        { "name": "validateOnly", "value": false },
+        { "name": "value", "value": "" }
+      ],
+      "input": [
+        { "name": "IDToken2", "value": "" },
+        { "name": "IDToken2validateOnly", "value": false }
+      ],
+      "_id": 1
+    },
+    {
+      "type": "ReCaptchaCallback",
+      "output": [
+        {
+          "name": "recaptchaSiteKey",
+          "value": "6LdPIjEgAAAAAKzFVtXhUl9Cns0q5cii4uQ0x7fY"
+        },
+        {
+          "name": "captchaApiUri",
+          "value": "https://www.google.com/recaptcha/api.js"
+        },
+        { "name": "captchaDivClass", "value": "g-recaptcha" },
+        { "name": "reCaptchaV3", "value": false }
+      ],
+      "input": [{ "name": "IDToken4", "value": "" }],
+      "_id": 3
+    },
+    {
+      "type": "StringAttributeInputCallback",
+      "output": [
+        { "name": "name", "value": "preferences/correlationID" },
+        { "name": "prompt", "value": "SSP Correlation ID (Ephemeral)" },
+        { "name": "required", "value": true },
+        { "name": "policies", "value": {} },
+        { "name": "failedPolicies", "value": [] },
+        { "name": "validateOnly", "value": false },
+        { "name": "value", "value": "" }
+      ],
+      "input": [
+        { "name": "IDToken3", "value": "" },
+        { "name": "IDToken3validateOnly", "value": false }
+      ],
+      "_id": 2
+    },
+    {
+      "type": "TextOutputCallback",
+      "output": [
+        {
+          "name": "message",
+          "value": "E01"
+        },
+        {
+          "name": "messageType",
+          "value": "2"
+        }
+      ],
+      "_id": 2
+    }
+  ],
+  "header": "Reset Password",
+  "description": "Enter your email address and brand to reset your password",
+  "status": 200,
+  "ok": true
+}

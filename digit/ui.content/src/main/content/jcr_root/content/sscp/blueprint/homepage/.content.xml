@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Homepage"
+        sling:resourceType="sscp/components/page"
+        autoLogoutPagePath="/content/sscp/blueprint/homepage/auto-logout"
+        errorPagePath="/content/sscp/blueprint/homepage/500"
+        idleRedirectDesktop="900000"
+        idleRedirectMobileTablet="300000"
+        idleWarningDesktop="600000"
+        idleWarningMobileTablet="210000"
+        loadingText="Loading..."
+        lockedPagePath="/content/sscp/blueprint/homepage/locked-account"
+        loginPagePath="/content/sscp/blueprint/homepage/login"
+        managePasswordDescription="&lt;p>Your password must be &lt;b>at least 8&lt;/b> characters in length and different to previously used passwords.&lt;/p>&#xd;&#xa;&lt;p>It must meet &lt;b>at least 3&lt;/b> of the 4 conditions listed below:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>At least 1 UPPER CASE letter (A-Z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 lower case letter (a-z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 number (0-9)&lt;/li>&#xd;&#xa;&lt;li>At least 1 special character e.g. (@,#,$,%,&amp;amp;, ?)&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+        managePasswordEditTitle="Manage password"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any"
+        resendEmailText="resend email"
+        resendSMSText="resend sms"
+        successPagePath="/content/sscp/blueprint/homepage/accounts"
+        termsOfUse="&lt;h2 id=&quot;1&quot;>Some things you should know&lt;/h2>&#xd;&#xa;&lt;p>In these Conditions of Use the meanings of words emphasised in this way have the meaning given in clause 2 below.&lt;/p>&#xd;&#xa;&lt;p>These Conditions of Use govern your access to and use of the facilities on this website and any transactions you perform using this site. To the extent that there is any inconsistency between these Conditions of Use and the terms of your finance contract with us, those terms will apply.&lt;/p>&#xd;&#xa;&lt;p>When first accessing Toyota Finance Online, you will be prompted to confirm your acceptance of these Conditions of Use.&lt;/p>&#xd;&#xa;&lt;p>If you believe that your password has become known to another person, please immediately refer to clause 8 which outlines the action you must take to limit your liability.&lt;/p>&#xd;&#xa;&lt;p>If you have any concerns regarding Toyota Finance Online functionality, please contact the Customer Service Team on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> (Toyota Finance Online), 8:30am - 7:00pm Monday to Friday (AEST/ADST) or by emailing us on toyotafinance@toyota.com.au.&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;2&quot;>Meaning of words&lt;/h2>&#xd;&#xa;&lt;p>balance refers to the balance of your finance contract at the close of business the previous day. This amount is not the payout amount.&lt;/p>&#xd;&#xa;&lt;p>customer means you in your capacity as a borrower, hirer and lessee or guarantor of a finance contract with us.&lt;/p>&#xd;&#xa;&lt;p>customer number means a number issued by us to you which when combined with a password may be used to access Toyota Finance Online .&lt;/p>&#xd;&#xa;&lt;p>finance contract means any loan, commercial hire/term purchase or lease facility between you and us. It includes any facility in which you are described as a borrower, hirer, lessee or guarantor. Your finance contract may also be described as an “account”.&lt;/p>&#xd;&#xa;&lt;p>guarantor is a person disclosed on the finance contract as a guarantor.&lt;/p>&#xd;&#xa;&lt;p>password means a specified alphanumeric combination set by you to allow access to your finance contract or account. To set your password the following rules apply -&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>it must not contain the customer number&lt;/li>&#xd;&#xa;&lt;li>it must be between 8 and 16 characters long&lt;/li>&#xd;&#xa;&lt;li>it must contain characters from three of the following four categories:&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>uppercase characters (A - Z)&lt;/li>&#xd;&#xa;&lt;li>lowercase characters (a - z)&lt;/li>&#xd;&#xa;&lt;li>digits (0 - 9)&lt;/li>&#xd;&#xa;&lt;li>non-alphabetic characters (e.g. !, $, #, %)&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>it must be different from any of your last 6 passwords&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;p>payout amount means the amount required to payout all moneys&lt;br />&#xd;&#xa;owing to us under your finance contract as at a given date. It may include any&lt;br />&#xd;&#xa;principal amount outstanding, interest, fees and other permitted charges.&lt;/p>&#xd;&#xa;&lt;p>service request means any change or query made through&lt;br />&#xd;&#xa;Toyota Finance Online&lt;/p>&#xd;&#xa;&lt;p>Toyota Finance Online means a secure internet website&lt;br />&#xd;&#xa;service through which you can view and access information about your finance&lt;br />&#xd;&#xa;contact or account, or make a service request.&lt;/p>&#xd;&#xa;&lt;p>unauthorised request means a service request made without&lt;br />&#xd;&#xa;your consent or the consent of a customer who is a party to your account.&lt;/p>&#xd;&#xa;&lt;p>us, we and our means Toyota Finance Online, a division of&lt;br />&#xd;&#xa;Toyota Finance Australia Limited ABN 48 002 435 181.&lt;/p>&#xd;&#xa;&lt;p>you and your means a customer who has accepted these&lt;br />&#xd;&#xa;Conditions of Use.&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;3&quot;>Use of Toyota Finance Online&lt;/h2>&#xd;&#xa;&lt;p>Customers may use Toyota Finance Online, unless we tell you&lt;br />&#xd;&#xa;otherwise, to:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>view transactions, balances, contract and personal details,&lt;/li>&#xd;&#xa;&lt;li>change payment amount or payment method&lt;/li>&#xd;&#xa;&lt;li>change address and contact details,&lt;/li>&#xd;&#xa;&lt;li>create a statement or payout amount in respect of your&lt;br />&#xd;&#xa;finance contract.&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;p>Subject to these Conditions of Use, you are deemed to have&lt;br />&#xd;&#xa;authorised any access to your finance contract or any service request which is&lt;br />&#xd;&#xa;carried out using your customer number and password.&lt;/p>&#xd;&#xa;&lt;p>Where you are a joint customer you also authorise any&lt;br />&#xd;&#xa;service request or transaction on your contract which is carried out by another&lt;br />&#xd;&#xa;of the joint customers using their customer number and password.&lt;/p>&#xd;&#xa;&lt;p>A contract in joint names can only be accessed by those&lt;br />&#xd;&#xa;customers who have been given access to their finance contract under these Conditions of Use.&lt;/p>&#xd;&#xa;&lt;p>In seeking access to Toyota Finance Online and performing&lt;br />&#xd;&#xa;any permitted activity those customers represent and warrant that they have the authority of the other joint customer/s to access and use the facilities of this website in respect of their finance contract and agree to indemnify us against any claim and liability made against us by any other joint customer arising out of such access and use&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;4&quot;>Changes to Conditions of Use&lt;/h2>&#xd;&#xa;&lt;p>We may, at any time, add to, remove, or change the&lt;br />&#xd;&#xa;functionality and/or appearance of Toyota Finance Online, or change these Conditions of Use without your consent.&lt;/p>&#xd;&#xa;&lt;p>We will notify you of any changes to these Conditions of Use&lt;br />&#xd;&#xa;by displaying a notice outlining the changes and detailing any changes to these Conditions of Use when you login to Toyota Finance Online. Before you can enter the secure pages of Toyota Finance Online you will be required to accept these changes before you will be able to proceed. If you do not accept the changes you will be denied any further access to the site.&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;5&quot;>Termination of Toyota Finance Online&lt;/h2>&#xd;&#xa;&lt;p>You may terminate the usage Toyota Finance Online by&lt;br />&#xd;&#xa;notifying us in writing or by contacting us on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> (Toyota Finance Online), 8:30am - 7:00pm Monday to Friday (AEST/ADST) or by emailing us on toyotafinance@toyota.com.au&lt;/p>&#xd;&#xa;&lt;p>We may terminate your access to Toyota Finance Online in relation to your finance contract or generally at any time by giving you written notice sent to the most recent address provided by you.&lt;/p>&#xd;&#xa;&lt;p>We may suspend or cancel your access to Toyota Finance Online at any time without notice to you if we believe there is a security concern or you fail to comply with these Conditions of Use.&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;6&quot;>Availability of information&lt;/h2>&#xd;&#xa;&lt;p>The information available on Toyota Finance Online regarding transactions, balances and any other information relevant to your finance contract may not always be completely up to date. However, in most cases the information will reflect transactions and balances up to the close of business on the previous business day.&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;7&quot;>Your general responsibilities&lt;/h2>&#xd;&#xa;&lt;p>You agree that you will:&lt;/p>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>set your password when you first access Toyota Finance Online and thereafter whenever we require you to do so;&lt;/li>&#xd;&#xa;&lt;li>change your password as soon as you know or suspect that it may have been disclosed to another person;&lt;/li>&#xd;&#xa;&lt;li>not choose a password which is the same as another password which is known to any other person;&lt;/li>&#xd;&#xa;&lt;li>not choose a password which contains any part of your date of birth, any recognisable part of your name, or any part of your home, business or mobile telephone number;&lt;/li>&#xd;&#xa;&lt;li>keep your password secure and not disclose it to any other person;&lt;/li>&#xd;&#xa;&lt;li>commit your password to memory and not keep an identifiable record of it;&lt;/li>&#xd;&#xa;&lt;li>take proper care when accessing Toyota Finance Online to ensure that your password is not disclosed to anyone else;&lt;/li>&#xd;&#xa;&lt;li>promptly notify us if you notice any apparent discrepancy in your contract details/transactions/balances/service requests; and&lt;/li>&#xd;&#xa;&lt;li>use other means to effect transactions, service requests and access information on your finance contract in the event that Toyota Finance Online is unavailable or is malfunctioning.&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;h2 id=&quot;8&quot;>What you must tell us&lt;/h2>&#xd;&#xa;&lt;p>You must notify us immediately if:&lt;/p>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>you become aware or suspect that your password has become known to any other person;&lt;/li>&#xd;&#xa;&lt;li>a computer which you use or have used to access Toyota Finance Online is lost, stolen or fraudulently used;&lt;/li>&#xd;&#xa;&lt;li>you become aware of any unauthorised transaction or error on your contract which arises in connection with Toyota Finance Online; or&lt;/li>&#xd;&#xa;&lt;li>you believe that you have been fraudulently induced to make&lt;br />&#xd;&#xa;a transaction on your contract.&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;p>You can contact us on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> (Toyota Finance Online) 8:30am - 7:00pm Monday to Friday (AEST/ADST) or by emailing us on toyotafinance@toyota.com.au&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;9&quot;>Exclusion of our liability&lt;/h2>&#xd;&#xa;&lt;p>Subject to any warranty implied by law that cannot be excluded, we will not be liable for any losses which arise in connection with:&lt;/p>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>the reliance by any party on any information obtained through the use of Toyota Finance Online;&lt;/li>&#xd;&#xa;&lt;li>any request to perform a transaction or service request which is not accepted or received by Toyota Finance Online for any reason including as a result of any technical, processing or user error;&lt;/li>&#xd;&#xa;&lt;li>the processing of any transaction on the next banking day after you have requested it;&lt;/li>&#xd;&#xa;&lt;li>any failure or delay of Toyota Finance Online to provide information or perform requested transactions or service requests which is caused by any matter beyond our control.&lt;br />&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;h2 id=&quot;10&quot;>Your liability for unauthorised transactions&lt;/h2>&#xd;&#xa;&lt;p>You will be liable for any transaction or service request which is carried out with your knowledge and consent, in addition to any losses which arise in connection with the following:&lt;/p>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>a mistake by you in relation to a transaction request, including where you enter the incorrect information;&lt;/li>&#xd;&#xa;&lt;li>the voluntary disclosure of your password to anybody, including to a friend or family member;&lt;/li>&#xd;&#xa;&lt;li>any fraud or theft committed by you or by any person to whom you have voluntarily disclosed your password;&lt;/li>&#xd;&#xa;&lt;li>any failure by you to comply with your responsibilities as set out in clause 7; or&lt;/li>&#xd;&#xa;&lt;li>any unreasonable delay by you in failing to notify us of a matter in clause 8, however in this case your liability will extend only to losses which occur between the time when you actually became aware, or ought to have become aware of the relevant matter, up until the time that we are notified of that matter.&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;p>If you are liable under clause 10 for losses which arise in&lt;br />&#xd;&#xa;connection with an unauthorised transaction on an contract, your liability will not extend to:&lt;/p>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>the portion of any loss which exceeds the available balance of that contract at the time of the transaction;&lt;/li>&#xd;&#xa;&lt;li>You will not be liable for any losses which arise in connection with:&lt;/li>&#xd;&#xa;&lt;li>any error made by, or any fraudulent or negligent conduct of, our employees or agents;&lt;/li>&#xd;&#xa;&lt;li>an expired or cancelled password;&lt;/li>&#xd;&#xa;&lt;li>any use of Toyota Finance Online which occurred before you received your customer number and/or password;&lt;/li>&#xd;&#xa;&lt;li>any unauthorised transactions or service requests which take place after you have notified us of any of the matters referred to in clause 8.&lt;br />&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;h2 id=&quot;11&quot;>Indemnity&lt;/h2>&#xd;&#xa;&lt;p>You agree to indemnify us against any loss or damage (including any consequential loss or damage) which we may suffer in connection with any claim, demand or action of any kind brought against us arising directly or indirectly where you have:&lt;/p>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>breached these Conditions of Use in any way; and/or&lt;/li>&#xd;&#xa;&lt;li>acted negligently or fraudulently in connection with Toyota Finance Online.&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;h2 id=&quot;12&quot;>Privacy&lt;/h2>&#xd;&#xa;&lt;p>We may collect and hold your personal information in accordance with our Privacy Policy at www.toyota.com.au/privacy.&lt;/p>&#xd;&#xa;&lt;p>You must notify us if any of your personal information changes.&lt;/p>&#xd;&#xa;&lt;p>You consent to us disclosing your personal information to any bank or financial institution with which you hold an account which is to be the subject of a direct debit request service agreement authorised by your Toyota Finance Online.&lt;/p>&#xd;&#xa;&lt;h2 id=&quot;13&quot;>Governing Law&lt;/h2>&#xd;&#xa;&lt;p>Your agreement to abide by these Conditions of Use, and the transactions carried out or contemplated by Toyota Finance Online are governe by the law in force in New South Wales. You irrevocably and unconditionally submit to the non-exclusive jurisdiction of its courts exercising jurisdiction there.&lt;/p>&#xd;&#xa;"
+        textIsRich="[true,true,true,true]"
+        thankYouDescription="Your details has been updated"
+        thankYouIcon="receipt-approved"
+        thankYouOverlayTimer="3000"
+        thankYouTitle="Thank you!"
+        verifyEmailCancelButton="cancel"
+        verifyEmailContinueButton="Continue"
+        verifyEmailDescription="You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below."
+        verifyEmailDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET."
+        verifyEmailOTPText="Enter your OTP code"
+        verifyEmailResendText="You can resend the email in {timer} seconds"
+        verifyEmailTitle="Verify your email"
+        verifyMobileCancelButton="cancel"
+        verifyMobileContinueButton="Continue"
+        verifyMobileDescription="You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below."
+        verifyMobileDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET."
+        verifyMobileOTPText="Enter your OTP code"
+        verifyMobileResendText="You can resend the SMS in {timer} seconds"
+        verifyMobileTitle="Verify your mobile">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid"/>
+        </root>
+        <errorMap jcr:primaryType="nt:unstructured">
+            <item0
+                jcr:primaryType="nt:unstructured"
+                errorCode="E01"
+                errorMessage="The email entered is either already registered for the portal, or we are having difficulties registering you, please contact our Customer Service team on &lt;BRAND PH NUMBER> or &lt;BRAND EMAIL>."/>
+            <item1
+                jcr:primaryType="nt:unstructured"
+                errorCode="E02"
+                errorMessage="Customer is not currently eligible for SSCP"/>
+            <item2
+                jcr:primaryType="nt:unstructured"
+                errorCode="E03"
+                errorMessage="Email is not unique or does not exist within Brand in QUEST"/>
+            <item3
+                jcr:primaryType="nt:unstructured"
+                errorCode="E04"
+                errorMessage="Customer does not have a mobile number"/>
+            <item4
+                jcr:primaryType="nt:unstructured"
+                errorCode="E05"
+                errorMessage="Other API failures (Timeout etc.)"/>
+            <item5
+                jcr:primaryType="nt:unstructured"
+                errorCode="E06"
+                errorMessage="Please ensure you have entered a valid email address."/>
+            <item6
+                jcr:primaryType="nt:unstructured"
+                errorCode="E07"
+                errorMessage="Either the Email and Password entered were not correct, or you have not yet registered for an account. Please try again or contact our Customer Service team on &lt;BRAND PH NUMBER> or &lt;BRAND EMAIL> if the issue persists."/>
+            <item7
+                jcr:primaryType="nt:unstructured"
+                errorCode="E08"
+                errorMessage="Either the Email and Password entered were not correct. Please try again or contact our Customer Service team on &lt;BRAND PH NUMBER> or &lt;BRAND EMAIL> if the issue persists."/>
+            <item8
+                jcr:primaryType="nt:unstructured"
+                errorCode="E09"
+                errorMessage="Login attempt when account is ‘Internal Lock’ locked"/>
+            <item9
+                jcr:primaryType="nt:unstructured"
+                errorCode="E10"
+                errorMessage="The one time password entered was not correct, please re-enter carefully otherwise, press 'Re-send' to get a new one time password."/>
+            <item10
+                jcr:primaryType="nt:unstructured"
+                errorCode="E11"
+                errorMessage="Your Work email cannot be the same as your Personal email. Please enter your email as either Personal or Work."/>
+            <item11
+                jcr:primaryType="nt:unstructured"
+                errorCode="E12"
+                errorMessage="The Login email entered is already in use for portal. Login emails cannot be shared across customers. Please select or nominate another email to be used as your Login Email."/>
+            <item12
+                jcr:primaryType="nt:unstructured"
+                errorCode="E13"
+                errorMessage="Sorry, we’re having difficulties updating your details. Please try again or if the issue persists, contact our Customer Service team on &lt;BRAND PH NUMBER> or &lt;BRAND EMAIL>."/>
+            <item13
+                jcr:primaryType="nt:unstructured"
+                errorCode="E14"
+                errorMessage="Please ensure you have entered a valid phone number."/>
+            <item14
+                jcr:primaryType="nt:unstructured"
+                errorCode="E15"
+                errorMessage="Sorry, we’re difficulties. Please try again or if the issue persists, contact our Customer Service team on &lt;BRAND PH NUMBER> or &lt;BRAND EMAIL>."/>
+            <item15
+                jcr:primaryType="nt:unstructured"
+                errorCode="E16"
+                errorMessage="Customer ID (CifNbr) is not an INDIVIDUAL Customer in QUEST"/>
+            <item16
+                jcr:primaryType="nt:unstructured"
+                errorCode="E17"
+                errorMessage="QUEST is unavailable (Technical errors)"/>
+            <item17
+                jcr:primaryType="nt:unstructured"
+                errorCode="E18"
+                errorMessage="Your account has been temporarily locked. You can unlock your account by resetting your password, otherwise please contact our Customer Service team on &lt;BRAND PH NUMBER> or &lt;BRAND EMAIL> if you continue to experience issues."/>
+            <item18
+                jcr:primaryType="nt:unstructured"
+                errorCode="E19"
+                errorMessage="QUEST - Generic data does not match validation requirements"/>
+            <item19
+                jcr:primaryType="nt:unstructured"
+                errorCode="E20"
+                errorMessage="A Mobile number is required for Authentication purposes. Please ensure a valid Mobile number is entered in the Mobile field above."/>
+            <item20
+                jcr:primaryType="nt:unstructured"
+                errorCode="E21"
+                errorMessage="A valid Phone number is required to be set as your Preferred contact number."/>
+            <item21
+                jcr:primaryType="nt:unstructured"
+                errorCode="E22"
+                errorMessage="A valid Personal or Work email is required to be set as your Preferred contact email."/>
+            <item22
+                jcr:primaryType="nt:unstructured"
+                errorCode="E23"
+                errorMessage="A valid Login email is required. Please either select 'Set as my login email' beneath Personal or Work email, or nominate a separate Login email."/>
+            <item23
+                jcr:primaryType="nt:unstructured"
+                errorCode="E24"
+                errorMessage="A valid Personal or Work email is required."/>
+            <item24
+                jcr:primaryType="nt:unstructured"
+                errorCode="E25"
+                errorMessage="Marketing or Communications Preferences do not exist"/>
+            <item25
+                jcr:primaryType="nt:unstructured"
+                errorCode="E27"
+                errorMessage="Please enter all required password fields."/>
+            <item26
+                jcr:primaryType="nt:unstructured"
+                errorCode="E28"
+                errorMessage="The Old Password entered was not correct, Please re-enter and try again. The Old Password is your current password, which you are updating."/>
+            <item27
+                jcr:primaryType="nt:unstructured"
+                errorCode="E29"
+                errorMessage="Your Password cannot be the same as one of your previous 5 passwords."/>
+        </errorMap>
+    </jcr:content>
+    <_x0035_00/>
+    <_x0034_04/>
+    <logout/>
+    <accounts/>
+    <locked-account/>
+    <forgot-password/>
+    <auto-logout/>
+    <maintenance/>
+    <terms-of-use/>
+    <register/>
+    <login/>
+    <repayments/>
+    <profile/>
+</jcr:root>

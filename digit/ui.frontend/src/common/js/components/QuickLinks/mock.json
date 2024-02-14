@@ -1,0 +1,76 @@
+{
+  "quickLinks": [
+    {
+      "title": "This is title one Lorem Ipsum",
+      "icon": "pickup",
+      "openInNewTab": "true",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title two",
+      "icon": "carpark",
+      "openInNewTab": "true",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title three",
+      "icon": "phone",
+      "openInNewTab": "false",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title four",
+      "icon": "sick",
+      "openInNewTab": "true",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title one",
+      "icon": "pickup",
+      "openInNewTab": "false",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title two Lorem Ipsum",
+      "icon": "customer-service",
+      "openInNewTab": "false",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title three Lorem Ipsum",
+      "icon": "phone",
+      "openInNewTab": "true",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title four",
+      "icon": "sick",
+      "openInNewTab": "true",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title one  Lorem Ipsum",
+      "icon": "customer-service",
+      "openInNewTab": "true",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title two",
+      "icon": "carpark",
+      "openInNewTab": "true",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title three",
+      "icon": "phone",
+      "openInNewTab": "false",
+      "linkPath": "http://google.com"
+    },
+    {
+      "title": "This is title four",
+      "icon": "sick",
+      "openInNewTab": "false",
+      "linkPath": "http://google.com"
+    }
+  ]
+}

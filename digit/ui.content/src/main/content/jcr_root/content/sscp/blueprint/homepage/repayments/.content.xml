@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-full-width-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Repayments"
+        sling:resourceType="sscp/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any"
+        textIsRich="[true,true,true,true]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid"/>
+            <teaser
+                cq:styleIds="[1654518709495]"
+                jcr:description="&lt;p>View your current repayment schedule. To update your payment methods, please contact us on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a>, Mon-Fri 8.30am - 7.00pm AEST.&lt;/p>&#xd;&#xa;"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Repayments"
+                sling:resourceType="sscp/components/teaser"
+                actionsEnabled="false"
+                descriptionFromPage="false"
+                fileReference="/content/dam/sscp/toyota_repayments.jpg"
+                isGreyOverlay="true"
+                isHalfWidthBanner="false"
+                textIsRich="true"
+                titleFromPage="false"/>
+            <container_1836306217
+                cq:styleIds="[1643201822514,1654668802297]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                containerClass="fixed"
+                layout="simple">
+                <paymentsummary
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/paymentsummary"
+                    advanceAmountDisclaimerLabelText="The amount you are ahead of your repayment schedule"
+                    advanceAmountLabelText="Amount in advance"
+                    arrearsAmountDisclaimerLabelText="The amount you are behind your repayment schedule, any additional charges won’t be shown as arrears until the following day"
+                    arrearsAmountLabelText="Amount in arrears"
+                    outstandingBalanceDisclaimerLabelText="Balance as of yesterday. Note: this may not be the total amount required to payout the loan"
+                    outstandingBalanceLabelText="Outstanding balance"
+                    nextDueDateLabelText="Next due date"
+                    nextRepaymentAmountDisclaimerLabelText="Your next repayment amount, including any administration fees"
+                    nextRepaymentAmountLabelText="Next repayment amount"
+                    nominatedPaymentMethodLabelText="Nominated payment method"
+                    paymentFrequencyDueDateLabelText="Payment frequency due date"
+                    paymentFrequencyLabelText="Payment frequency"
+                    paymentFrequencyDisclaimerText="Your payment frequency is irregular. Refer to your repayments schedule below for details of all monthly payments."
+                    paymentSummaryLabelText="Payment summary"
+                    repaymentAmountDisclaimerLabelText="The total repayment schedule amount, including any administration fees"
+                    repaymentAmountLabelText="Repayment amount"/>
+                <paymentmethods
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/paymentmethods"
+                    bpayDescriptionText="Contact your bank or financial institution to make this payment from your cheque, savings, debit or transaction account.&amp;nbsp;&lt;br>&#xd;&#xa;"
+                    bpayIcon="bpay"
+                    bpayLabelText="BPAY"
+                    directDebitDescriptionText="To setup or change your Direct Debit, please contact us on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a>, Mon-Fri 8.30am - 7.00pm AEST.&lt;br>&#xd;&#xa;"
+                    directDebitIcon="pay-date"
+                    directDebitLabelText="Direct debit"
+                    eftDescriptionText="Make EFT payments directly from your cheque or savings account by using your financial institution’s online banking service.&lt;br>&#xd;&#xa;"
+                    eftIcon="online-payment-with-a-credit-card"
+                    eftLabelText="EFT"
+                    nominatedFlagText="Nominated Payment Method"
+                    paymentMethodsDescriptionText="We offer a range of payment methods to suit you. The EFT (electronic funds transfer) and BPAY details below are unique to you and your account. You can make additional repayments using these details. For any questions or to change your payment method, please contact customer service."
+                    paymentMethodsLabelText="Payment methods"
+                    textIsRich="[true,true,true,true,true,true]"/>
+                <annualinterest
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/annualinterest"
+                    annualInterestLabelText="Annual interest charged"
+                    financialYearText="Financial year"
+                    setSuffixYear="false"/>
+                <billingschedule
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/billingschedule"
+                    billingScheduleLabelText="Repayment schedule"/>
+            </container_1836306217>
+        </root>
+        <loadingoverlay
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/loadingoverlay"
+            loadingText="Loading...Test"/>
+    </jcr:content>
+</jcr:root>

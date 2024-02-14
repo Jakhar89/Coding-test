@@ -1,0 +1,13 @@
+{
+  "globalConfig": {
+    "baseApiUrl": " https://api-sit1.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  },
+  "contract": "123456",
+  "accountNumberTitle": "Account Number",
+  "outstandingBalanceTitle": "Outstanding Balance ",
+  "loanProgressTitle": "Loan Progress",
+  "paidToDateTooltip": "Paid To Date Tooltip",
+  "outstandingBalanceTooltip": "Outstanding Balance  Tooltip",
+  "paidToDateTitle": "Paid To Date"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Locked Account"
+        sling:resourceType="sscp/components/page"
+        textIsRich="true">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid">
+                <spacer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/spacer"
+                    desktopSpace="90"
+                    mobileSpace="60"
+                    tabletSpace="90"/>
+                <container
+                    cq:styleIds="[1643201822514]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container"
+                    containerClass="fixed"
+                    layout="simple">
+                    <lockedaccount
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sscp/components/lockedaccount"
+                        eventName="accountUnlock"
+                        lockedButtonText="unlock account"
+                        lockedDescription="&lt;p>You can unlock your account by clicking the button below, otherwise if you are continuing to experience issues please contact our customer service team on &lt;a href=&quot;tel:137200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET.&lt;/p>&#xd;&#xa;"
+                        lockedIcon="lock"
+                        lockedTitle="Your account has been locked"
+                        loginButtonText="Login &amp; Continue"
+                        loginButtonUrl="/content/sscp/showcase/login"
+                        managePasswordDescription="&lt;p>This password will be used for any future logins. Your password must be &lt;b>at least 8 &lt;/b>characters in length and different to previously used passwords. &lt;/p>&#xd;&#xa;&lt;p>It must meet &lt;b>at least 3 &lt;/b>of the 4 conditions listed below:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>At least 1 UPPER CASE letter (A-Z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 lower case letter (a-z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 number (0-9)&lt;/li>&#xd;&#xa;&lt;li>At least 1 special character e.g. (@,#,$,%,&amp;amp;, ?)&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                        managePasswordEditTitle="Reset your password"
+                        resendEmailText="resend email"
+                        resendSMSText="resend sms"
+                        resetButtonText="reset password"
+                        setPasswordText="Set Password &amp; log in"
+                        textIsRich="[true,true,true,true,true]"
+                        thankYouDescription="You have successfully unlocked your account. We'll now take you to your account page."
+                        thankYouIcon="receipt-approved"
+                        thankYouOverlayTimer="3000"
+                        thankYouTitle="Thank you!"
+                        unlockedDescription="&lt;p>Your account has been unlocked. You can now continue with your login or alternatively, you can reset your password.&lt;/p>&#xd;&#xa;"
+                        unlockedIcon="unlocked"
+                        unlockedTitle="Your account has been unlocked"
+                        verifyEmailCancelButton="cancel"
+                        verifyEmailContinueButton="Continue"
+                        verifyEmailDescription="You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below."
+                        verifyEmailDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on &lt;a href=&quot;tel:137200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET."
+                        verifyEmailOTPText="Enter your OTP code"
+                        verifyEmailResendText="You can resend the email in {timer} seconds"
+                        verifyEmailTitle="Verify your email"
+                        verifyMobileCancelButton="cancel"
+                        verifyMobileContinueButton="Continue"
+                        verifyMobileDescription="You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below."
+                        verifyMobileDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on &lt;a href=&quot;tel:137200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET."
+                        verifyMobileOTPText="Enter your OTP code"
+                        verifyMobileResendText="You can resend the SMS in {timer} seconds"
+                        verifyMobileTitle="Verify your mobile"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

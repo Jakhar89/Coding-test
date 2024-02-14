@@ -1,0 +1,18 @@
+{
+  "name": "select-mock",
+  "placeholder": "Select a option",
+  "options": [
+    {
+      "value": "apple",
+      "label": "Apple"
+    },
+    {
+      "value": "orange",
+      "label": "Orange"
+    },
+    {
+      "value": "banana",
+      "label": "Banana"
+    }
+  ]
+}

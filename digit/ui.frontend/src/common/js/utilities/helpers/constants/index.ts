@@ -1,0 +1,16 @@
+export const API_PROFILE_DATA = 'profileData';
+export const API_LOGIN_INFO = 'loginInfo';
+export const API_ACCOUNTS_DATA = 'contractsData';
+export const API_ACCOUNT_DETAILS = 'accountsData';
+export const API_BORROWERS_DATA = 'borrowersData';
+export const API_REPAYMENTS_SUMMARY = 'repaymentData';
+export const API_VEHICLE_DETAILS = 'vehicleData';
+export const API_BILLING_SCHEDULE_DATA = 'billingScheduleApiData';
+export const API_REPAYMENT_DATA = 'repaymentData';
+export const API_PAYMENT_OPTIONS_DATA = 'paymentOptionsData';
+export const API_RECENT_TRANSACTIONS_DATA = 'recentTransactionsData';
+export const API_CORRESPONDENCE_DATA = 'correspondenceData';
+export const QUEST_ERROR_MSG_DISPLAY_DURATION = 10000;
+export const SET_LOADING_OBJ = { loading: true };
+export const API_TRANSACTIONS_HISTORY = 'transactionsHistoryData';
+export const API_RESTRICT_DATA = 'restrictData';

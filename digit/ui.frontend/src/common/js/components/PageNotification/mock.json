@@ -1,0 +1,9 @@
+{
+  "buttonText": "log back in",
+  "buttonUrl": "/content/sscp/showcase/toyota/login",
+  "description": "You have successfully logged out",
+  "icon": "error",
+  "isMaintainencePage": false,
+  "mobileDescription": "",
+  "title": "You have logged out"
+}

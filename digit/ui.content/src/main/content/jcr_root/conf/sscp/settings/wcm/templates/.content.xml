@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <sscp-maintenance-page/>
+    <home-page/>
+    <sscp-showcase-page/>
+    <page-content/>
+    <xf-web-variation/>
+    <rep:policy/>
+    <sscp-content-page/>
+    <sscp-notification-page/>
+    <sscp-full-width-page/>
+    <grid-layout-page/>
+</jcr:root>

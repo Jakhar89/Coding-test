@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "jsx": "preserve",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "pretty": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2021",
+    "lib": ["DOM", "DOM.Iterable", "ES2021"],
+    "paths": {
+      "@/assets/*": ["assets/*"],
+      "@/components/*": ["common/js/components/*"],
+      "@/context/*": ["common/js/context/*"],
+      "@/module/*": ["common/js/modules/*"],
+      "@/utility/*": ["common/js/utilities/*"],
+      "@/props/*": ["common/js/utilities/props/*"],
+      "@/styles/*": ["common/js/utilities/styles/*"],
+      "@/types/*": ["common/types/*"],
+      "@/icons/*": ["assets/icons/*"],
+      "@/storybook/*": ["../.storybook/*"]
+    },
+    "types": ["vite/client"]
+  },
+  "exclude": ["public", "node_modules"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
+}

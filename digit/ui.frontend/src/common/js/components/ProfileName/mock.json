@@ -1,0 +1,11 @@
+{
+  "familyName": "Family name",
+  "givenName": "Given name",
+  "globalConfig": {
+    "baseApiUrl": " https://api-dev1.powertorquefinance.com.au",
+    "questApiKey": "o47kHSmlZB1IvKftjWd5W14h393XSybM4l0iDN25"
+  },
+  "middleName": "Middle name",
+  "profileNameTitle": "Your name",
+  "title": "Title"
+}

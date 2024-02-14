@@ -1,0 +1,43 @@
+{
+  "accountNumberText": "Account number",
+  "transactionTitle": "Transactions History",
+  "filtersText": "Filters",
+  "filter1": "Search",
+  "filter1Placeholder": "Search by description",
+  "filter1Icon": "We're here to help",
+  "filter2": "Date From",
+  "filter3": "Date To",
+  "filter4": "Transaction Type",
+  "filter4Placeholder": "Select Transaction Type",
+  "tableHeader1": "Date",
+  "tableHeader2": "Description",
+  "tableHeader3": "Amount",
+  "tableHeader4": "Balance",
+  "noTransactions": "No Transaction Details",
+  "exportButtonLabel": "Export PDF/Print",
+  "globalConfig": {
+    "baseApiUrl": "https://api-sit4.powertorquefinance.com.au",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF"
+  },
+  "brandVariablesConfig": {
+    "brandName": "toyota",
+    "brandPhNumber1": "137 200",
+    "brandPhNumber2": "08907897789",
+    "brandEmail1": "toyotafinance@toyota.com.au",
+    "brandEmail2": "abc22222@abc.com",
+    "brandPostalAddress": "34 abc nsw",
+    "brandTransactionHistoryFooter": "Toyota Finance is a division of Toyota Finance Australia Limited ABN 48 002 435 181, AFSL and Australian Credit Licence 392536"
+  },
+  "transactionPeriodText": "Transaction Period",
+  "transactionTypes": [
+    {
+      "type": "All transactions"
+    },
+    {
+      "type": "Credit"
+    },
+    {
+      "type": "Debit"
+    }
+  ]
+}

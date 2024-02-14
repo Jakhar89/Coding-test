@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-full-width-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Email Address"
+        sling:resourceType="sscp/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid"/>
+            <teaser
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/teaser"/>
+            <container_1836306217
+                cq:styleIds="[1643201822514,1654668802297]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                containerClass="fixed"
+                layout="simple">
+                <emailaddress
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/emailaddress"
+                    cancelButtonText="cancel"
+                    emailAddressEditTitle="Email address"
+                    emailAddressLabelText="Email address"
+                    introductoryText="Please select which email you prefer as your login and contact email. Your login email will also be used for Two-Factor Authentication."
+                    loginEmailDescription="You must set your login email before proceeding"
+                    loginEmailText="Set as my login email"
+                    loginEmailTitle="Set login email"
+                    loginLabelText="Login"
+                    personalLabelText="Personal"
+                    preferredContactDescription="Please select your preferred contact email which will be used for all correspondence"
+                    preferredContactTitle="Preferred contact email"
+                    resendEmailText="resend email"
+                    resendSMSText="resend sms"
+                    saveButtonText="save changes"
+                    textIsRich="[true,true]"
+                    thankYouDescription="Your email address has been updated"
+                    thankYouIcon="receipt-approved"
+                    thankYouOverlayTimer="3000"
+                    thankYouTitle="Thank you!"
+                    verifyEmailCancelButton="cancel"
+                    verifyEmailContinueButton="Continue"
+                    verifyEmailDescription="You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below."
+                    verifyEmailDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET."
+                    verifyEmailOTPText="Enter your OTP code"
+                    verifyEmailResendText="You can resend the email in {timer} seconds"
+                    verifyEmailTitle="Verify your email"
+                    verifyMobileCancelButton="cancel"
+                    verifyMobileContinueButton="Continue"
+                    verifyMobileDescription="You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below."
+                    verifyMobileDisclaimer="Still haven’t received your OTP code? Please contact our customer service team on &lt;a href=&quot;tel:137%20200&quot;>137 200&lt;/a> Mon-Fri 8.30am - 7.00pm AET."
+                    verifyMobileOTPText="Enter your OTP code"
+                    verifyMobileResendText="You can resend the SMS in {timer} seconds"
+                    verifyMobileTitle="Verify your mobile"
+                    workLabelText="Work"/>
+            </container_1836306217>
+        </root>
+    </jcr:content>
+</jcr:root>

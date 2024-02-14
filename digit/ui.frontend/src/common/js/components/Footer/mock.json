@@ -1,0 +1,43 @@
+{
+  "menuList": [
+    {
+      "url": "/content/sscp/showcase",
+      "text": "my toyota",
+      "isNewTab": "true"
+    },
+    {
+      "url": "/content/sscp/au",
+      "text": "Toyota Genuine Parts",
+      "isNewTab": "false"
+    },
+    {
+      "url": "/content/sscp/showcase",
+      "text": "servicing",
+      "isNewTab": "false"
+    },
+    {
+      "url": "/content/sscp/au",
+      "text": "accessories",
+      "isNewTab": "false"
+    }
+  ],
+  "bottomFooterMenuList": [
+    {
+      "url": "/content/sscp/showcase",
+      "text": "Privacy Policy",
+      "isNewTab": "true"
+    },
+    {
+      "url": "/content/sscp/showcase",
+      "text": "Terms \u0026 Conditions",
+      "isNewTab": "false"
+    }
+  ],
+  "logoPath": "/content/dam/sscp/jcr:content",
+  "logoRedirectUrl": "/content/sscp/showcase/accounts",
+  "logoAltText": "alt text",
+  "contactUsText": "Contact us",
+  "contactUsDetails": "\u003ca href\u003d\"tel:137%20200\"\u003e137 200\u003c/a\u003e Mon-Fri 8.30am - 7.00pm AET\u003cbr /\u003e\u003ca href\u003d\"mailto:toyotafinance@toyota.com.au\"\u003etoyotafinance@toyota.com.au\u003c/a\u003e",
+  "postalAddress": "\u003cp\u003ePO BOX 1354\u003cbr\u003e\r\nMacquarie Centre NSW 2113\u003c/p\u003e\r\n",
+  "licenceDetails": "&copy; TOYOTA FINANCE AUSTRALIA LIMITED 2009 ABN 48 002 435 181, AFSL and Australian Credit Licence 392536"
+}

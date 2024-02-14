@@ -1,0 +1,39 @@
+{
+  "communicationsConfig": {
+    "managePasswordDescription": "\u003cp\u003eThis password will be used for any future logins. Your password must be \u003cb\u003eat least 8 \u003c/b\u003echaracters in length and different to previously used passwords. \u003c/p\u003e\r\n\u003cp\u003eIt must meet \u003cb\u003eat least 3 \u003c/b\u003eof the 4 conditions listed below:\u003c/p\u003e\r\n\u003cul\u003e\r\n\u003cli\u003eAt least 1 UPPER CASE letter (A-Z)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 lower case letter (a-z)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 number (0-9)\u003c/li\u003e\r\n\u003cli\u003eAt least 1 special character e.g. (@,#,$,%,\u0026amp;, ?)\u003c/li\u003e\r\n\u003c/ul\u003e\r\n",
+    "managePasswordEditTitle": "Reset your password",
+    "resendEmailText": "resend email",
+    "resendSMSText": "resend sms",
+    "verifyEmailContinueButton": "Continue",
+    "verifyEmailDescription": "You should have just received an email containing a one time password (OTP). Please verify your account by entering the OTP code below.",
+    "verifyEmailDisclaimer": "Still haven't received your OTP code? Please contact our customer service team on \u003ca href\u003d\"tel:137200\"\u003e137 200\u003c/a\u003e Mon-Fri 8.30am - 7.00pm AET.",
+    "verifyEmailOTPText": "Enter your OTP code",
+    "verifyEmailResendText": "You can resend the email in {timer} seconds",
+    "verifyEmailTitle": "Verify your email",
+    "verifyMobileContinueButton": "Continue",
+    "verifyMobileDescription": "You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below.",
+    "verifyMobileDisclaimer": "Still haven't received your OTP code? Please contact our customer service team on \u003ca href\u003d\"tel:137200\"\u003e137 200\u003c/a\u003e Mon-Fri 8.30am - 7.00pm AET.",
+    "verifyMobileOTPText": "Enter your OTP code",
+    "verifyMobileResendText": "You can resend the SMS in {timer} seconds",
+    "verifyMobileTitle": "Verify your mobile",
+    "thankYouDescription": "You have successfully reset your password. We'll now take you to your account page.",
+    "thankYouIcon": "receipt-approved",
+    "thankYouOverlayTimer": 3000,
+    "thankYouTitle": "Thank you!"
+  },
+  "forgotPasswordButton": "Continue",
+  "forgotPasswordContact": "\u003cp\u003eHaving trouble registering your account? Please contact our customer service team on\u0026nbsp;\u003ca href\u003d\"tel:137200\"\u003e137 200\u003c/a\u003e\u0026nbsp;Mon-Fri 8.30am - 7.00pm AET.\u003c/p\u003e\r\n",
+  "forgotPasswordDescription": "Please enter the email associated with your account.",
+  "forgotPasswordTitle": "Forgot your password?",
+  "globalConfig": {
+    "forgerockUrl": "https://openam-tfs-anz-staging.id.forgerock.io/am/",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP"
+  },
+  "setPasswordText": "Set Password \u0026 log in",
+  "termsOfUse": "\u003ch2 id\u003d\"1\"\u003eSome of your things\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"2\"\u003eMeanings of Words\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"3\"\u003eUse of Toyota Finance Online\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"4\"\u003eChanges to Conditions of Use\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"5\"\u003eTermination of Toyota Finance Online\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"6\"\u003eAvailability of information\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"7\"\u003eYour general responsibilities\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"8\"\u003eWhat you must tell us\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"9\"\u003eExclusion of our liability\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"10\"\u003eYour liability for unauthorised transactions\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"11\"\u003eIndemnity\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"12\"\u003ePrivacy\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"13\"\u003eGoverning Law\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n",
+  "termsTitle": "Terms and conditions",
+  "agreeTerms": "I have read and accept all the Terms and Conditions",
+  "agreeTermsButton": "Continue",
+  "agreeTermsTitle": "Agree to Terms and Conditions"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Terms of use"
+        sling:resourceType="sscp/components/page"
+        textIsRich="true">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container"
+                    containerClass="fixed"
+                    layout="simple">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sscp/components/text"
+                        text="&lt;h1>Terms of Use&lt;/h1>&#xd;&#xa;"
+                        textIsRich="true"/>
+                </container>
+                <container_1426860355
+                    cq:styleIds="[1643201822514]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container"
+                    containerClass="fixed"
+                    layout="simple">
+                    <termsofuse
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sscp/components/termsofuse"
+                        termsOfUseTitle="Contents">
+                        <itemList jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                id="1"
+                                text="SOME THINGS YOU SHOULD KNOW"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                id="2"
+                                text="MEANING OF WORDS"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                id="3"
+                                text="USE OF TOYOTA FINANCE ONLINE"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                id="4"
+                                text="CHANGES TO CONDITIONS OF USE"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                id="5"
+                                text="TERMINATION OF TOYOTA FINANCE ONLINE"/>
+                            <item5
+                                jcr:primaryType="nt:unstructured"
+                                id="6"
+                                text="AVAILABILITY OF INFORMATION"/>
+                            <item6
+                                jcr:primaryType="nt:unstructured"
+                                id="7"
+                                text="YOUR GENERAL RESPONSIBILITIES"/>
+                            <item7
+                                jcr:primaryType="nt:unstructured"
+                                id="8"
+                                text="WHAT YOU MUST TELL US"/>
+                            <item8
+                                jcr:primaryType="nt:unstructured"
+                                id="9"
+                                text="EXCLUSION OF OUR LIABILITY"/>
+                            <item9
+                                jcr:primaryType="nt:unstructured"
+                                id="10"
+                                text="YOUR LIABILITY FOR UNAUTHORISED TRANSACTIONS"/>
+                            <item10
+                                jcr:primaryType="nt:unstructured"
+                                id="11"
+                                text="INDEMNITY"/>
+                            <item11
+                                jcr:primaryType="nt:unstructured"
+                                id="12"
+                                text="PRIVACY"/>
+                            <item12
+                                jcr:primaryType="nt:unstructured"
+                                id="13"
+                                text="GOVERNING LAW"/>
+                        </itemList>
+                    </termsofuse>
+                </container_1426860355>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

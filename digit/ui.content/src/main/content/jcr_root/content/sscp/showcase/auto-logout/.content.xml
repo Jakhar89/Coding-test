@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-notification-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Auto Logout"
+        sling:resourceType="sscp/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any"
+        textIsRich="[true,true,true,true]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                containerClass="fixed"
+                layout="responsiveGrid">
+                <pagenotification
+                    cq:styleIds="[1657878181145]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/pagenotification"
+                    buttonText="log back in"
+                    buttonUrl="/content/sscp/showcase/login"
+                    description="&lt;p>For security reasons you are logged out when you have been inactive for 15 minutes.&lt;/p>&#xd;&#xa;"
+                    icon="lock"
+                    mobileDescription="&lt;p>For security reasons you are logged out when you have been inactive for 5 minutes.&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"
+                    title="You have been logged out"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

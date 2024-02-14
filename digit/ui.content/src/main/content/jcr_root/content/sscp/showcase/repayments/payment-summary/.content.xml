@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-full-width-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Payment Summary"
+        sling:resourceType="sscp/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid"/>
+            <teaser
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/teaser"/>
+            <container_1836306217
+                cq:styleIds="[1643201822514,1654668802297]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                containerClass="fixed"
+                layout="simple">
+                <paymentsummary
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/paymentsummary"
+                    advanceAmountDisclaimerLabelText="The amount you are ahead of your repayment schedule"
+                    advanceAmountLabelText="Amount in advance"
+                    arrearsAmountDisclaimerLabelText="The amount you are behind your repayment schedule, any additional charges won’t be shown as arrears until the following day"
+                    arrearsAmountLabelText="Amount in arrears"
+                    outstandingBalanceDisclaimerLabelText="Balance as of yesterday. Note: this may not be the total amount required to payout the loan"
+                    outstandingBalanceLabelText="Outstanding balance"
+                    nextDueDateLabelText="Next due date"
+                    nextRepaymentAmountDisclaimerLabelText="Your next repayment amount, including any administration fees"
+                    nextRepaymentAmountLabelText="Next repayment amount"
+                    nominatedPaymentMethodLabelText="Nominated payment method"
+                    paymentFrequencyDueDateLabelText="Payment frequency due date"
+                    paymentFrequencyLabelText="Payment frequency"
+                    paymentFrequencyDisclaimerText="Your payment frequency is irregular. Refer to your repayments schedule below for details of all monthly payments."
+                    paymentSummaryLabelText="Payment summary"
+                    repaymentAmountDisclaimerLabelText="The total repayment schedule amount, including any administration fees"
+                    repaymentAmountLabelText="Repayment amount"/>
+            </container_1836306217>
+        </root>
+    </jcr:content>
+</jcr:root>

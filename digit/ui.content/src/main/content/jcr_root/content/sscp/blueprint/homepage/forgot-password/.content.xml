@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/sscp/settings/wcm/templates/sscp-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Forgot Password"
+        sling:resourceType="sscp/components/page"
+        textIsRich="true">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sscp/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sscp/components/container"
+                layout="responsiveGrid">
+                <container_1549529517
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container">
+                    <spacer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sscp/components/spacer"
+                        desktopSpace="90"
+                        mobileSpace="60"
+                        tabletSpace="90"/>
+                </container_1549529517>
+                <container
+                    cq:styleIds="[1643201822514]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sscp/components/container"
+                    containerClass="fixed"
+                    layout="simple">
+                    <forgotpassword
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="sscp/components/forgotpassword"
+                        forgotPasswordContact="&lt;p>Having trouble resetting your password? Please contact our customer service team on &lt;u>137 200&lt;/u> Mon-Fri 8.30am - 7.00pm AEST&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                        forgotPasswordDescription="Please enter the email associated with your account."
+                        forgotPasswordTitle="Forgot your password?"
+                        managePasswordDescription="&lt;p>This password will be used for any future logins. Your password must be&amp;nbsp;&lt;b>at least 8&lt;/b>&amp;nbsp;characters in length and different to previously used passwords.&lt;/p>&#xd;&#xa;&lt;p>It must meet&lt;b>&amp;nbsp;at least 3&lt;/b>&amp;nbsp;of the 4 conditions listed below:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>At least 1 UPPER CASE letter (A-Z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 lower case letter (a-z)&lt;/li>&#xd;&#xa;&lt;li>At least 1 number (0-9)&lt;/li>&#xd;&#xa;&lt;li>At least 1 special character e.g. (@,#,$,%,&amp;amp;, ?)&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                        managePasswordEditTitle="Reset your password"
+                        setPasswordText="Set Password &amp; log in"
+                        textIsRich="[true,true,true,true]"
+                        thankYouDescription="You have successfully reset your password. We’ll now take you to your account page."/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

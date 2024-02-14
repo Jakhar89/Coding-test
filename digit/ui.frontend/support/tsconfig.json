@@ -1,0 +1,33 @@
+{
+  "extends": "../../tsconfig.json",
+
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUmdGlobalAccess": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "target": "ES6",
+
+    "lib": ["ES2015"],
+
+    "paths": {
+      "@/support/types/*": ["../../support/types/*"],
+      "@/support/utility/*": ["../../support/utilities/*"],
+
+      "@/frontend/support/generator/*": ["generators/*"],
+      "@/frontend/support/types/*": ["types/*"],
+      "@/frontend/support/utility/*": ["utilities/*"]
+    },
+
+  },
+
+  "include": ["**/*.ts"],
+
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "transpileOnly": true
+  }
+}

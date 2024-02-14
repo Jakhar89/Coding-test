@@ -1,0 +1,9 @@
+node_modules/
+support/
+target/
+
+src/**/*.css
+
+jest.config.ts
+postcss.config.js
+tailwind.config.js

@@ -1,0 +1,12 @@
+.vscode/
+coverage/
+node/
+target/
+storybook-static
+
+jest.config.js
+postcss.config.js
+
+.eslintrc
+.prettierrc
+.stylelintrc

@@ -1,0 +1,16 @@
+{
+  "bpayDescriptionText": "Contact your bank or financial institution to make this payment from your cheque, savings, debit or transaction account.",
+  "bpayLabelText": "BPAY",
+  "bpayIcon": "bpay",
+  "directDebitDescriptionText": "To setup or change your Direct Debit, please <a href='/contact.html'>click here</a>.",
+  "directDebitLabelText": "Direct debit",
+  "directDebitIcon": "pay-date",
+  "eftDescriptionText": "Make EFT payments directly from your cheque or savings account by using your financial institution’s online banking service.\u003cbr\u003e\r\n",
+  "eftLabelText": "EFT",
+  "eftIcon": "online-payment-with-a-credit-card",
+  "nominatedFlagText": "Nominated Payment Method",
+  "nominatedPaymentOptionType": "EFT/BPAY",
+  "paymentMethodsDescriptionText": "We offer a range of payment methods to suit you. the EFT(electronic funds transfer) and BPAY details below are unique to you and your account. You can make additional repayments using these details. For any questions or to change your payment method, please contact customer service.",
+  "paymentMethodsLabelText": "Payment Methods",
+  "editIcon": "edit"
+}

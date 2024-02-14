@@ -1,0 +1,13 @@
+{
+  "resCitySuburbLabelText": "Suburb",
+  "resCountryLabelText": "Country",
+  "residentialAddressSameLabelText": "Mailing address is the same as the above",
+  "residentialAddressTitle": "Residential Address",
+  "resPostZipCodeLabelText": "Postcode",
+  "resPropertyNameLabelText": "Property Name",
+  "resStateTerritoryLabelText": "State",
+  "resStreetNameLabelText": "Street Name",
+  "resStreetTypeLabelText": "Street Type",
+  "resStreetNumberLabelText": "Street Number",
+  "resUnitNumberLabelText": "Unit Number"
+}

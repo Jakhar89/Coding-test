@@ -1,0 +1,31 @@
+{
+  "agreeTerms": "I have read and accept all the Terms and Conditions",
+  "agreeTermsButton": "Continue",
+  "agreeTermsTitle": "Agree to Terms and Conditions",
+  "communicationsConfig": {
+    "resendSMSText": "resend sms",
+    "verifyMobileContinueButton": "Continue",
+    "verifyMobileDescription": "You should have just received an SMS containing a one time password (OTP) to the mobile associated with your account. Please verify your account by entering the SMS OTP code below.",
+    "verifyMobileDisclaimer": "Still haven't received your OTP code? Please contact our customer service team on 137 200 Mon-Fri 8.30am - 7.00pm AET.",
+    "verifyMobileOTPText": "Enter your OTP code",
+    "verifyMobileResendText": "You can resend the SMS in {timer} seconds",
+    "verifyMobileTitle": "Verify your mobile"
+  },
+  "forgotPasswordText": "Forgot your password",
+  "forgotPasswordUrl": "/content/sscp/showcase/toyota",
+  "globalConfig": {
+    "forgerockUrl": "https://openam-tfs-anz-staging.id.forgerock.io/am",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP"
+  },
+  "loginButton": "Log in",
+  "loginContact": "\u003cp\u003eHaving trouble registering your account? Please contact our customer service team on 137 200 Mon-Fri 8.30am - 7.00pm AET.\u003c/p\u003e",
+  "loginDescription": "To log in please use the email address and password you have nominated.",
+  "loginTitle": "Log in",
+  "registerButton": "Register here",
+  "registerButtonUrl": "/content/sscp/showcase/toyota",
+  "registerIcon": "car-badge",
+  "registerTitle": "Don't have an account set up?",
+  "termsOfUse": "\u003ch2 id\u003d\"1\"\u003eSome of your things\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"2\"\u003eMeanings of Words\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"3\"\u003eUse of Toyota Finance Online\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"4\"\u003eChanges to Conditions of Use\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"5\"\u003eTermination of Toyota Finance Online\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"6\"\u003eAvailability of information\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"7\"\u003eYour general responsibilities\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"8\"\u003eWhat you must tell us\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"9\"\u003eExclusion of our liability\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"10\"\u003eYour liability for unauthorised transactions\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"11\"\u003eIndemnity\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"12\"\u003ePrivacy\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n\u003ch2 id\u003d\"13\"\u003eGoverning Law\u003c/h2\u003e\r\n\u003cp\u003eLorem Ipsum\u0026nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\u0027s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\u003c/p\u003e\r\n",
+  "termsTitle": "Terms and conditions"
+}

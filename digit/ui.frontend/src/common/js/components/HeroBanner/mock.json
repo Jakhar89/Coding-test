@@ -1,0 +1,15 @@
+{
+  "description": "\u003cp\u003eSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.\u003c/p\u003e\r\n",
+  "isHalfWidthBanner": false,
+  "image": "https://picsum.photos/1024/768",
+  "title": "Headline",
+  "greetingText": "Hi {names}",
+  "globalConfig": {
+    "forgerockUrl": "https://openam-tfs-anz-staging.id.forgerock.io/am",
+    "forgerockRealm": "bravo",
+    "forgerockClientId": "SSCP",
+    "questApiKey": "QVLrs3h8uj3Np1q178JbEahj1mtfcAZB2o6WZknF",
+    "baseApiUrl": "https://api-sit1.powertorquefinance.com.au"
+  },
+  "lastLoginText": "Last login: "
+}
